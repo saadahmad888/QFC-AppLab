@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap">
+    </noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="stylesheet" href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <noscript>
+      <link rel="stylesheet" href="assets/_css/app.css">
+    </noscript>
+    <title>Resource Centre</title>
+  </head>
+  <body class="inner-page">
+    <div class="search-backdrop"></div>
+    <header class="site-header">
+      <div class="container-lg">
+        <div class="top-nav">
+          <ul>
+            <li><a class="fs-15 fw-normal" href="">Client Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Vendor Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Resources</a></li>
+            <li><a class="fs-15 fw-normal" href="">عربي</a></li>
+            <li>
+              <div class="font-accessibility">
+                <button class="fs-15 fw-normal" type="button">A+</button>
+                <button class="fs-15 fw-normal" type="button">A-</button>
+              </div>
+            </li>
+            <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="dark" src="assets/images/QFC-logo.svg" alt="Logo"><img class="light" src="assets/images/logo-white-1.png" alt="Logo"></a>
+              <div class="d-flex gap-3">
+                <div class="search-box d-block d-lg-none">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div>
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu"><img src="assets/images/icons/menu-icons.svg" alt="hamburger icon"></button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="javascript:void(0)" data-mega-menu-trigger="megaAbout">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="doingBusiness">Doing Business</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="latestNews">Latest News</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="supportCentre">Support Centre</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end-buttons">
+                <div class="search-box">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div><a class="updated-primary-btn fs-16 fw-medium" href="">Start Your Setup</a>
+              </div>
+            </div>
+          </nav>
+          <div id="searchBox">
+            <div class="search-collapse-box">
+              <div class="input-group"><span class="input-group-text" id="search-input"> <img src="assets/images/icons/MagnifyingGlass.svg" alt=""></span>
+                <input class="form-control fs-20 fw-normal" type="text" placeholder="What are you looking for..." aria-describedby="search-input">
+              </div>
+              <button class="close" type="button"><img src="assets/images/icons/times.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="mega-menu-wrapper" id="megaMenuWrapper">
+            <div class="mega-menu-panel" id="megaAbout">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">About Us</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#">Life at QFC</a></li>
+                        <li><a href="#">Life in Qatar</a></li>
+                        <li><a href="#">Innovations</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Sample Heading</h4>
+                      <ul>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">QFC Regulatory Authority</a></li>
+                        <li><a href="#">Designated Office Premises</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Vendor Portal</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Introduction to QFC</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="doingBusiness">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Doing Business</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Business Solutions</a></li>
+                        <li><a href="#">Setup</a></li>
+                        <li><a href="#">Operate</a></li>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">Public Register</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Elite Onboarding Service</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Innovation Dome</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="latestNews">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Latest News</h4>
+                      <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Reports & Publications</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="spotlight-card"><a class="title fs-20 fw-normal" href="#">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></a>
+                        <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                        <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="supportCentre">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Support Centre</h4>
+                      <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Make an Inquiry</a></li>
+                        <li><a href="#">Resources</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">How to</h4>
+                      <ul>
+                        <li><a href="#">Submit Filings</a></li>
+                        <li><a href="#">Amend Company Details</a></li>
+                        <li><a href="#">Renew</a></li>
+                        <li><a href="#">Update UBO</a></li>
+                        <li><a href="#">Request Certificates</a></li>
+                        <li><a href="#">Access the Client Portal</a></li>
+                        <li><a href="#">Book Appointments</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" id="mobileMenu" data-bs-backdrop="static" tabindex="-1" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel"> <a class="navbar-brand" href="#"><img src="assets/images/QFC-logo.svg" alt="Logo"></a></h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-body-inner">
+            <ul>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false" aria-controls="aboutUs">About Us<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="aboutUs">
+                  <p class="nav-title">About Us</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Ecosystem</a></li>
+                    <li><a href="#">Life at QFC</a></li>
+                    <li><a href="#">Life in Qatar</a></li>
+                    <li><a href="#">Innovations</a></li>
+                  </ul>
+                  <p class="nav-title">Sample Heading</p>
+                  <ul>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">QFC Regulatory Authority</a></li>
+                    <li><a href="#">Designated Office Premises</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Vendor Portal</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Introduction to QFC</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#business" role="button" aria-expanded="false" aria-controls="business">Doing Business<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="business">
+                  <p class="nav-title">Doing Business</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#">Setup</a></li>
+                    <li><a href="#">Operate</a></li>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">Public Register</a></li>
+                  </ul>
+                  <p class="nav-title">Elite Onboarding Service</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Innovation Dome</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#latestNews" role="button" aria-expanded="false" aria-controls="latestNews">Latest News<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="latestNews">
+                  <p class="nav-title">Latest News</p>
+                  <ul>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reports & Publications</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                  </ul>
+                  <div class="spotlight-card">
+                    <p class="title fs-20 fw-normal">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></p>
+                    <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                    <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                  </div>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#sportsCenter" role="button" aria-expanded="false" aria-controls="sportsCenter">Support Centre<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="sportsCenter">
+                  <p class="nav-title">Support Centre</p>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Make an Inquiry</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                  <p class="nav-title">How to</p>
+                  <ul>
+                    <li><a href="#">Submit Filings</a></li>
+                    <li><a href="#">Amend Company Details</a></li>
+                    <li><a href="#">Renew</a></li>
+                    <li><a href="#">Update UBO</a></li>
+                    <li><a href="#">Request Certificates</a></li>
+                    <li><a href="#">Access the Client Portal</a></li>
+                    <li><a href="#">Book Appointments</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-nav">
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">Client Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Vendor Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Resources</a></li>
+            </ul>
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">عربي</a></li>
+              <li>
+                <div class="font-accessibility">
+                  <button class="fs-16 fw-normal" type="button">A+</button>
+                  <button class="fs-16 fw-normal" type="button">A-</button>
+                </div>
+              </li>
+              <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+        <div class="inner-banner">
+          <div class="inner-banner-holder position-relative inner-banner-normal">
+            <div class="container-lg">
+              <div class="row"> 
+                <div class="col-12">
+                  <div class="banner-title">
+                        <h4 class="section-title fw-normal text-primary fs-40">Resource Centre</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="breadcrumb-menu" id="">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col"> 
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="active " href="Resource Centre.html">Resource Centre</a></li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec-padding resource-center-section">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-12">
+                <div class="resource-center-navs">
+                  <ul class="nav nav-pills" id="resource-pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link active" id="resource-pill-0" data-bs-toggle="pill" data-bs-target="#resource-tab-0" type="button" role="tab" aria-selected="true">All Resources</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link" id="resource-pill-1" data-bs-toggle="pill" data-bs-target="#resource-tab-1" type="button" role="tab" aria-selected="false">Setting Up in QFC</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link" id="resource-pill-2" data-bs-toggle="pill" data-bs-target="#resource-tab-2" type="button" role="tab" aria-selected="false">Registration</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link" id="resource-pill-3" data-bs-toggle="pill" data-bs-target="#resource-tab-3" type="button" role="tab" aria-selected="false">Client Affairs</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link" id="resource-pill-4" data-bs-toggle="pill" data-bs-target="#resource-tab-4" type="button" role="tab" aria-selected="false">Tax</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link" id="resource-pill-5" data-bs-toggle="pill" data-bs-target="#resource-tab-5" type="button" role="tab" aria-selected="false">Employment Standards Office</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="fs-20 fw-normal nav-link" id="resource-pill-6" data-bs-toggle="pill" data-bs-target="#resource-tab-6" type="button" role="tab" aria-selected="false">Data Protection</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="resource-center-tabs">
+                  <div class="tab-content" id="resource-pills-tabContent">
+                    <div class="tab-pane fade show active" id="resource-tab-0" role="tabpanel" aria-labelledby="resource-pill-0" tabindex="0">
+                      <div class="heading-box">
+                        <div class="h2 fs-40 fw-semibold text-black">All Resources</div>
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2 class="fs-40 fw-semibold">Tax</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents fs-20 fw-normal">Showing<strong>30</strong> Documents</p>
+                        <div class="table-header">
+                          <p class="fs-20 fw-normal">FILE NAME</p>
+                          <p class="fs-20 fw-normal">DATE</p>
+                          <p class="fs-20 fw-normal">DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <div class="collapse-item">
+                          <button class="rc-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rc-tab0-intl-tax" aria-expanded="true" aria-controls="rc-tab0-intl-tax"><span class="rc-collapse-title fs-24 fw-semibold">INTERNATIONAL TAX</span><span class="rc-collapse-count fs-16">12 documents</span><i class="bi bi-chevron-down"></i></button>
+                          <div class="collapse show" id="rc-tab0-intl-tax">
+                            <div class="collapse-inner">
+                              <h4 class="rc-sub-title fs-20 fw-semibold">CRS — COMMON REPORTING STANDARD</h4>
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">QFC CRS Regulatory Framework</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">CRS Implementation Training Video</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/play.svg" alt="play Icon"><span class="dl-label fs-18 fw-medium">Watch</span><span class="dl-meta fs-18 fw-normal">(MP4, 100 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">Live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon"><span class="dl-label fs-18 fw-medium">Access Portal</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="collapse-inner">
+                              <h4 class="rc-sub-title fs-20 fw-semibold">CRS — COMMON REPORTING STANDARD</h4>
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">QFC CRS Regulatory Framework</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">Live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">View Index</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">CRS Implementation Training Video</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/calculator.svg" alt="play Icon"><span class="dl-label fs-18 fw-medium">Launch Calculator</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">Live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon"><span class="dl-label fs-18 fw-medium">Access Portal</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse-item">
+                          <button class="rc-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rc-tab0-domestic" aria-expanded="true" aria-controls="rc-tab0-intl-tax"><span class="rc-collapse-title fs-24 fw-semibold">DOMESTIC LEGISLATION</span><span class="rc-collapse-count fs-16">6 items</span><i class="bi bi-chevron-down"></i></button>
+                          <div class="collapse show" id="rc-tab0-domestic">
+                            <div class="collapse-inner without-timeline">
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">QFC CRS Regulatory Framework</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">CRS Implementation Training Video</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse-item">
+                          <button class="rc-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rc-tab0-double-taxation-agreement" aria-expanded="true" aria-controls="rc-tab0-intl-tax"><span class="rc-collapse-title fs-24 fw-semibold">DOUBLE TAXATON AGREEMENT</span><span class="rc-collapse-count fs-16">3 items</span><i class="bi bi-chevron-down"></i></button>
+                          <div class="collapse show" id="rc-tab0-double-taxation-agreement">
+                            <div class="collapse-inner without-timeline without-date">
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">Double Taxation Agreements Repository</p>
+                                      </div>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium"> </p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">View All Agreements</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="resource-tab-1" role="tabpanel" aria-labelledby="resource-pill-1" tabindex="0">
+                      <div class="heading-box">
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2>Setting Up in QFC</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents">Showing<strong>0</strong> Documents</p>
+                        <div class="table-header">
+                          <p>FILE NAME</p>
+                          <p>DATE</p>
+                          <p>DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <p class="fs-20 fw-semibold text-black">Data Not Found...</p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="resource-tab-2" role="tabpanel" aria-labelledby="resource-pill-2" tabindex="0">
+                      <div class="heading-box">
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2>Setting Up in QFC</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents">Showing<strong>0</strong> Documents</p>
+                        <div class="table-header">
+                          <p>FILE NAME</p>
+                          <p>DATE</p>
+                          <p>DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <p class="fs-20 fw-semibold text-black">Data Not Found...</p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="resource-tab-3" role="tabpanel" aria-labelledby="resource-pill-3" tabindex="0">
+                      <div class="heading-box">
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2>Setting Up in QFC</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents">Showing<strong>0</strong> Documents</p>
+                        <div class="table-header">
+                          <p>FILE NAME</p>
+                          <p>DATE</p>
+                          <p>DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <p class="fs-20 fw-semibold text-black">Data Not Found...</p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="resource-tab-4" role="tabpanel" aria-labelledby="resource-pill-4" tabindex="0">
+                      <div class="heading-box">
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2 class="fs-40 fw-semibold">Tax</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents fs-20 fw-normal">Showing<strong>30</strong> Documents</p>
+                        <div class="table-header">
+                          <p class="fs-20 fw-normal">FILE NAME</p>
+                          <p class="fs-20 fw-normal">DATE</p>
+                          <p class="fs-20 fw-normal">DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <div class="collapse-item">
+                          <button class="rc-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rc-tab0-intl-tax" aria-expanded="true" aria-controls="rc-tab0-intl-tax"><span class="rc-collapse-title fs-24 fw-semibold">INTERNATIONAL TAX</span><span class="rc-collapse-count fs-16">12 documents</span><i class="bi bi-chevron-down"></i></button>
+                          <div class="collapse show" id="rc-tab0-intl-tax">
+                            <div class="collapse-inner">
+                              <h4 class="rc-sub-title fs-20 fw-semibold">CRS — COMMON REPORTING STANDARD</h4>
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">QFC CRS Regulatory Framework</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">CRS Implementation Training Video</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/play.svg" alt="play Icon"><span class="dl-label fs-18 fw-medium">Watch</span><span class="dl-meta fs-18 fw-normal">(MP4, 100 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">Live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon"><span class="dl-label fs-18 fw-medium">Access Portal</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="collapse-inner">
+                              <h4 class="rc-sub-title fs-20 fw-semibold">CRS — COMMON REPORTING STANDARD</h4>
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">QFC CRS Regulatory Framework</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">Live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">View Index</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">CRS Implementation Training Video</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/calculator.svg" alt="play Icon"><span class="dl-label fs-18 fw-medium">Launch Calculator</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">Live</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon"><span class="dl-label fs-18 fw-medium">Access Portal</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse-item">
+                          <button class="rc-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rc-tab0-domestic" aria-expanded="true" aria-controls="rc-tab0-intl-tax"><span class="rc-collapse-title fs-24 fw-semibold">DOMESTIC LEGISLATION</span><span class="rc-collapse-count fs-16">6 items</span><i class="bi bi-chevron-down"></i></button>
+                          <div class="collapse show" id="rc-tab0-domestic">
+                            <div class="collapse-inner without-timeline">
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">QFC CRS Regulatory Framework</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">CRS Implementation Training Video</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">2024 Participating and Reportable Jurisdictions</p><span class="badge-new">New</span>
+                                      </div>
+                                      <ul class="file-tags">
+                                        <li class="fs-16 fw-normal">Policy</li>
+                                        <li class="fs-16 fw-normal">QFC-TAX-CRS-2021</li>
+                                        <li class="fs-16 fw-normal">v1.0</li>
+                                      </ul>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium">28 Jul 2006</p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">English</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.2 MB)</span></a><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">العربية</span><span class="dl-meta fs-18 fw-normal">(PDF, 3.0 MB)</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse-item">
+                          <button class="rc-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rc-tab0-double-taxation-agreement" aria-expanded="true" aria-controls="rc-tab0-intl-tax"><span class="rc-collapse-title fs-24 fw-semibold">DOUBLE TAXATON AGREEMENT</span><span class="rc-collapse-count fs-16">3 items</span><i class="bi bi-chevron-down"></i></button>
+                          <div class="collapse show" id="rc-tab0-double-taxation-agreement">
+                            <div class="collapse-inner without-timeline without-date">
+                              <ul class="resource-list">
+                                <li>
+                                  <div class="inner-items">
+                                    <div class="file-name-box">
+                                      <div class="fn-title">
+                                        <p class="fs-20 fw-normal">Double Taxation Agreements Repository</p>
+                                      </div>
+                                    </div>
+                                    <div class="date-box">
+                                      <p class="fs-18 fw-medium"> </p>
+                                    </div>
+                                    <div class="download-box"><a class="download-btn" href="#"><img src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon"><span class="dl-label fs-18 fw-medium">View All Agreements</span></a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="resource-tab-5" role="tabpanel" aria-labelledby="resource-pill-5" tabindex="0">
+                      <div class="heading-box">
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2>Setting Up in QFC</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents">Showing<strong>0</strong> Documents</p>
+                        <div class="table-header">
+                          <p>FILE NAME</p>
+                          <p>DATE</p>
+                          <p>DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <p class="fs-20 fw-semibold text-black">Data Not Found...</p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="resource-tab-6" role="tabpanel" aria-labelledby="resource-pill-6" tabindex="0">
+                      <div class="heading-box">
+                        <div class="hb-top">
+                          <div class="hb-heading">
+                            <h2>Setting Up in QFC</h2>
+                          </div>
+                          <div class="hb-filters">
+                                <div class="filter-tabs">
+                                  <div class="filter-items search-box">
+                                    <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Document Type">Document Type</option>
+                                      <option value="Effective">Effective</option>
+                                      <option value="Expired">Expired</option>
+                                      <option value="On Hold">On Hold</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="All Language">All Language</option>
+                                      <option value="English">English</option>
+                                      <option value="Arabic">Arabic</option>
+                                    </select>
+                                  </div>
+                                  <div class="filter-items select2-box">
+                                    <select class="select2">
+                                      <option value="Sort by Year">Sort by Year</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                      <option value="2026">2026</option>
+                                    </select>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <p class="showing-documents">Showing<strong>0</strong> Documents</p>
+                        <div class="table-header">
+                          <p>FILE NAME</p>
+                          <p>DATE</p>
+                          <p>DOWNLOADS</p>
+                        </div>
+                      </div>
+                      <div class="resource-center-tabs-content-main">
+                        <p class="fs-20 fw-semibold text-black">Data Not Found...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec-padding d-none">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col text-center">
+                <h4 class="mb-5 text-center fw-medium fs-24 section-title text-primary">Your one-stop-shop for all QFC brochures, guides, forms, and more</h4>
+              </div>
+            </div>
+            <div class="media-centre-tabs">
+              <div class="tabs-wrapper" id="myTab" role="tablist"><a class="btn-tab" id="tab1" data-bs-toggle="tab" data-bs-target="#tab-pane-1" type="button" role="tab" aria-controls="tab-pane-1" aria-selected="false">All</a><a class="btn-tab" id="tab2" data-bs-toggle="tab" data-bs-target="#tab-pane-2" type="button" role="tab" aria-controls="tab-pane-2" aria-selected="false">Setting Up in QFC</a><a class="btn-tab" id="tab4" data-bs-toggle="tab" data-bs-target="#tab-pane-4" type="button" role="tab" aria-controls="tab-pane-4" aria-selected="false">Client Affairs</a><a class="btn-tab active" id="tab5" data-bs-toggle="tab" data-bs-target="#tab-pane-5" type="button" role="tab" aria-controls="tab-pane-5" aria-selected="true">Tax</a><a class="btn-tab" id="tab6" data-bs-toggle="tab" data-bs-target="#tab-pane-6" type="button" role="tab" aria-controls="tab-pane-6" aria-selected="false">Employment Standards Office</a><a class="btn-tab" id="tab7" data-bs-toggle="tab" data-bs-target="#tab-pane-7" type="button" role="tab" aria-controls="tab-pane-7" aria-selected="false">Data Protection</a></div>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="tab-pane-1" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+                  <div class="row mb-5 mt-5">
+                    <div class="col-lg"> 
+                      <h3 class="fs-40 text-violet">All</h3>
+                    </div>
+                    <div class="col-lg-auto">
+                          <div class="filter-tabs">
+                            <div class="filter-items search-box">
+                              <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                            </div>
+                            <div class="filter-items select2-box">
+                              <select class="select2">
+                                <option value="Sort by Year">Sort by Year</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                              </select>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row mb-5 mt-5 align-items-center">
+                    <div class="col-lg"> 
+                      <h3 class="fs-32 text-black fw-500">Tax</h3>
+                    </div>
+                  </div>
+                  <div class="documents-table table-responsive">
+                    <div class="documents-table-scroll">
+                      <table class="table">
+                        <thead> 
+                          <tr>
+                            <th>File Name</th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">File Type</th>
+                            <th class="text-center">File Size</th>
+                            <th class="text-center"> </th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr> 
+                            <td class="section-row" colspan="5">Domestic Legislation</td>
+                          </tr>
+                          <tr class="content-row">
+                            <td>
+                              <div class="file-name"><span class="file-icon"></span>
+                                <p>2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="pdf-viewer.html">EN</a><a href="pdf-viewer.html">AR</a></div>
+                          </td>
+                        </tbody>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 </p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="section-row" colspan="5">Concessionary Statements of Practice (CSoP)</td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 </p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="section-row" colspan="5">Double Taxation Agreement        </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row mt-1 align-items-center">
+                    <div class="col-lg">
+                      <h5 class="fs-20 fw-500 text-secondary">Double Taxation Agreements</h5>
+                    </div>
+                    <div class="col-lg-auto"> <a class="btn-view" href="#">View Agreements<img class="img-fluid" src="assets/images/right-arrow.svg" loading="lazy" width="" height="" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-pane-2" role="tabpanel" aria-labelledby="tab2" tabindex="0"> 
+                  <div class="row mb-5 mt-5 align-items-center">
+                    <div class="col-lg"> 
+                      <h3 class="fs-32 text-black fw-500">Setting Up in QFC</h3>
+                    </div>
+                    <div class="col-lg-auto">
+                          <div class="filter-tabs">
+                            <div class="filter-items search-box">
+                              <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                            </div>
+                            <div class="filter-items select2-box">
+                              <select class="select2">
+                                <option value="Sort by Year">Sort by Year</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                              </select>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="documents-table table-responsive">
+                    <div class="documents-table-scroll">
+                      <table class="table">
+                        <thead> 
+                          <tr>
+                            <th>File Name</th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">File Type</th>
+                            <th class="text-center">File Size</th>
+                            <th class="text-center"> </th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr> 
+                            <td class="section-row" colspan="5">Domestic Legislation</td>
+                          </tr>
+                          <tr class="content-row">
+                            <td>
+                              <div class="file-name"><span class="file-icon"></span>
+                                <p>Help Sheet - What to do if you disagree?</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <td> 
+                            <p>11 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="pdf-viewer.html">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tbody>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>Rates - Additional Charge and Compensation</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>30 Nov 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>CRS MoF Decision 8 2025 (amends 17-2019) Unofficial Translation</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>20 Feb 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="section-row" colspan="5">Concessionary Statements of Practice (CSoP)</td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>CRS Reportable Jurisdictions for RY2024 from General Tax Authority-GTA</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>30 Nov 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>CRS Reportable Jurisdictions for RY2023 from GTA</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>20 Feb 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>CRS List of Reportable and Participating Jurisdiction GTA Decision 16 2019 - EN</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>12 Aug 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>FATCA Inter-Governmental Agreement between Qatar and the US</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>30 Nov 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-pane-4" role="tabpanel" aria-labelledby="tab4" tabindex="0">Client Affairs</div>
+                <div class="tab-pane fade fade show active" id="tab-pane-5" role="tabpanel" aria-labelledby="tab5" tabindex="0">
+                  <div class="row mb-5 mt-5 align-items-center sticky-row">
+                    <div class="col-lg"> 
+                      <h3 class="fs-40 text-violet">Tax</h3>
+                    </div>
+                    <div class="col-lg-auto">
+                          <div class="filter-tabs">
+                            <div class="filter-items search-box">
+                              <input type="text" placeholder="Search"><i class="bi bi-search"></i>
+                            </div>
+                            <div class="filter-items select2-box">
+                              <select class="select2">
+                                <option value="Sort by Year">Sort by Year</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                              </select>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="documents-table table-responsive">
+                    <div class="documents-table-scroll">
+                      <table class="table">
+                        <thead> 
+                          <tr>
+                            <th>File Name</th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">File Type</th>
+                            <th class="text-center">File Size</th>
+                            <th class="text-center"> </th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr> 
+                            <td class="section-row" colspan="5">Domestic Legislation</td>
+                          </tr>
+                          <tr class="content-row">
+                            <td>
+                              <div class="file-name"><span class="file-icon"></span>
+                                <p>2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="pdf-viewer.html">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tbody>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 </p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="section-row" colspan="5">Concessionary Statements of Practice (CSoP)</td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025</p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr class="content-row">
+                          <td>
+                            <div class="file-name"><span class="file-icon"></span>
+                              <p>2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 </p>
+                            </div>
+                          </td>
+                          <td> 
+                            <p>28 Jul 2006</p>
+                          </td>
+                          <td> 
+                            <p>PDF</p>
+                          </td>
+                          <td>
+                            <p>2.0 MB</p>
+                          </td>
+                          <td> 
+                            <div class="file-lang"><a href="#">EN</a><a href="#">AR</a></div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="section-row" colspan="5">Double Taxation Agreement        </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row mt-1 align-items-center">
+                    <div class="col-lg">
+                      <h5 class="fs-20 fw-500 text-secondary">Double Taxation Agreements</h5>
+                    </div>
+                    <div class="col-lg-auto"> <a class="btn-view" href="#">View Agreements<img class="img-fluid" src="assets/images/right-arrow.svg" loading="lazy" width="" height="" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-pane-6" role="tabpanel" aria-labelledby="tab6" tabindex="0">Employment Standards Office</div>
+                <div class="tab-pane fade" id="tab-pane-7" role="tabpanel" aria-labelledby="tab7" tabindex="0">Data Protection</div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <footer class="footer-sec">
+      <div class="container-lg pb-3 pb-lg-5 pt-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 text-start order-2 order-lg-1"> 
+            <div class="footer-nav w-100">
+              <h5 class="mb-2 mt-4 mt-lg-0">Subscribe to our newsletter</h5>
+              <p>We’ll send you only what matters — no noise, no spam.</p>
+            </div>
+            <div class="news-letter"> 
+              <input type="search" placeholder="Enter e-mail address" name="search"><a class="btn btn-transparent rounded-circle border-1 border" href="#"> <i class="bi bi-arrow-right text-white"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12 d-flex flex-wrap flex-md-nowrap align-items-start order-3 order-lg-2"> 
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">About QFC</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="about.html">Overview</a></li>
+                    <li><a class="nav-item nav-link" href="leadership.html">Leadership</a></li>
+                    <li><a class="nav-item nav-link" href="ecosystem.html">Ecosystem</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Business Services</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Setup Guide</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">VIP Services</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Regulatory & Legal</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Laws &amp; Regulations</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Public Register</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Insights & Media</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="news.html">News</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">White Papers</a></li>
+                    <li><a class="nav-item nav-link" href="reports-publications.html">Reports &amp; Publications</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Contact & Support</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Make an Inquiry</a></li>
+                    <li><a class="nav-item nav-link" href="FAQ.html">FAQ</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Social Media</a></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 mt-0 pt-0 mt-lg-5 pt-lg-5 order-1 order-lg-3"> <a class="logo d-flex align-items-center" href="index.html"><img class="footer-logo img-fluid mt-0" src="assets/images/logo-white-1.png" alt=""></a></div>
+          <div class="col-12 col-lg-6 mt-lg-5 pt-lg-5 mt-2 pt-2 order-4 order-lg-4"> 
+            <ul class="footer-social">
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/facebook.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/linkedin.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/instagram.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/twitter.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/youtube.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/tiktok.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg pt-3 pt-lg-4 border-top">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 copyright">
+            <p class="fw-normal mb-0">&copy; 2025 Qatar Financial Centre. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 footer-terms">
+            <div class="footer-nav d-flex align-items-start"> 
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="terms.html">Terms</a></li>
+                    <li><a class="nav-item nav-link" href="privacy-policy.html">Privacy</a></li>
+                    <li><a class="nav-item nav-link" href="cookies.html">Cookies</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+      {
+          "imports": {
+              "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+              "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+          }
+      }
+    </script>
+    <script type="module">
+      import { Popover } from 'bootstrap';
+      //- new Popover(document.getElementById('popoverButton'))
+    </script>
+  </body>
+</html>

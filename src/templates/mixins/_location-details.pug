@@ -1,0 +1,8 @@
+mixin locationDetails(title, address, buttonText)
+    .map-marker__card
+        h3.map-marker__title.fs-20= title
+        .map-marker__address
+            i.bi.bi-geo-alt-fill.map-marker__icon
+            span.map-marker__text= address
+        button.map-marker__button(type="button", data-bs-toggle="offcanvas", data-bs-target="#leadershipModal", aria-controls="leadershipModal")= buttonText
+

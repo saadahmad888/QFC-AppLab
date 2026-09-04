@@ -1,0 +1,104 @@
+.testimonial {
+    &-wrapper {
+        padding: 48px;
+        gap: 40px;
+        border: 1px solid #d5d5d5;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-start;
+        align-items: stretch;
+        margin-block: 24px;
+        @include media-breakpoint-down(sm) {
+            padding: 24px;
+            gap: 24px;
+        }
+        &.newstyle {
+            background: radial-gradient(159.21% 445.11% at -15.86% -45.06%, rgba(255, 255, 255, 0) 0%, #f4f3ff 100%);
+        }
+        &.text-color {
+            p.fs-24 {
+                font-weight: 500 !important;
+            }
+        }
+        &.no-border {
+            border: 0;
+            padding: 0;
+            margin-block: 0;
+            figure {
+                margin-bottom: 0;
+            }
+            .testimonial {
+                &-author {
+                    gap: 32px !important;
+                    figure {
+                        height: auto;
+                        width: 354px;
+                        @media only screen and (max-width: 1600px) {
+                            width: 250px;
+                        }
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .testimonial-author-info {
+                        text-align: center;
+                    }
+                }
+                &-content {
+                    border-inline-start: 1px solid #d5d5d5;
+                    padding-inline-start: 48px;
+                    .fs-20,
+                    .fs-20 p {
+                        font-size: 20px;
+                        @include fluid-steps(font-size, (12px, 12px, 12px, 20px));
+                    }
+                }
+            }
+            @include media-breakpoint-down(md) {
+                flex-wrap: wrap;
+                flex-direction: column !important;
+                &.h-100{
+                    height: auto !important;
+                }
+                .testimonial {
+                    &-author {
+                        width: 100%;
+                    }
+                    &-content {
+                        padding-top: 24px;
+                        border-inline-start: 0;
+                        border-top: 1px solid #d5d5d5;
+                    }
+                }
+            }
+        }
+    }
+    &-author {
+        gap: 20px;
+        figure {
+            height: 80px;
+            width: 80px;
+        }
+    }
+    &-content {
+        figure {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.updates {
+    .card {
+        &.card-list {
+            &.newsletter {
+                &.counter {
+                    .fs-24 {
+                        font-size: 24px;
+                        @include fluid-steps(font-size, (12px, 12px, 12px, 24px));
+                    }
+                }
+            }
+        }
+    }
+}

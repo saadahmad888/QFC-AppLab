@@ -1,0 +1,157 @@
+p,
+h6 {
+	a {
+		color: var(--primary);
+
+		&:hover {
+			color: var(--primary);
+			text-decoration: underline;
+		}
+	}
+}
+
+body {
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		font-weight: 500;
+	}
+}
+
+// $color-mode-type: data;
+
+// @include color-mode(dark) {
+//   p {
+//     color: var(--bs-primary-text);
+//     background-color: var(--bs-primary-bg-subtle);
+//   }
+// }
+
+.bro {
+	color: bisque;
+	margin: 10px;
+}
+
+.gg {
+	color: var(--black);
+}
+
+.title-about {
+	font-size: 50px;
+}
+
+.new-header {
+	background-color: yellow;
+}
+
+.modal-title {
+	border-radius: 5px;
+	display: flex;
+	border: 1px solid red;
+}
+
+.about {
+	border: 1px solid red;
+
+	p {
+		font-size: 20px;
+	}
+}
+
+.fig-radius {
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.datepicker-box {
+	position: relative;
+	max-width: 190px;
+
+	&::after {
+		content: "";
+		display: block;
+		background-image: url(../../assets/images/calender-icon.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		inset-inline-end: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+.faq-tab {
+	display: none;
+}
+
+.faq-tab.active {
+	display: block;
+}
+
+.submenu {
+	display: none;
+}
+
+.has-submenu.open .submenu {
+	display: block;
+}
+
+.discover-new {
+	.card-body .card-title,
+	.card-body .more-btn {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: normal;
+		width: calc(100% - 24px);
+		text-align: start;
+	}
+	.card-body .card-title {
+		-webkit-line-clamp: 1;
+	}
+
+	.card-body .more-btn {
+		-webkit-line-clamp: 1;
+	}
+}
+.publications-wrapper {
+	.read-more-content.collapsed {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		-webkit-box-orient: vertical;
+	}
+}
+#insight-global {
+	.row > [class*="col-"]:only-child {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+/* purgecss start ignore */
+.swiper .swiper-pagination {
+	display: none;
+}
+
+.swiper .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+	display: inline-block;
+}
+
+.swiper .swiper-pagination:has(.swiper-pagination-bullet) {
+	display: flex;
+	justify-content: center;
+}
+
+.swiper-pagination {
+	display: none !important;
+}
+
+.swiper-initialized .swiper-pagination:has(.swiper-pagination-bullet + .swiper-pagination-bullet) {
+	display: flex !important;
+}
+/* purgecss end ignore */

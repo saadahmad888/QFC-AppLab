@@ -1,0 +1,61 @@
+mixin contactForm(...formItems)
+    - var rowClass = 'align-items-center'
+    - for (var i = 0; i < formItems.length; i++) { if (formItems[i].rowClass) { rowClass = formItems[i].rowClass; break; } }
+    form.form-wrapper
+        .row(class=rowClass) 
+            each item in formItems
+                if item.type || !item.rowClass
+                    div(class=`col-md-${item.column}` + (item.columnClass ? ` ${item.columnClass}` : ''))
+                        if item.type === 'textarea'
+                            .form-group 
+                                label=item.label
+                                textarea.form-control(rows="2" placeholder=item.placeholder)
+                        else if item.type === 'select'
+                            .form-group 
+                                label=item.label
+                                select.form-control(required=(item.placeholder ? true : false))
+                                    if item.placeholder
+                                        option(value="" selected)= item.placeholder
+                                    each option in item.options
+                                        option(value=option.value)= option.text
+                        else if item.type === 'text'
+                            .form-group
+                                label=item.label
+                                input.form-control(type="text" placeholder=item.placeholder)
+                        else if item.type === 'tel'
+                            .form-group 
+                                label=item.label
+                                input.form-control.phone-input(type="tel" id=item.phoneId || "phone-code" placeholder=item.placeholder) 
+                        else if item.type === 'button'
+                            .form-group 
+                                input(type="button" value=item.label href="#", class=item.className)
+                        else if item.type === 'file'
+                            - var fileInputId = 'inputUpload-' + Math.random().toString(36).slice(2, 9)
+                            .form-group 
+                                label(for=fileInputId)=item.label
+                                .file-upload-wrapper(data-file-dropzone)
+                                    .upload-files-container.form-control
+                                        .dropzone-area
+                                            h3.dynamic-message Drag files here or 
+                                                label.label 
+                                                    span.browse-files
+                                                        input.default-file-input(type='file' id=fileInputId multiple)
+                                                        span.browse-files-text choose from folder
+                                    .selected-files-area.d-none
+                                        .selected-files-header
+                                            span.selected-files-label Selected file
+                                            a.change-file-link(href='#') Change file
+                                        ul.selected-files-list
+                        else if item.type === 'checkbox'
+                            .form-check-input 
+                                span.contact-checkbox-box
+                                    input.form-check(type="checkbox", name=item.checklabel id=item.checklabel)
+                                label(for=item.checklabel)=item.label
+                        else if item.type === 'radio'
+                            .form-group(class=item.wrapperClass || '')
+                                label.radio-label=item.label
+                                .radio-group
+                                    each option in item.options
+                                        .radio-option
+                                            input.radio-input(type="radio", name=item.name, id=option.id, value=option.value, checked=option.checked)
+                                            label.radio-label-text(for=option.id)= option.text

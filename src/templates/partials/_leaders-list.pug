@@ -1,0 +1,30 @@
++section('leadership py-60') 
+    .row 
+        .col-12
+            +tabList('simpleTabs', 
+                {item: 'Board of Directors', id: 'board-tab', targetID: 'board', class: 'active'}, 
+                {item: 'Executive Committee', id: 'exec-tab', targetID: 'exec'})
+            +tabContents(
+                {id: 'board', contentID:'board-tab', class: 'active show', contentList:[{ image: 'assets/images/yousuf-mohammed.png', title: 'Yousuf Mohamed Al-Jaida', description: 'Board Member | Chief Executive Officer of Qatar Financial Centre', modal:'leadershipModal'},{image: 'assets/images/sheikh-faisal.png', title: 'H.E. Sheikh Faisal Bin Thani Al Thani', description: 'Chairman | Minister of Commerce and Industry', modal:'leadershipModal'},{image: 'assets/images/abdulaziz.png', title: 'H.E. Abdulaziz Bin Nasser Bin Mubarak Al Khalifa', description: 'Board Member | President of the Civil Service and Government Development Bureau', modal:'leadershipModal'},{image: 'assets/images/akbar-al.png', title: 'H.E. Akbar Al Baker', description: 'Board Member | Advisor to HE the Prime Minister and Minister of Foreign Affairs of Qatar', modal:'leadershipModal'},{ image: 'assets/images/yousuf-mohammed.png', title: 'Yousuf Mohamed Al-Jaida', description: 'Board Member | Chief Executive Officer of Qatar Financial Centre',modal:'leadershipModal'},{image: 'assets/images/sheikh-faisal.png', title: 'H.E. Sheikh Faisal Bin Thani Al Thani', description: 'Chairman | Minister of Commerce and Industry', modal:'leadershipModal'},{image: 'assets/images/abdulaziz.png', title: 'H.E. Abdulaziz Bin Nasser Bin Mubarak Al Khalifa', description: 'Board Member | President of the Civil Service and Government Development Bureau',modal:'leadershipModal'},{image: 'assets/images/akbar-al.png', title: 'H.E. Akbar Al Baker', description: 'Board Member | Advisor to HE the Prime Minister and Minister of Foreign Affairs of Qatar', modal:'leadershipModal'},
+                {image: 'assets/images/akbar-al.png', title: 'H.E. Akbar Al Baker', description: 'Board Member | Advisor to HE the Prime Minister and Minister of Foreign Affairs of Qatar', modal:'leadershipModal'},{ image: 'assets/images/yousuf-mohammed.png', title: 'Yousuf Mohamed Al-Jaida', description: 'Board Member | Chief Executive Officer of Qatar Financial Centre'}]},
+
+                {id: 'exec', contentID:'exec-tab', class: '', contentList:[{image: 'assets/images/sheikh-faisal.png', title: 'H.E. Sheikh Faisal Bin Thani Al Thani', description: 'Chairman | Minister of Commerce and Industry', modal:'leadershipModal'},{image: 'assets/images/abdulaziz.png', title: 'H.E. Abdulaziz Bin Nasser Bin Mubarak Al Khalifa', description: 'Board Member | President of the Civil Service and Government Development Bureau', modal:'leadershipModal'},{image: 'assets/images/akbar-al.png', title: 'H.E. Akbar Al Baker', description: 'Board Member | Advisor to HE the Prime Minister and Minister of Foreign Affairs of Qatar'},
+                {image: 'assets/images/akbar-al.png', title: 'H.E. Akbar Al Baker', description: 'Board Member | Advisor to HE the Prime Minister and Minister of Foreign Affairs of Qatar', modal:'leadershipModal'},{ image: 'assets/images/yousuf-mohammed.png', title: 'Yousuf Mohamed Al-Jaida', description: 'Board Member | Chief Executive Officer of Qatar Financial Centre', modal:'leadershipModal'},{ image: 'assets/images/yousuf-mohammed.png', title: 'Yousuf Mohamed Al-Jaida', description: 'Board Member | Chief Executive Officer of Qatar Financial Centre', modal:'leadershipModal'}]})
+
+
+.offcanvas.offcanvas-end(id="leadershipModal", tabindex="-1", aria-labelledby="leadershipModal")
+    .offcanvas-header
+        button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+    .offcanvas-body 
+        .element-card
+            .row
+                .col-md-4
+                    figure
+                        img.img-fluid(src="assets/images/yousuf-mohammed.png")
+                .col-md-8
+                    h3.fw-medium.fs-20.text-secondary.mb-2 Yousuf Mohamed Al-Jaida
+                    h5.fw-normal.fs-16.text-dark-grey.mb-4 Chairman | Minister of Commerce and Industry
+                .col-12.mt-4
+                    p.fw-normal.fs-18.text-secondary Yousuf Mohamed Al-Jaida was appointed Chief Executive Officer of Qatar Financial Centre (QFC) in June 2015. He previously held the role of Deputy Chief Executive Officer and Chief Strategic Business Development Officer at QFC where he was responsible for leading the overall strategy and business development functions of the organisation
+                    p.fw-normal.fs-18.text-secondary Prior to joining QFC, he was Head of Indirect Investment at the Qatar General Retirement and Pension Authority, which included overseeing the management of hedge fund, private equity, real estate, fixed income, and equity portfolio investments. He has also worked for Qatar Energy and Dolphin Energy early in his career.
+                    p.fw-normal.fs-18.text-secondary Yousuf serves as board member in leading local and international organisations including the World Alliance of International Financial Centers, the Qatar Financial Centre, the Qatar Finance and Business Academy, the Qatar Free Zones Authority, the Investment Promotion Agency, and Sidra Medicine.

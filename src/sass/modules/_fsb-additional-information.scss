@@ -1,0 +1,28 @@
+.fsb-additional-information-section {
+    .section-heading {
+        .title,
+        h2 {
+            color: #521892;
+            margin-bottom: 2.5rem;
+        }
+    }
+    &-col {
+        h4,
+        .title {
+            margin-bottom: 1rem;
+        }
+        p,
+        .desc {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #3d126b;
+            border-color: #c0c0c0;
+        }
+        &.second-item {
+            @include media-breakpoint-down(md) {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

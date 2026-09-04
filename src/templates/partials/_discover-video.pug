@@ -1,0 +1,17 @@
++section('discover-qatar') 
+    .row 
+        .col-12 
+            //- Local video
+            //- .video-container.h-100.ratio 
+            //-     video.w-100.h-100(src="assets/videos/about.mp4" autoplay="" muted="" loop="" height="100%" id="overviewVideo") 
+            //-     button.discover-video-btn.video-btn#videoToggle(aria-label="Play/Pause Video")
+            //-         img(src="assets/images/icons/pause-icon.png", alt="pause icon")
+            
+            //- Youtube video
+            .video-container.h-100.ratio
+                iframe.w-100.h-100(
+                    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                )

@@ -1,0 +1,8 @@
+include ../mixins/_news-list
+
+.news-list.d-flex.flex-wrap.gap-3.justify-content-between
+    +newsList(
+        {dateMonth: '26 Nov', location: 'Doha Qatar', type:'International', text: 'The Qatar African Business forum (QABF) returns for its third edition',
+        date: '26', month: 'Nov', image:'assets/images/news-new.png' ,class:'h-100 w-100 object-fit-cover'},
+        {dateMonth: '23 Dec 2025', location: 'Doha Qatar', type:'Webinar', text: 'Masterclass: Labuan IBFC - fulfilling your Shariah-compliant business needs',
+        date: '23', month: 'Aug', image:'assets/images/news-new.png' ,class:'h-100 w-100 object-fit-cover'})

@@ -1,0 +1,36 @@
+.not-found-page{
+    padding: 200px;
+    figure{
+        margin-bottom: 64px;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+    .btn{
+        @include btnColor(linear-gradient(90deg, var(--violet) 0%, #603F83 100%));
+        width: 175px;
+        span {
+            @include btnSpan();
+        }
+        &:hover {
+            background: linear-gradient(-93.64deg, #25125A -23.72%, #603F83 82.41%);
+            span {
+                // transform: translateX(16px);
+                // html[dir="rtl"] & {
+                //     transform: translateX(-16px);
+                // }
+                i {
+                    opacity: 0;
+                    transform: translateX(500%);
+                    html[dir="rtl"] & {
+                        transform: translateX(-500%);
+                    }
+                }
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

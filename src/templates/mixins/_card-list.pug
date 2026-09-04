@@ -1,0 +1,79 @@
+mixin cardList(id, className, ...cardTypeList)
+    each  cardtype in cardTypeList   
+        if id === 'simple-card'
+            .col-sm-6.col-md-4
+                if cardtype.id === 'newsletter' && cardtype.link
+                    a(href=cardtype.link)
+                        //- .card(class=className, id=cardtype.id)
+                        .card(class=[className, cardtype.extraClass], id=cardtype.id)
+                            .card-body.p-4
+                                if cardtype.id === 'disc-card'
+                                    figure.mb-0.d-flex.aligm-items-end.justify-content-end 
+                                        img.img-fluid(src=cardtype.image)
+                                if cardtype.toptile
+                                    span=cardtype.toptile
+                                if cardtype.title
+                                    h5.card-title.fw-medium.text-secondary.fs-24=cardtype.title
+                                if cardtype.text
+                                    p.card-text.fw-normal.fs-18!= cardtype.text
+                                if cardtype.button
+                                    a.btn.more-btn.fs-16.stretched-link.py-0(href=cardtype.link)!= cardtype.button
+                                if cardtype.button2
+                                    a.btn.more-btn.fs-16(href=cardtype.link)!= cardtype.button2
+                                if cardtype.image && cardtype.id !== 'disc-card'
+                                    figure.mb-0.card-image
+                                        img.img-fluid(src=cardtype.image, alt='')
+                else
+                    .card(class=className, id=cardtype.id)
+                        .card-body.p-4
+                            if cardtype.id === 'disc-card'
+                                figure.mb-0.d-flex.aligm-items-end.justify-content-end 
+                                    img.img-fluid(src=cardtype.image)
+                            if cardtype.toptile
+                                span=cardtype.toptile
+                            if cardtype.title
+                                h5.card-title.fw-medium.text-secondary.fs-24=cardtype.title
+                            if cardtype.text
+                                p.card-text.fw-normal.fs-18!= cardtype.text
+                            if cardtype.button
+                                a.btn.more-btn.fs-16.stretched-link.py-0(href=cardtype.link)!= cardtype.button
+                            if cardtype.button2
+                                a.btn.more-btn.fs-16(href=cardtype.link)!= cardtype.button2
+                            if cardtype.image && cardtype.id !== 'disc-card'
+                                figure.mb-0.card-image
+                                    img.img-fluid(src=cardtype.image, alt='')
+                            
+                        
+        if id === 'slider-card'
+                .card.my-5(class=className)
+                    .card-body.p-0
+                        h2.card-index.fw-normal=cardtype.index
+                        h5.fs-40.card-title.fw-normal=cardtype.title
+                        p.fs-20.card-text.fw-normal= cardtype.text
+                        figure.mb-0.my-5.d-flex.aligm-items-end.justify-content-start 
+                            img.img-fluid(src=cardtype.image)  
+        if id === 'swiper-card'             
+            .swiper-slide
+                .card(class=className)
+                    .card-body
+                        .d-flex.flex-row.align-items-center
+                            .icon-box.d-flex.align-items-center
+                                figure.mb-0 
+                                    img.img-fluid(src=cardtype.image)  
+                            a.card-title.fw-medium.fs-18(href="#")!=cardtype.title
+                            i.bi.bi-arrow-right.arrow-icon 
+        if id === 'border-less-card'
+                .card(class=className)
+                    .card-body
+                        .d-flex.flex-column.flex-sm-row.align-items-start
+                            .icon-box.d-flex.align-items-center
+                                figure.mb-0 
+                                    img.img-fluid(src=cardtype.image)  
+                            .details
+                                a.card-title.fw-semibold(href="#")!=cardtype.title
+                                p.card-text.fw-norml!=cardtype.text
+                                ul 
+                                    each list in cardtype.lists
+                                        li!=list
+
+                            

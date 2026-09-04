@@ -1,0 +1,107 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css")
+
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+
+
+        noscript
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
+        link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css')
+        link(rel="stylesheet", href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        link(rel="stylesheet", href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        //- link(rel="stylesheet", href="assets/css/app.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        noscript
+            link(rel="stylesheet", href="assets/_css/app.css")
+            //- link(rel="stylesheet", href="assets/css/app.min.css")
+        title Qatar Financial Centre
+    body.inner-page
+        - let activeLink = 'About'
+
+        include ../partials/_header
+        include ../mixins/_sections
+        include ../mixins/_section-title
+        include ../mixins/_breadcrumbs
+        include ../mixins/_inner-banner
+        include ../mixins/_news-list
+        include ../mixins/_socialMedia
+        include ../mixins/_testimonialItem
+
+
+        
+        +breadcrumbNav('', 'breadcrumb-menu','share', { link: 'index.html', text: 'Home', id: 'Home'},{ link: 'media-centre.html', text: 'Latest Updates', id: 'latest-updates'},{ link: 'reports-publications.html', text: 'Reports & publications', id: 'news'}, { link: 'reports-publications-detail.html', text: '2019 Growth Report', id: activeLink})
+        +section('updates py-60') 
+            .row
+                .col-12
+                    .news-details-page
+                        +newsList(
+                            {dateMonth: '',type:'', text: '2019 Growth Report: Poised to achieve continuing growth',image:'assets/images/news-detail.png'})
+                        .news-content.mt-4
+                            p.fs-20.fw-semibold.text-secondary 
+                                | 2019 was yet another year of remarkable success for us at QFC.
+                            p.fs-20.fw-normal
+                                | Recording exceptional growth of 35% and reaching over 800 registered firms on the platform. We witnessed key milestones over the course of the year from the unveiling of our 2022 strategic roadmap that places a key focus on clusters poised for growth, to signing 11 landmark MoUs with world-renowned entities, to taking a more prominent role in key global conferences and continuing to connect with new markets around the world.
+                                br
+                                br
+                                | With 828 new firms registered, QFC has almost surpassed its 2024 record, bringing the total number of registered firms to 3,300 by June 2025. Notably, QFC’s regulated firms delivered strong performance, with Corporate & Investment Banks driving a 19 per cent year-on-year increase in Assets Under Management (AUM).
+                                br
+                                br
+                                | QFC’s H1 performance was supported by strategic reforms to facilitate market entry, targeted business development and stakeholder engagement efforts. Measures such as simplifying the incorporation process, allowing applicants to instantly establish a legal entity and obtain a licence for non-regulated activities, and reducing the application fee for licensing a business by 90 per cent have significantly lowered entry barriers, encouraging more entrepreneurs to launch their businesses through the QFC platform.
+                                br
+                                br
+                            +testimonialItem({className:'newstyle text-color', heading:'A word from the chief.', text:'Welcome to the Qatar Financial Centre’s (QFC) 2019 Annual Review – a unique opportunity to reflect on our collective dedication, milestones, and achievements over the past year – though of course each year I find our successes far too numerous to name in their entirety.'})
+                            p.fs-20.fw-normal
+                                | During the first half of the year, QFC hosted and participated in over 15 events. Notable hosted and co-hosted events include the 3rd Annual Qatar Financial Market Forum powered by Bloomberg Intelligence, the Qatar Family Office Showcase, the QFC & Morgan Stanley Economic Workshop, the Digital Assets Policy Roundtable held on the sidelines of the Qatar Economic Forum, and the Qatar Islamic Finance Forum. QFC also participated in major international events such as the Qatar Web Summit, and the World Economic Forum in Davos. These platforms were used to promote QFC’s value proposition and highlight Qatar’s competitive business environment to investors and relevant stakeholders.
+                                br
+                                br
+                                | QFC’s presence at the 2025 Web Summit was particularly impactful. Between February and June 2025, 566 firms registered with the QFC through the Web Summit, a sharp rise from the 358 firms recorded during the previous edition.
+                            p.fs-20.fw-semibold.text-secondary 
+                                | International Membership
+                                br
+                            p.fs-20.fw-normal
+                                | QFC also expanded its network through strategic partnerships aimed at advancing its focus sectors, supporting economic development, facilitating cross-border investment, and enhancing its value proposition. Memoranda of Understanding were signed with Qatar National Bank (QNB), German Mittelstand GCC, Gulf Capital Market Association (GCMA), Pakistan Software Export Board (PSEB), Rwanda Development Board (RDB), Cyprus Chamber of Commerce and Industry (CCCI), Hong Kong Trade Development Council (HKTDC), Financial Services Development Council (FSDC), and Ashmore Group. In addition, QFC signed a Head of Terms with Hang Seng Indexes Company Limited (HSIL) and a service agreement with The View Hospital.
+                                br
+                                br
+                                | Further progress was made under the Innovation Dome, QFC’s flagship initiative. During H1, 33 firms joined the Digital Assets Lab, which is spearheading collaborative projects in areas including Islamic finance, tokenised deposits, real estate tokenisation, and blockchain-based rewards systems. In addition, the QFC Metaverse was launched, an immersive digital platform designed to facilitate business engagement, collaboration, and innovation. It serves as a central hub for networking, showcasing new technologies, and hosting workshops, training sessions, and expert-led discussions.
+                                br
+                                br
+                                | Commenting on QFC’s compounding growth, Yousuf Mohamed Al-Jaida, Chief Executive Officer, QFC, stated: “We are pleased to see positive results from our ongoing efforts to enhance Qatar’s business ecosystem and drive progress across sectors. Our focus remains on fostering an environment that attracts diverse businesses and supports sustainable growth. With this growth momentum, we continue to reinforce Qatar’s position as a leading hub for innovation and investment in the region.”
+                            +testimonialItem({image: true, className:'newstyle', heading:'Our focus remains on fostering an environment that attracts diverse businesses and supports sustainable growth. With this growth momentum, we continue to reinforce Qatar’s position as a leading hub for innovation and investment in the region.'})
+            .row.mt-4.pt-2 
+                .col-12.d-flex.align-items-center.justify-content-center
+                    a.btn.btn-transparent(href="#") 
+                        span.button-text Load More
+                            i.bi.bi-circle-fill
+
+        include ../partials/_footer
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        //- script(src='assets/js/vendor/swiper-bundle.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js')
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        script(src='assets/js/header.js')
+        script(src='assets/js/custom.js')
+
+
+        //- script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
+    
+        script(async, src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js", crossorigin="anonymous")
+        script(type="importmap").
+            {
+                "imports": {
+                    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+                    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+                }
+            }
+        script(type="module").
+            import { Popover } from 'bootstrap';
+            //- new Popover(document.getElementById('popoverButton'))
+
+       

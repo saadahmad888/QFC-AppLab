@@ -1,0 +1,30 @@
+.breadcrumb-menu {
+    background-color: #F4F4F4;
+    border: 1px solid var(--border-color);
+    padding: 18px 0;
+
+    nav {
+        .breadcrumb {
+            .breadcrumb-item {
+                &+.breadcrumb-item::before {
+                    content: var(--bs-breadcrumb-divider, ">");
+                    color: var(--purple);
+                    float: inline-start !important;
+                    padding-inline-end: var(--bs-breadcrumb-item-padding-x) !important;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: -0.18px;
+                    color: rgba(51, 51, 51, 0.8);
+
+                    &.active {
+                        color: var(--purple);
+                    }
+                }
+            }
+        }
+    }
+}

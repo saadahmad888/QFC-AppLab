@@ -1,0 +1,10 @@
++section('organizations py-5')
+    .row 
+        .col-12.col-lg-5
+            .sticky-side.position-sticky 
+                +title('mb-4','QFC Affiliated Organisations', 'QFC is governed by three independent organisations that work together to promote transparency, compliance and business confidence. Each institution plays a critical role in creating a global business centre and environment.')
+        .col-12.col-lg-7
+            +cardList('border-less-card','card-journey mb-4',
+                {title: 'Qatar Financial Centre (QFC)', text: 'Chairman: H.E. Minister of Commerce & Industry', image: 'assets/images/logo.png', lists:['Focus: Legal & Tax', 'Licenses firms and oversees the legal, tax and business environment.']},
+                {title: 'Qatar Financial Centre Regulatory Authority (QFCRA)', text: 'Chairman: H.E. Governor of Qatar Central Bank', image: 'assets/images/icons/reg_auth.png', lists:['Focus: Regulated Activities','Oversees financial services firms that operate within the QFC framework, by ensuring market integrity, investor protection and compliance with financial regulations that reflect global best practices.']},
+                {title: 'Qatar International Court and Dispute Regulation Centre (QICDRC)', text: 'Chairman: Sir William Blair', image: 'assets/images/icons/QIC-logo.png', lists:['Focus: Dispute Resolution', 'Provides independent, common law-based dispute resolution for civil and commercial matters, by enhancing legal certainty and confidence for businesses.']})

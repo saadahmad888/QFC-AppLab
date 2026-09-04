@@ -1,0 +1,49 @@
+.qfc-wizard {
+    &-inner {
+        background-color: #ffffff;
+        background-image: radial-gradient(163.87% 338.51% at 12.79% 11.86%, rgba(255, 255, 255, 0) 0%, #f4f3ff 100%);
+        border: 1px solid #e3e3e3;
+        padding: 56px;
+        border-radius: 16px;
+
+        @include media-breakpoint-down(xl) {
+            padding: 30px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 20px;
+        }
+
+        .heading {
+            h2 {
+                margin-bottom: 12px;
+            }
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+        .form-group {
+            .form-label {
+                margin-bottom: 20px;
+            }
+            .form-select {
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid #d2d2d2;
+                font-size: 18px;
+                @include fluid-steps(font-size, (12px, 12px, 12px, 18px));
+                font-weight: 400;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        button {
+            min-width: 160px;
+            @include media-breakpoint-down(xl) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

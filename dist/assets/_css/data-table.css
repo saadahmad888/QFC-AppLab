@@ -1,0 +1,463 @@
+/* =============================================================================
+   Data Table Component
+   Author: Applab
+   Description: Configurable table with add row/column controls, editable fields,
+                status badges, and link picker. Inspired by the DTA agreements table.
+   ============================================================================= */
+
+/* ---- Section wrapper ---- */
+.data-table-section {
+    padding-block: var(--section-spacing-desktop, 100px);
+}
+
+@media (max-width: 1560px) {
+    .data-table-section {
+        padding-block: var(--section-spacing-laptop, 4rem);
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .data-table-section {
+        padding-block: var(--section-spacing-tablet, 3rem);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .data-table-section {
+        padding-block: var(--section-spacing-mobile, 2rem);
+    }
+}
+
+/* ---- Toolbar ---- */
+.dt-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.dt-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    border: 1.5px solid #521892;
+    background: transparent;
+    color: #521892;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.dt-btn:hover {
+    background: #521892;
+    color: #fff;
+}
+
+.dt-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* ---- Table wrapper (horizontal scroll on small screens) ---- */
+.dt-table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #e4e0ed;
+}
+
+/* ---- Table ---- */
+.dt-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 480px;
+    background: #fff;
+}
+
+/* ---- Header row ---- */
+.dt-table thead tr {
+    background: #521892;
+}
+
+.dt-table thead th {
+    padding: 14px 20px;
+    text-align: start;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    position: relative;
+}
+
+.dt-table thead th:first-child {
+    border-start-start-radius: 10px;
+}
+
+.dt-table thead th:last-child {
+    border-start-end-radius: 10px;
+}
+
+/* ---- Body rows ---- */
+.dt-table tbody tr {
+    border-bottom: 1px solid #f0edf7;
+    transition: background 0.15s ease;
+}
+
+.dt-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.dt-table tbody tr:hover {
+    background: #faf8fd;
+}
+
+.dt-table tbody td {
+    padding: 14px 20px;
+    font-size: 15px;
+    color: #222;
+    vertical-align: middle;
+}
+
+/* ---- Editable cell ---- */
+.dt-cell-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #222;
+    width: 100%;
+    min-width: 80px;
+    font-family: inherit;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dt-cell-input:focus {
+    background: #f3edfc;
+    box-shadow: 0 0 0 2px rgba(82, 24, 146, 0.18);
+}
+
+/* ---- Header editable label ---- */
+.dt-th-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    font-family: inherit;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background 0.15s ease;
+}
+
+.dt-th-input:focus {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* ---- Status badge cell ---- */
+.dt-status-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dt-status-select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 28px 4px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23555' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    background-size: 10px 6px;
+    transition: opacity 0.15s ease;
+}
+
+.dt-status-select:focus {
+    opacity: 0.85;
+}
+
+/* Status colour variants */
+.dt-status-select[data-status="effective"] {
+    background-color: #e6f6ee;
+    color: #1a7a45;
+}
+
+.dt-status-select[data-status="draft"] {
+    background-color: #fef4e5;
+    color: #9a5f00;
+}
+
+.dt-status-select[data-status="superseded"] {
+    background-color: #f0edf7;
+    color: #6b6b7e;
+}
+
+.dt-status-select[data-status="expired"] {
+    background-color: #fdecea;
+    color: #b32318;
+}
+
+.dt-status-select[data-status="pending"] {
+    background-color: #e5f0fd;
+    color: #1553a0;
+}
+
+/* ---- Link cell ---- */
+.dt-link-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dt-link-anchor {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: #521892;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-decoration 0.15s ease;
+}
+
+.dt-link-anchor:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.dt-link-anchor svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.dt-link-edit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    color: #aaa;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.15s ease;
+}
+
+.dt-link-edit-btn:hover {
+    color: #521892;
+}
+
+.dt-link-edit-btn svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* ---- Delete row / column controls ---- */
+.dt-col-del-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0 0 6px;
+    color: rgba(255, 255, 255, 0.55);
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    transition: color 0.15s ease;
+}
+
+.dt-col-del-btn:hover {
+    color: #fff;
+}
+
+.dt-col-del-btn svg {
+    width: 12px;
+    height: 12px;
+}
+
+.dt-row-del-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 6px;
+    color: #ccc;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.15s ease;
+}
+
+.dt-row-del-btn:hover {
+    color: #b32318;
+}
+
+.dt-row-del-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* ---- Link picker modal ---- */
+.dt-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9000;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt-modal-overlay.is-open {
+    display: flex;
+}
+
+.dt-modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    width: min(480px, 90vw);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+.dt-modal-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 1.25rem;
+}
+
+.dt-modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+.dt-modal-field label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #666;
+}
+
+.dt-modal-field input {
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    font-family: inherit;
+    color: #222;
+    transition: border-color 0.15s ease;
+    outline: none;
+}
+
+.dt-modal-field input:focus {
+    border-color: #521892;
+}
+
+.dt-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.dt-modal-cancel {
+    padding: 0.45rem 1.1rem;
+    border-radius: 6px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+
+.dt-modal-cancel:hover {
+    border-color: #999;
+}
+
+.dt-modal-save {
+    padding: 0.45rem 1.1rem;
+    border-radius: 6px;
+    border: 1.5px solid #521892;
+    background: #521892;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.dt-modal-save:hover {
+    background: #3d1170;
+    border-color: #3d1170;
+}
+
+.dt-modal-close {
+    position: absolute;
+    top: 1rem;
+    inset-inline-end: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    display: inline-flex;
+    padding: 4px;
+    transition: color 0.15s ease;
+}
+
+.dt-modal-close:hover {
+    color: #333;
+}
+
+.dt-modal-close svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ---- Column type header badge ---- */
+.dt-th-type-badge {
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0.65;
+    margin-inline-start: 6px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* ---- Responsive: stack on mobile ---- */
+@media (max-width: 575.98px) {
+    .dt-table thead th,
+    .dt-table tbody td {
+        padding: 10px 12px;
+    }
+
+    .dt-toolbar {
+        gap: 0.5rem;
+    }
+
+    .dt-btn {
+        font-size: 12px;
+        padding: 0.4rem 0.75rem;
+    }
+}

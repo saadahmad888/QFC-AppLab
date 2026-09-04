@@ -1,0 +1,340 @@
+// ── .text-media-block — global, RTL-friendly ─────────────────────────────────
+// Use anywhere without a parent wrapper. All physical properties are replaced
+// with CSS logical properties so the layout mirrors automatically under dir="rtl".
+
+.text-media-block {
+    padding-block: 60px;
+
+    // ── figure — shared media container ──────────────────────────────────────
+    .tmb-figure {
+        display: block;
+        margin: 0;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 16px;
+        position: relative;
+
+        img,
+        .tmb-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        // Override Bootstrap's padding-bottom ratio trick so the
+        // iframe fills the fixed-height figure instead.
+        .ratio {
+            height: 100%;
+
+            &::before { display: none; }
+
+            iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+
+        @include media-breakpoint-down(xl)  { height: 400px; }
+        @include media-breakpoint-down(lg)  { height: 340px; }
+        @include media-breakpoint-down(md)  { height: 280px; }
+        @include media-breakpoint-down(sm)  { height: 220px; }
+    }
+
+    // ── Media defaults ────────────────────────────────────────────────────────
+    .media-image   { display: block; }
+    .media-video   { display: none; }
+    .media-youtube { display: none; }
+
+    // Custom play / pause button — anchored to inline-start bottom corner
+    .tmb-play-btn {
+        display: none;
+        position: absolute;
+        bottom: 24px;
+        inset-inline-start: 24px;
+        width: 54px;
+        height: 54px;
+        background: rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        transition: background 0.2s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 1px;
+            border-radius: 50%;
+            background: linear-gradient(221.22deg, rgba(255, 255, 255, 0) 36.55%, #ffffff 142.1%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+        }
+
+        &:hover { background: rgba(0, 0, 0, 0.3); }
+
+        img {
+            width: 18px;
+            height: auto;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    // ── Content defaults ──────────────────────────────────────────────────────
+    .content-box { padding-inline-end: 32px; }
+
+    .content-para {
+        display: block;
+        margin-block-start: 16px;
+    }
+
+    .content-cta {
+        display: none;
+        margin-block-start: 24px;
+    }
+
+    .content-read-more-wrap {
+        display: none;
+        margin-block-start: 16px;
+
+        // High-specificity override of global _about.scss — forces webkit-box
+        // so line-clamp works in collapsed state and shows proper ellipsis.
+        // Height transition is handled by JS (CSS cannot animate line-clamp directly).
+        p.read-more-content {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            &.collapsed {
+                display: -webkit-box;
+                -webkit-line-clamp: 10;
+                line-clamp: 10;
+            }
+        }
+    }
+
+    .content-list {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin-block-start: 16px;
+
+        li {
+            display: flex;
+            gap: 10px;
+            padding-block: 6px;
+
+            &::before {
+                content: "\2022";
+                flex-shrink: 0;
+                font-size: 1.1em;
+                line-height: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    .content-list-read-more-wrap {
+        display: none;
+        margin-block-start: 16px;
+
+        // Override global webkit-box — lists use max-height, not line-clamp.
+        // Transition is driven by JS for smooth expand / collapse.
+        ul.read-more-content {
+            display: block;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            -webkit-line-clamp: unset;
+            line-clamp: unset;
+
+            &.collapsed { max-height: 220px; }
+
+            li {
+                display: flex;
+                gap: 10px;
+                padding-block: 6px;
+
+                &::before {
+                    content: "\2022";
+                    flex-shrink: 0;
+                    font-size: 1.1em;
+                    line-height: inherit;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    // ── Media variants ────────────────────────────────────────────────────────
+    &.with-uploaded-video {
+        .media-image  { display: none; }
+        .media-video  { display: block; }
+    }
+
+    &.with-youtube {
+        .media-image,
+        .media-video  { display: none; }
+        .media-youtube { display: block; }
+    }
+
+    &.video-no-controls {
+        .tmb-play-btn { display: flex; }
+
+        .tmb-video {
+            cursor: pointer;
+
+            &::-webkit-media-controls,
+            &::-webkit-media-controls-enclosure,
+            &::-webkit-media-controls-panel,
+            &::-webkit-media-controls-play-button,
+            &::-webkit-media-controls-timeline,
+            &::-webkit-media-controls-current-time-display,
+            &::-webkit-media-controls-time-remaining-display,
+            &::-webkit-media-controls-mute-button,
+            &::-webkit-media-controls-volume-slider,
+            &::-webkit-media-controls-fullscreen-button {
+                display: none !important;
+                -webkit-appearance: none;
+            }
+        }
+    }
+
+    // ── Content variants ──────────────────────────────────────────────────────
+    &.with-cta         { .content-cta { display: inline-flex; } }
+
+    &.with-read-more {
+        .content-para           { display: none; }
+        .content-read-more-wrap { display: block; }
+    }
+
+    &.with-list {
+        .content-para { display: none; }
+        .content-list { display: block; }
+    }
+
+    &.with-list-cta {
+        .content-para { display: none; }
+        .content-list { display: block; }
+        .content-cta  { display: inline-flex; }
+    }
+
+    &.with-list-read-more {
+        .content-para                { display: none; }
+        .content-list-read-more-wrap { display: block; }
+    }
+
+    // ── Dash list marker (combine with any list variant) ──────────────────────
+    // Replaces disc bullets with an en-dash prefix on each item.
+    &.list-dash {
+        .content-list,
+        .content-list-read-more-wrap ul.read-more-content {
+            list-style: none;
+            padding-inline-start: 0;
+
+            li {
+                display: flex;
+                gap: 10px;
+
+                &::before {
+                    content: "–";
+                    flex-shrink: 0;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    // ── Reverse layout (media inline-start, content inline-end) ──────────────
+    // In the pug the media col comes first in the DOM with no offset,
+    // and the content col comes second with offset-lg-1.
+    // Logical padding flips automatically under dir="rtl".
+    &.reverse {
+        .content-box {
+            padding-inline-end: 0;
+            padding-inline-start: 32px;
+        }
+    }
+
+    // ── Responsive ────────────────────────────────────────────────────────────
+    @include media-breakpoint-down(md) {
+        padding-block: 40px;
+
+        .content-box {
+            padding-inline: 0;
+            margin-block-end: 32px;
+        }
+    }
+}
+
+// ── Tab navigation — scoped to the section wrapper ───────────────────────────
+.all-in-one-text-media-block-section {
+
+    .tmb-tabs-nav { padding-block-start: 40px; }
+
+    .tmb-tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 72px;
+        overflow: auto;
+        cursor: grab;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        border: 0;
+
+        &::-webkit-scrollbar { display: none; }
+
+        &.dragging {
+            cursor: grabbing;
+            user-select: none;
+        }
+
+        .nav-item { flex-shrink: 0; }
+
+        .nav-link {
+            color: $gray-color;
+            font-size: 16px;
+            font-weight: 400;
+            border: none;
+            border-bottom: 3px solid transparent;
+            border-radius: 0;
+            padding: 10px 0;
+            white-space: nowrap;
+            transition: all 0.3s ease-in-out;
+
+            &:hover,
+            &.active {
+                color: $primary;
+                background: transparent;
+                border-bottom: 3px solid $primary;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            justify-content: flex-start;
+
+            .nav-link { white-space: nowrap; }
+        }
+
+        @include media-breakpoint-between(lg, xl) { gap: 32px; }
+
+        @include media-breakpoint-down(sm) { gap: 16px; }
+    }
+
+    .tmb-tab-content .tab-pane { padding: 0; }
+}

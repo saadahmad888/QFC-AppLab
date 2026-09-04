@@ -1,0 +1,572 @@
+div.search-backdrop
+header.site-header
+    .container-lg
+        .top-nav
+            ul
+                li
+                    a.fs-15.fw-normal(href="")
+                        | Client Portal
+                li
+                    a.fs-15.fw-normal(href="")
+                        | Vendor Portal
+                li
+                    a.fs-15.fw-normal(href="")
+                        | Resources
+                li
+                    a.fs-15.fw-normal(href="")
+                        | عربي
+                li
+                    .font-accessibility
+                        button.fs-15.fw-normal(type="button")
+                            | A+
+                        button.fs-15.fw-normal(type="button")
+                            | A-
+                li
+                    a(href="")
+                        img(src="assets/images/icons/accessibility-icon.svg" alt="")
+        .main-nav
+            nav.navbar.navbar-expand-lg
+                .container-fluid
+                    a.navbar-brand(href='#')
+                        img.dark(src="assets/images/QFC-logo.svg" alt="Logo")
+                        img.light(src="assets/images/logo-white-1.png" alt="Logo")
+                    div.d-flex.gap-3
+                        .search-box.d-block.d-lg-none
+                            button.search-btn.search-trigger(type="button")
+                                img(src="assets/images/icons/MagnifyingGlass.svg" alt="")
+                        button.navbar-toggler.d-block.d-lg-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#mobileMenu' aria-controls='mobileMenu')
+                            img(src="assets/images/icons/menu-icons.svg" alt="hamburger icon")
+                    #navbarSupportedContent.collapse.navbar-collapse
+                        ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                            li.nav-item
+                                a.nav-link.fs-20.fw-medium(href="javascript:void(0)" data-mega-menu-trigger="megaAbout") About Us
+                            li.nav-item
+                                a.nav-link.fs-20.fw-medium(href='#' data-mega-menu-trigger="doingBusiness") Doing Business
+                            li.nav-item
+                                a.nav-link.fs-20.fw-medium(href='#' data-mega-menu-trigger="latestNews") Latest News
+                            li.nav-item
+                                a.nav-link.fs-20.fw-medium(href='#' data-mega-menu-trigger="supportCentre") Support Centre
+                    .navbar-end-buttons
+                        .search-box
+                            button.search-btn.search-trigger(type="button")
+                                img(src="assets/images/icons/MagnifyingGlass.svg" alt="")
+                        a.updated-primary-btn.fs-16.fw-medium(href="")
+                            |Start Your Setup
+            #searchBox
+                .search-collapse-box
+                    .input-group
+                        span#search-input.input-group-text 
+                            img(src="assets/images/icons/MagnifyingGlass.svg" alt="")
+                        input.form-control.fs-20.fw-normal(type='text' placeholder='What are you looking for...' aria-describedby='search-input')
+                    button.close(type="button")
+                        img(src="assets/images/icons/times.svg" alt="")
+                        
+            #megaMenuWrapper.mega-menu-wrapper
+                #megaAbout.mega-menu-panel
+                    .mega-menu-inner
+                        .container-lg
+                            .row
+                                .col-lg-6
+                                    h4.fs-18.fw-normal About Us
+                                    ul
+                                        li: a(href="#") Overview
+                                        li: a(href="#") Governance
+                                        li: a(href="#") Ecosystem
+                                        li: a(href="#") Life at QFC
+                                        li: a(href="#") Life in Qatar
+                                        li: a(href="#") Innovations
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Sample Heading
+                                    ul
+                                        li: a(href="#") Law & Regulations
+                                        li: a(href="#") QFC Regulatory Authority
+                                        li: a(href="#") Designated Office Premises
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Quick Links
+                                    ul
+                                        li: a(href="#") Client Portal
+                                        li: a(href="#") Resources
+                                        li: a(href="#") Vendor Portal
+
+                                    h4.fs-18.fw-normal Downloads
+                                    ul
+                                        li: a(href="#") Annual Report
+                                        li: a(href="#") Introduction to QFC
+
+                                .col-12
+                                    h4.fs-18.fw-normal Frequently Accessed
+                                    ul.frequently-list
+                                        li
+                                            a(href="")
+                                                |FAQ
+                                        li
+                                            a(href="")
+                                                |Reports & Publications
+                                        li
+                                            a(href="")
+                                                |Careers
+                                        li
+                                            a(href="")
+                                                |Contact Us
+
+                #doingBusiness.mega-menu-panel
+                    .mega-menu-inner
+                        .container-lg
+                            .row
+                                .col-lg-6
+                                    h4.fs-18.fw-normal Doing Business
+                                    ul
+                                        li: a(href="#") Overview
+                                        li: a(href="#") Business Solutions
+                                        li: a(href="#") Setup
+                                        li: a(href="#") Operate
+                                        li: a(href="#") Law & Regulations
+                                        li: a(href="#") Public Register
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Elite Onboarding Service
+                                    ul
+                                        li: a(href="#") Fast-Track Your Business Incorporation in one hour with QFC Platinum
+
+                                    h4.fs-18.fw-normal Innovation Dome
+                                    ul
+                                        li: a(href="#") Fast-Track Your Business Incorporation in one hour with QFC Platinum
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Quick Links
+                                    ul
+                                        li: a(href="#") Start Your Setup
+                                        li: a(href="#") Setup Checklist
+                                        li: a(href="#") Client Portal
+                                        li: a(href="#") Tax Card
+
+                                    h4.fs-18.fw-normal Downloads
+                                    ul
+                                        li: a(href="#") Forms and Templates
+                                        li: a(href="#") Policies and Guidelines
+
+                                .col-12
+                                    h4.fs-18.fw-normal Frequently Accessed
+                                    ul.frequently-list
+                                        li
+                                            a(href="")
+                                                |FAQ
+                                        li
+                                            a(href="")
+                                                |Reports & Publications
+                                        li
+                                            a(href="")
+                                                |Careers
+                                        li
+                                            a(href="")
+                                                |Contact Us
+
+                #latestNews.mega-menu-panel
+                    .mega-menu-inner
+                        .container-lg
+                            .row
+                                .col-lg-6
+                                    h4.fs-18.fw-normal Latest News
+                                    ul
+                                        li: a(href="#") Events
+                                        li: a(href="#") News
+                                        li: a(href="#") Reports & Publications
+                                        li: a(href="#") Blogs
+                                        li: a(href="#") Community
+
+                                .col-lg-3
+                                    .spotlight-card
+                                        a.title.fs-20.fw-normal(href="#")
+                                            |Spotlight
+                                            img(src="assets/images/icons/right-arrow.svg" alt="Arrow")
+                                        figure
+                                            img(src="assets/images/spotlight-card-img.png" alt="")
+                                        .content-box.with-arrow
+                                            a.fs-18.fw-medium(href="")
+                                                |QFC hosts participants  executive master's programme in leadership
+                                            img(src="assets/images/icons/right-arrow.svg" alt="Arrow")
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Quick Links
+                                    ul
+                                        li: a(href="#") Start Your Setup
+                                        li: a(href="#") Setup Checklist
+                                        li: a(href="#") Client Portal
+                                        li: a(href="#") Tax Card
+
+                                    h4.fs-18.fw-normal Downloads
+                                    ul
+                                        li: a(href="#") Forms and Templates
+                                        li: a(href="#") Policies and Guidelines
+
+                                .col-12
+                                    h4.fs-18.fw-normal Frequently Accessed
+                                    ul.frequently-list
+                                        li
+                                            a(href="")
+                                                |FAQ
+                                        li
+                                            a(href="")
+                                                |Reports & Publications
+                                        li
+                                            a(href="")
+                                                |Careers
+                                        li
+                                            a(href="")
+                                                |Contact Us
+
+                #supportCentre.mega-menu-panel
+                    .mega-menu-inner
+                        .container-lg
+                            .row
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Support Centre
+                                    ul
+                                        li: a(href="#") FAQs
+                                        li: a(href="#") Make an Inquiry
+                                        li: a(href="#") Resources
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Quick Links
+                                    ul
+                                        li: a(href="#") Start Your Setup
+                                        li: a(href="#") Setup Checklist
+                                        li: a(href="#") Client Portal
+                                        li: a(href="#") Tax Card
+
+                                    h4.fs-18.fw-normal Downloads
+                                    ul
+                                        li: a(href="#") Forms and Templates
+                                        li: a(href="#") Policies and Guidelines
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal How to
+                                    ul
+                                        li: a(href="#") Submit Filings
+                                        li: a(href="#") Amend Company Details
+                                        li: a(href="#") Renew
+                                        li: a(href="#") Update UBO
+                                        li: a(href="#") Request Certificates
+                                        li: a(href="#") Access the Client Portal
+                                        li: a(href="#") Book Appointments
+
+                                .col-lg-3
+                                    h4.fs-18.fw-normal Quick Links
+                                    ul
+                                        li: a(href="#") Start Your Setup
+                                        li: a(href="#") Setup Checklist
+                                        li: a(href="#") Client Portal
+                                        li: a(href="#") Tax Card
+
+                                    h4.fs-18.fw-normal Downloads
+                                    ul
+                                        li: a(href="#") Forms and Templates
+                                        li: a(href="#") Policies and Guidelines
+
+                                .col-12
+                                    h4.fs-18.fw-normal Frequently Accessed
+                                    ul.frequently-list
+                                        li
+                                            a(href="")
+                                                |FAQ
+                                        li
+                                            a(href="")
+                                                |Reports & Publications
+                                        li
+                                            a(href="")
+                                                |Careers
+                                        li
+                                            a(href="")
+                                                |Contact Us
+
+
+
+
+    #mobileMenu.offcanvas.offcanvas-end(data-bs-backdrop="static" tabindex='-1' aria-labelledby='mobileMenuLabel')
+        .offcanvas-header
+            h5#mobileMenuLabel.offcanvas-title 
+                a.navbar-brand(href='#')
+                    img(src="assets/images/QFC-logo.svg" alt="Logo")
+            button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+        .offcanvas-body
+            .offcanvas-body-inner
+                ul
+                    li
+                        a.nav-link(data-bs-toggle='collapse' href='#aboutUs' role='button' aria-expanded='false' aria-controls='aboutUs')
+                            | About Us
+                            img(src="assets/images/icons/arrow-down.svg" alt="")
+                        #aboutUs.collapse
+                            p.nav-title
+                                |About Us
+                            ul
+                                li
+                                    a(href="#")
+                                        |Overview
+                                li
+                                    a(href="#")
+                                        |Governance
+                                li
+                                    a(href="#")
+                                        |Ecosystem
+                                li
+                                    a(href="#")
+                                        |Life at QFC
+                                li
+                                    a(href="#")
+                                        |Life in Qatar
+                                li
+                                    a(href="#")
+                                        |Innovations
+                            p.nav-title
+                                |Sample Heading
+                            ul
+                                li
+                                    a(href="#")
+                                        |Law & Regulations
+                                li
+                                    a(href="#")
+                                        |QFC Regulatory Authority
+                                li
+                                    a(href="#")
+                                        |Designated Office Premises
+                            p.nav-title
+                                |Quick Links
+                            ul
+                                li
+                                    a(href="#")
+                                        |Client Portal
+                                li
+                                    a(href="#")
+                                        |Resources
+                                li
+                                    a(href="#")
+                                        |Vendor Portal
+                            p.nav-title
+                                |Downloads
+                            ul
+                                li
+                                    a(href="#")
+                                        |Annual Report
+                                li
+                                    a(href="#")
+                                        |Introduction to QFC
+                                
+                    li
+                        a.nav-link(data-bs-toggle='collapse' href='#business' role='button' aria-expanded='false' aria-controls='business')
+                            | Doing Business
+                            img(src="assets/images/icons/arrow-down.svg" alt="")
+                        #business.collapse
+                            p.nav-title
+                                |Doing Business
+                            ul
+                                li
+                                    a(href="#")
+                                        |Overview
+                                li
+                                    a(href="#")
+                                        |Business Solutions
+                                li
+                                    a(href="#")
+                                        |Setup
+                                li
+                                    a(href="#")
+                                        |Operate
+                                li
+                                    a(href="#")
+                                        |Law & Regulations
+                                li
+                                    a(href="#")
+                                        |Public Register
+                            p.nav-title
+                                |Elite Onboarding Service
+                            ul
+                                li
+                                    a(href="#")
+                                        |Fast-Track Your Business Incorporation in one hour with QFC Platinum
+                            p.nav-title
+                                |Innovation Dome
+                            ul
+                                li
+                                    a(href="#")
+                                        |Fast-Track Your Business Incorporation in one hour with QFC Platinum
+                            p.nav-title
+                                |Quick Links
+                            ul
+                                li
+                                    a(href="#")
+                                        |Start Your Setup
+                                li
+                                    a(href="#")
+                                        |Setup Checklist
+                                li
+                                    a(href="#")
+                                        |Client Portal
+                                li
+                                    a(href="#")
+                                        |Tax Card
+                            p.nav-title
+                                |Downloads
+                            ul
+                                li
+                                    a(href="#")
+                                        |Forms and Templates
+                                li
+                                    a(href="#")
+                                        |Policies and Guidelines
+                    
+                    li
+                        a.nav-link(data-bs-toggle='collapse' href='#latestNews' role='button' aria-expanded='false' aria-controls='latestNews')
+                            | Latest News
+                            img(src="assets/images/icons/arrow-down.svg" alt="")
+                        #latestNews.collapse
+                            p.nav-title
+                                |Latest News
+                            ul
+                                li
+                                    a(href="#")
+                                        |Events
+                                li
+                                    a(href="#")
+                                        |News
+                                li
+                                    a(href="#")
+                                        |Reports & Publications
+                                li
+                                    a(href="#")
+                                        |Blogs
+                                li
+                                    a(href="#")
+                                        |Community
+                            .spotlight-card
+                                p.title.fs-20.fw-normal
+                                    |Spotlight
+                                    img(src="assets/images/icons/right-arrow.svg" alt="Arrow")
+                                figure
+                                    img(src="assets/images/spotlight-card-img.png" alt="")
+                                .content-box.with-arrow
+                                    a.fs-18.fw-medium(href="")
+                                        |QFC hosts participants  executive master's programme in leadership
+                                    img(src="assets/images/icons/right-arrow.svg" alt="Arrow")
+
+                            p.nav-title
+                                |Quick Links
+                            ul
+                                li
+                                    a(href="#")
+                                        |Start Your Setup
+                                li
+                                    a(href="#")
+                                        |Setup Checklist
+                                li
+                                    a(href="#")
+                                        |Client Portal
+                                li
+                                    a(href="#")
+                                        |Tax Card
+                                
+                            p.nav-title
+                                |Downloads
+                            ul
+                                li
+                                    a(href="#")
+                                        |Forms and Templates
+                                li
+                                    a(href="#")
+                                        |Policies and Guidelines
+                    
+                    li
+                        a.nav-link(data-bs-toggle='collapse' href='#sportsCenter' role='button' aria-expanded='false' aria-controls='sportsCenter')
+                            | Support Centre
+                            img(src="assets/images/icons/arrow-down.svg" alt="")
+                        #sportsCenter.collapse
+                            p.nav-title
+                                |Support Centre
+                            ul
+                                li
+                                    a(href="#")
+                                        |FAQs
+                                li
+                                    a(href="#")
+                                        |Make an Inquiry
+                                li
+                                    a(href="#")
+                                        |Resources
+                            p.nav-title
+                                |How to
+                            ul
+                                li
+                                    a(href="#")
+                                        |Submit Filings
+                                li
+                                    a(href="#")
+                                        |Amend Company Details
+                                li
+                                    a(href="#")
+                                        |Renew
+                                li
+                                    a(href="#")
+                                        |Update UBO
+                                li
+                                    a(href="#")
+                                        |Request Certificates
+                                li
+                                    a(href="#")
+                                        |Access the Client Portal
+                                li
+                                    a(href="#")
+                                        |Book Appointments
+                                
+                            p.nav-title
+                                |Quick Links
+                            ul
+                                li
+                                    a(href="#")
+                                        |Start Your Setup
+                                li
+                                    a(href="#")
+                                        |Setup Checklist
+                                li
+                                    a(href="#")
+                                        |Client Portal
+                                li
+                                    a(href="#")
+                                        |Tax Card
+                                
+                            p.nav-title
+                                |Downloads
+                            ul
+                                li
+                                    a(href="#")
+                                        |Forms and Templates
+                                li
+                                    a(href="#")
+                                        |Policies and Guidelines
+                    
+
+
+            .bottom-nav
+                ul
+                    li
+                        a.fs-16.fw-normal(href="")
+                            | Client Portal
+                    li
+                        a.fs-16.fw-normal(href="")
+                            | Vendor Portal
+                    li
+                        a.fs-16.fw-normal(href="")
+                            | Resources
+                ul
+                    li
+                        a.fs-16.fw-normal(href="")
+                            | عربي
+                    li
+                        .font-accessibility
+                            button.fs-16.fw-normal(type="button")
+                                | A+
+                            button.fs-16.fw-normal(type="button")
+                                | A-
+                    li
+                        a(href="")
+                            img(src="assets/images/icons/accessibility-icon.svg" alt="")

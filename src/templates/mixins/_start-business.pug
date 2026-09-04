@@ -1,0 +1,21 @@
+include ./_slider
+include ./_sections
+include ./_section-title
+
+mixin startupComponent(heading, description, button, id, className, ...lists)
+    +section('start-business')
+        .row.gx-0 
+            .col-md-7.setup(class=className)
+                +title('mb-4 text-white',heading, description, 'text-white')
+                a.btn.btn-transparent.mt-5(href="#")
+                    //- img(src="assets/images/icons/right-arrow-white.svg" alt="Arrow")
+                    span.button-text=button
+                        i.bi.bi-circle-fill 
+            .col-md-5.px-0.setup-figure
+                if id === 'setup-slider'
+                    +sliderList(id, id, ...lists)
+                else 
+                    each list in lists
+                        figure.mb-4
+                            img(src=list.image, class="img-fluid")
+                

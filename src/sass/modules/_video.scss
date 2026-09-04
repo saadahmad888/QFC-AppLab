@@ -1,0 +1,43 @@
+.video {
+    &-container {
+        // height: 100%;
+        position: relative;
+        video {
+            border-radius: 16px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            controls: hidden;
+            &::-webkit-media-controls {
+                display: none !important;
+            }
+        }
+    }
+    &-btn {
+        position: absolute;
+        width: 54px;
+        height: 54px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        bottom: 32px;
+        left: 32px;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 1px;
+            border-radius: 50%;
+            background: linear-gradient(221.22deg, rgba(255, 255, 255, 0) 36.55%, #ffffff 142.1%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+mixin headerNav(id, activeLink, ...items)
+    ul.navbar-nav.ms-auto
+        each item in items
+            if id === 'page-header'
+                li(class=(item.id === activeLink ? 'active ' : '') + (index === items.length - 1 ? 'last-item' : ''))
+                    .nav-link-wrapper
+                        a(href=item.link aria-label=item.text).nav-item.nav-link= item.text
+                        if (item.sub && item.sub.length) || (item.columns && item.columns.length)
+                            button.mobile-menu-toggle.d-lg-none(type="button" aria-label="Toggle submenu" aria-expanded="false")
+                                i.bi.bi-chevron-down
+                
+                    if (item.sub && item.sub.length) || (item.columns && item.columns.length)
+                        .d-flex(class='sub-menu')
+                            if item.columns && item.columns.length
+                                each column in item.columns
+                                    .menu-column
+                                        if column.heading && !column.spotlight
+                                            p.menu-heading= column.heading
+                                        if column.links && column.links.length
+                                            ul
+                                                each linkItem in column.links
+                                                    li(class=linkItem.subSub && linkItem.subSub.length ? 'has-sub-sub' : '')
+                                                        .submenu-item-wrapper
+                                                            a(href=linkItem.link aria-label=linkItem.text, class=linkItem.subactive).nav-item= linkItem.text
+                                                            if linkItem.subSub && linkItem.subSub.length
+                                                                button.mobile-submenu-toggle.d-lg-none(type="button" aria-label="Toggle submenu" aria-expanded="false")
+                                                                    i.bi.bi-chevron-down
+                                                        if linkItem.subSub && linkItem.subSub.length
+                                                            ul(class='sub-sub-menu')
+                                                                each subsubItem in linkItem.subSub
+                                                                    li
+                                                                        a(href=subsubItem.link aria-label=subsubItem.text).nav-item= subsubItem.text
+                                        if column.sectionHeading
+                                            p.section-heading= column.sectionHeading
+                                        if column.buttons && column.buttons.length
+                                            .menu-buttons
+                                                each button in column.buttons
+                                                    a.btn-menu-item(href=button.link)= button.text
+                                        if column.description
+                                            p.menu-description= column.description
+                                        if column.heading2
+                                            p.menu-heading= column.heading2
+                                        if column.description2
+                                            p.menu-description= column.description2
+                                        if column.spotlight
+                                            .menu-spotlight
+                                                if column.heading
+                                                    p.spotlight-heading= column.heading
+                                                if column.spotlight.image
+                                                    img.spotlight-image(src=column.spotlight.image alt=column.spotlight.alt || '')
+                                                if column.spotlight.text || column.spotlight.link
+                                                    a.spotlight-link(href=column.spotlight.link || '#')
+                                                        if column.spotlight.text
+                                                            p.spotlight-text= column.spotlight.text
+                                                        i.bi.bi-arrow-right.spotlight-arrow
+                                        if column.links2 && column.links2.length
+                                            ul
+                                                each linkItem in column.links2
+                                                    li(class=linkItem.subSub && linkItem.subSub.length ? 'has-sub-sub' : '')
+                                                        .submenu-item-wrapper
+                                                            a(href=linkItem.link aria-label=linkItem.text, class=linkItem.subactive).nav-item= linkItem.text
+                                                            if linkItem.subSub && linkItem.subSub.length
+                                                                button.mobile-submenu-toggle.d-lg-none(type="button" aria-label="Toggle submenu" aria-expanded="false")
+                                                                    i.bi.bi-chevron-down
+                                                        if linkItem.subSub && linkItem.subSub.length
+                                                            ul(class='sub-sub-menu')
+                                                                each subsubItem in linkItem.subSub
+                                                                    li
+                                                                        a(href=subsubItem.link aria-label=subsubItem.text).nav-item= subsubItem.text
+                            else if item.sub && item.sub.length
+                                p='Menu'
+                                ul
+                                    each subItem in item.sub
+                                        li(class=subItem.subSub && subItem.subSub.length ? 'has-sub-sub' : '')
+                                            .submenu-item-wrapper
+                                                a(href=subItem.link aria-label=subItem.text, class=subItem.subactive).nav-item= subItem.text
+                                                if subItem.subSub && subItem.subSub.length
+                                                    button.mobile-submenu-toggle.d-lg-none(type="button" aria-label="Toggle submenu" aria-expanded="false")
+                                                        i.bi.bi-chevron-down
+                                            if subItem.subSub && subItem.subSub.length
+                                                ul(class='sub-sub-menu')
+                                                    each subsubItem in subItem.subSub
+                                                        li
+                                                            a(href=subsubItem.link aria-label=subsubItem.text).nav-item= subsubItem.text
+            if id === 'page-footer'
+                li
+                    a.nav-item.nav-link(href=item.link)= item.text
+            

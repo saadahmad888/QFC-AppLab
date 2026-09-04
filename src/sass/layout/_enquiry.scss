@@ -1,0 +1,92 @@
+.enquiry-tabs-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .enquiry-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content;
+        padding-inline: 0;
+        
+        @include media-breakpoint-down(md) {
+            padding-inline: 15px;
+        }
+        
+        #simpleTabs {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            white-space: nowrap;
+            width: max-content;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+            .nav-item {
+                flex-shrink: 0 !important;
+                display: flex;
+                
+                &:first-child .nav-link {
+                    @include media-breakpoint-down(md) {
+                        margin-inline-start: 0;
+                    }
+                }
+                
+                &:last-child .nav-link {
+                    @include media-breakpoint-down(md) {
+                        margin-inline-end: 0;
+                    }
+                }
+                
+                .nav-link {
+                    padding-inline: 0;
+                    margin-inline: 18px;
+                    white-space: nowrap;
+                    font-weight: 400;
+                    
+                    @include media-breakpoint-down(lg) {
+                        margin-inline: 8px;
+                    }
+                    
+                    @include media-breakpoint-down(md) {
+                        margin-inline: 12px;
+                        font-size: 18px !important;
+                        font-weight: 500;
+                        padding-block: 12px;
+                        line-height: 1.4;
+                    }
+                    
+                    @include media-breakpoint-down(sm) {
+                        font-size: 16px !important;
+                        margin-inline: 10px;
+                    }
+                    
+                    &.active {
+                        @include media-breakpoint-down(md) {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.apply-qfc{
+    .radio-label{
+        font-size: 16px;
+    }
+    .radio-wrapper{
+            margin-bottom: 24px !important;        
+    }
+}
+.form-wrapper label {
+    margin-bottom: 0 !important;
+}

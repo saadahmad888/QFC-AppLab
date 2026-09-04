@@ -1,0 +1,12 @@
+.enquiry-btn {
+    position: fixed;
+    bottom: 30px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    html[dir="rtl"] & {
+        inset-inline-start: unset;
+        inset-inline-end: 50%;
+    }
+}

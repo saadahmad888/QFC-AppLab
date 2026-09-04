@@ -1,0 +1,70 @@
++section('search py-50')
+    .row
+        .col-xxl-8.col-xl-10.mx-auto   
+            .filter-tabs.flex-column
+                .enquiry-tabs-wrapper
+                    .d-flex.enquiry-tabs
+                        +tabList('simpleTabs', 
+                            {item: 'Contact Us', id: 'contact-tab', targetID: 'contact', class: 'active'}, 
+                            {item: 'Apply to QFC', id: 'apply-tab', targetID: 'apply'},
+                            {item: 'Make a Complaint', id: 'complaint-tab', targetID: 'complaint'},
+                            {item: 'Subscribe to our newsletter', id: 'newsletter-tab', targetID: 'newsletter'})
+                    
+                .tab-content.mt-lg-4
+                    .tab-pane.fade.active.show#contact(role="tabpanel", aria-labelledby="contact-tab")
+                        +section('contact ')
+                            +title('', 'Connect with us and let’s discuss.','Please fill out the form below .')
+                            .row.mt-4
+                                .col-12
+                                    .contact-form
+                                        +contactForm({column:'6', type:"text", label:"First name", placeholder:"First name"},
+                                        {column:'6', type:"text", label:"Last name", placeholder:"Last name"},
+                                        {column:'6', type:"text", label:"Email Address", placeholder:"email@domain.com"},
+                                        {column:'6', type:"tel", label:"Phone Number", placeholder:"+974 4412 7890", phoneId:"phone-contact"},
+                                        {column:'6', type:"select", label:"Reason for Contact", placeholder:"Reason for Contact", options:[{value:"1", text:'Select'}]},
+                                        {column:'6', type:"select", label:"Type of App", placeholder:"Select", options:[{value:"1", text:'Select'}]},
+                                        {column:'12', type:"textarea", label:"Enter your Query", placeholder:"Describe your query in detail"},
+                                        {column:'12', type:"file", label:"Add an attachment if any", placeholder:"Drag files here or choose from folder"},
+                                        {column:'12', type:"checkbox", label:"By ticking, you are accepting our Terms of use", checklabel:"checkbox-1"},
+                                        {column:'12', type:"checkbox", label:"Add me to your newsletter and keep me updated", checklabel:"checkbox-2"},
+                                        {column:'6', type:"button", label:"Submit", className:'btn mt-4'})
+                    .tab-pane.fade#apply(role="tabpanel", aria-labelledby="apply-tab")
+                         +section('apply-qfc')
+                            +title('', 'Connect with us and lets discuss.','Please fill out the form below to apply for an internship opportunity.')
+                            .row.mt-4
+                                .col-12
+                                    .contact-form
+                                        +contactForm({column:'12', type:"radio", label:"Type of Application", name:"qfc-licensed", wrapperClass:"radio-wrapper", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]},
+                                        {column:'6', type:"text", label:"First name", placeholder:"First name"},
+                                        {column:'6', type:"text", label:"Last name", placeholder:"Last name"},
+                                        {column:'6', type:"text", label:"Email Address", placeholder:"email@domain.com"},
+                                        {column:'6', type:"tel", label:"Phone Number", placeholder:"+974 4412 7890", phoneId:"phone-apply"},
+                                        {column:'6', type:"select", label:"Reason for Contact", placeholder:"Reason for Contact", options:[{value:"1", text:'Select'}]},
+                                        {column:'6', type:"select", label:"Type of App", placeholder:"Select", options:[{value:"1", text:'Select'}]},
+                                        {column:'12', type:"textarea", label:"Enter your Query", placeholder:"Describe your query in detail"},
+                                        {column:'12', type:"file", label:"Add an attachment if any", placeholder:"Drag files here or choose from folder"},
+                                        {column:'12', type:"checkbox", label:"By ticking, you are accepting our Terms of use", checklabel:"checkbox-1"},
+                                        {column:'12', type:"checkbox", label:"Add me to your newsletter and keep me updated", checklabel:"checkbox-2"},
+                                        {column:'6', type:"button", label:"Submit", className:'btn mt-4'})
+                    .tab-pane.fade#complaint(role="tabpanel", aria-labelledby="complaint-tab")
+                        +section('complaint')
+                            +title('', 'Connect with us and let’s discuss.','If you are an existing client, please raise your complaint via client portal. If you are a prospective client, please use this form.')
+                            .row.mt-4
+                                .col-12
+                                    .contact-form
+                                        +contactForm(
+                                        {column:'6', type:"text", label:"First name", placeholder:"First name"},
+                                        {column:'6', type:"text", label:"Last name", placeholder:"Last name"},
+                                        {column:'6', type:"text", label:"Email Address", placeholder:"email@domain.com"},
+                                        {column:'6', type:"tel", label:"Phone Number", placeholder:"+974 4412 7890", phoneId:"phone-complaint"},
+                                        {column:'12', type:"textarea", label:"Enter your Query", placeholder:"Describe your query in detail"},
+                                        {column:'6', type:"button", label:"Submit", className:'btn mt-4'})
+                    .tab-pane.fade#newsletter(role="tabpanel", aria-labelledby="newsletter-tab")
+                        +section('newsletters')
+                            +title('', 'Connect with us and let’s discuss.','We’ll send you only what matters — no noise, no spam.')
+                            .row.mt-4
+                                .col-12
+                                    .contact-form
+                                        +contactForm({column:'6', type:"text", label:"Email Address", placeholder:"email@domain.com"},
+                                        {column:'12', type:"button", label:"Subscribe", className:'btn mt-4'})
+

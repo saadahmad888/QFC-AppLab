@@ -1,0 +1,156 @@
++section('global-tabs py-3 sticky-tabs')
+    .row
+        .col.text-center
+            +title('mb-4 text-center','Qatar & Global Insights Hub')
+            
+    .row.media-centre-tabs
+        .col
+            .tabs-wrapper
+                a(href="#insight-highlights" class="btn-tab") QFC Highlights
+                a(href="#insight-inside" class="btn-tab") Inside Qatar
+                a(href="#insight-viewpoint" class="btn-tab") QFC Viewpoint
+                a(href="#insight-spot" class="btn-tab") In the Spotlight
+                a(href="#insight-global" class="btn-tab") Global Economy Watch
+                a(href="#insight-community" class="btn-tab") Community Focus
++section('updates py-4 extra-styles', 'insight-highlights')
+    .row
+        .col
+            +title('mb-4','QFC Highlights')
+    .row.mt-3
+        .col-12
+            .news-list-page.event-list.row
+                each i in [1,2,3,4]
+                    +newsList(
+                        {dateMonth: '23 Nov', type:'International', text: 'QFC Honoured for Pioneering Initiatives in Innovation and Social Responsibility',image:'assets/images/news-new.png'})
+
++section('updates py-3', 'insight-inside')
+    .row
+        .col
+            +title('mb-4','Inside Qatar')
+            p.fs-20.fw-medium.text-secondary.mb-4 Qatar Deepens Global Economic and Strategic Ties
+            p.fs-20.fw-normal.text-secondary.mb-4 Over the past two months, Qatar has expanded bilateral trade and investment ties across multiple regions. New agreements and delegations advanced cooperation with Turkey, Sweden, Hong Kong, the U.S., and Malaysia, with the latter seeing trade volume rise of nearly 80%. The Qatar-Hong Kong merchandise trade corridor alone topped $1.6 billion last year. Qatar’s $500 billion U.S. investment push by its sovereign wealth fund also underscores its growing international economic footprint.
+            p.fs-20.fw-normal.text-secondary.mb-4 The Ministry of Commerce and Industry announced plans to launch 38 new e-services in 2025, signaling an ambitious digital transformation. In a tech-forward move, Qatar also partnered with Microsoft to introduce AI-powered virtual assistants for improved citizen services.
+            p.fs-20.fw-medium.text-secondary.mb-4 Steady Economic Performance and Investor Momentum
+            p.fs-20.fw-normal.text-secondary.mb-4 Qatar recorded $2.7 billion in FDI for 2024, driven by resilient non-oil sectors. Oxford Economics projects steady non-energy growth through 2025, with a sharper pickup expected in 2026. Complementing this, Invest Qatar unveiled $1 billion in incentives, reinforcing the country’s competitiveness, which was recognized in the 2025 Global Competitiveness Report, where Qatar ranked among the global leaders for the first time.
++section('updates py-4', 'insight-viewpoint')
+    .row
+        .col
+            +title('mb-4','QFC Viewpoint')
+            p.fs-20.fw-medium.text-secondary.mb-4 Qatar Deepens Global Economic and Strategic Ties
+            p.fs-20.fw-normal.text-secondary.mb-4 Over the past two months, Qatar has expanded bilateral trade and investment ties across multiple regions. New agreements and delegations advanced cooperation with Turkey, Sweden, Hong Kong, the U.S., and Malaysia, with the latter seeing trade volume rise of nearly 80%. The Qatar-Hong Kong merchandise trade corridor alone topped $1.6 billion last year. Qatar’s $500 billion U.S. investment push by its sovereign wealth fund also underscores its growing international economic footprint.
+            p.fs-20.fw-normal.text-secondary.mb-4 The Ministry of Commerce and Industry announced plans to launch 38 new e-services in 2025, signaling an ambitious digital transformation. In a tech-forward move, Qatar also partnered with Microsoft to introduce AI-powered virtual assistants for improved citizen services.
+            p.fs-20.fw-medium.text-secondary.mb-4 Steady Economic Performance and Investor Momentum
+            p.fs-20.fw-normal.text-secondary.mb-4 Qatar recorded $2.7 billion in FDI for 2024, driven by resilient non-oil sectors. Oxford Economics projects steady non-energy growth through 2025, with a sharper pickup expected in 2026. Complementing this, Invest Qatar unveiled $1 billion in incentives, reinforcing the country’s competitiveness, which was recognized in the 2025 Global Competitiveness Report, where Qatar ranked among the global leaders for the first time.
+
++section('updates py-3', 'insight-spot')
+    .row
+        .col
+            +title('mb-4','In the Spotlight')
+            p.fs-20.fw-medium.text-secondary.mb-4 Qatar Deepens Global Economic and Strategic Ties
+            p.fs-20.fw-normal.text-secondary.mb-4 Over the past two months, Qatar has expanded bilateral trade and investment ties across multiple regions. New agreements and delegations advanced cooperation with Turkey, Sweden, Hong Kong, the U.S., and Malaysia, with the latter seeing trade volume rise of nearly 80%. The Qatar-Hong Kong merchandise trade corridor alone topped $1.6 billion last year. Qatar’s $500 billion U.S. investment push by its sovereign wealth fund also underscores its growing international economic footprint.
+            p.fs-20.fw-normal.text-secondary.mb-4 The Ministry of Commerce and Industry announced plans to launch 38 new e-services in 2025, signaling an ambitious digital transformation. In a tech-forward move, Qatar also partnered with Microsoft to introduce AI-powered virtual assistants for improved citizen services.
+            p.fs-20.fw-medium.text-secondary.mb-4 Steady Economic Performance and Investor Momentum
+            p.fs-20.fw-normal.text-secondary.mb-4 Qatar recorded $2.7 billion in FDI for 2024, driven by resilient non-oil sectors. Oxford Economics projects steady non-energy growth through 2025, with a sharper pickup expected in 2026. Complementing this, Invest Qatar unveiled $1 billion in incentives, reinforcing the country’s competitiveness, which was recognized in the 2025 Global Competitiveness Report, where Qatar ranked among the global leaders for the first time.
+            a.fs-20.text-violet.fw-normal(href="#") Click here to know more about Client Affairs
+
++section('updates py-4', 'insight-global')
+    .row
+        .col
+            +title('mb-4','Global Economy Watch')
+
+    .row.justify-content-center
+        .col-lg-6 
+            .card.mb-4.card-list.publications.new-cards
+                .card-body.p-0.h-100
+                    .publications-wrapper.h-100
+                        figure.mb-0.ratio
+                            img.img-fluid(src='assets/images/pwc.png')
+                        .content-details.read-more-wrapper
+                            h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+
+                            p.fw-normal.text-secondary.fs-20.read-more-content.collapsed  President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.<br>President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.  
+                            
+                            //- a.btn.more-btn.fs-16.fw-medium(href="#") Read more
+                            a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+                            //- a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+        .col-lg-6 
+            .card.mb-4.card-list.publications.new-cards
+                .card-body.p-0.h-100
+                    .publications-wrapper.h-100
+                        figure.mb-0.ratio
+                            img.img-fluid(src='assets/images/world-bank.png')
+                        .content-details.read-more-wrapper
+                            h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+                            p.fw-normal.text-secondary.fs-20.read-more-content.collapsed President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.
+                            a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+                            //- a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less 
+        .col-lg-6 
+            .card.mb-4.card-list.publications.new-cards
+                .card-body.p-0.h-100
+                    .publications-wrapper.h-100
+                        figure.mb-0.ratio
+                            img.img-fluid(src='assets/images/pwc.png')
+                        .content-details.read-more-wrapper
+                            h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+
+                            p.fw-normal.text-secondary.fs-20.read-more-content.collapsed  President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.<br>President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.  
+                            
+                            //- a.btn.more-btn.fs-16.fw-medium(href="#") Read more
+                            a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+                            //- a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+        //- .col-lg-6 
+        //-     .card.mb-4.card-list.publications.new-cards
+        //-         .card-body.p-0.h-100
+        //-             .publications-wrapper.h-100
+        //-                 figure.mb-0.ratio
+        //-                     img.img-fluid(src='assets/images/world-bank.png')
+        //-                 .content-details.read-more-wrapper
+        //-                     h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+        //-                     p.fw-normal.text-secondary.fs-20.read-more-content.collapsed President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.
+        //-                     a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+        //-                     a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+    //- .row 
+    //-     .col-lg-6 
+    //-         .card.mb-4.card-list.publications.new-cards
+    //-             .card-body.p-0.h-100
+    //-                 .publications-wrapper.h-100
+    //-                     figure.mb-0.ratio
+    //-                         img.img-fluid(src='assets/images/pwc.png')
+    //-                     .content-details.read-more-wrapper
+    //-                         h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+
+    //-                         p.fw-normal.text-secondary.fs-20.read-more-content.collapsed  President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.<br>President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.  
+                            
+    //-                         //- a.btn.more-btn.fs-16.fw-medium(href="#") Read more
+    //-                         a.btn.more-btn.my-2.fs-20.read-more(href="javascript:void(0)") Read more
+    //-                         a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+    //-     .col-lg-6 
+    //-         .card.mb-4.card-list.publications.new-cards
+    //-             .card-body.p-0.h-100
+    //-                 .publications-wrapper.h-100
+    //-                     figure.mb-0.ratio
+    //-                         img.img-fluid(src='assets/images/world-bank.png')
+    //-                     .content-details.read-more-wrapper
+    //-                         h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+    //-                         p.fw-normal.text-secondary.fs-20.read-more-content.collapsed President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.
+    //-                         a.btn.more-btn.my-2.fs-20.read-more(href="javascript:void(0)") Read more
+    //-                         a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+                            
++section('updates py-3', 'insight-community')
+    .row
+        .col
+            +title('mb-4','Community Focus')
+            p.fs-20.fw-medium.text-secondary.mb-4 Qatar Deepens Global Economic and Strategic Ties
+            p.fs-20.fw-normal.text-secondary.mb-4 Resona8 Media is an established creative media company licensed under both QFC and Media City in Qatar, with a strong international footprint spanning Canada, Turkey, the UAE, and Qatar.
+            p.fs-20.fw-normal.text-secondary.mb-4 Specialising in broadcast graphics, real-time data aggregation, and full-spectrum channel branding, Resona8 offers end-to-end solutions that elevate media production beyond conventional limits.
+            p.fs-20.fw-normal.text-secondary.mb-4 “We had the company up and running and operational in less than four weeks. We understand the legal, financial, and organisational aspects of forming a company, and QFC offered all of this with clarity and speed,” comments Ali Husseini, Managing Partner & CTO, Resona8 Media, on setting up with the QFC.
+            a.fs-20.text-violet.fw-normal(href="#") Click here to learn more about Resona8 Media and its operations in Qatar.
+
++startupComponent('Stay Informed, Stay Ahead', 'Explore the latest market trends, news highlights, and upcoming events to stay updated with what’s shaping the industry.','Subscribe Now', "setup-slider", 'new-styles',
+{image: "assets/images/start-career.png"}, 
+{image: "assets/images/19.png"}, 
+{image: "assets/images/20.png"}, 
+{image: "assets/images/19.png"}
+)
+
+                            

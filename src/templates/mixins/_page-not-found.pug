@@ -1,0 +1,10 @@
+mixin pageNotfound(...lists)
+    each item in lists
+        section.not-found-page.d-flex.flex-column.align-items-center.justify-content-center
+            figure  
+                img(src=item.image, alt="not found page")
+            h1.text-primary.mb-4.fs-40!=item.heading 
+            p.secondary.fs-20!=item.content 
+            a.btn.btn-primary(href="index.html")
+                span.button-text=item.button 
+                    i.bi.bi-circle-fill

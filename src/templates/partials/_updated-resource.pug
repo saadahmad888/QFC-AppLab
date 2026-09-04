@@ -1,0 +1,849 @@
+include ../mixins/_filter-fields
+
++section('sec-padding resource-center-section')
+    .row
+        .col-12
+            .resource-center-navs
+                ul.nav.nav-pills#resource-pills-tab(role='tablist')
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link.active#resource-pill-0(data-bs-toggle='pill' data-bs-target='#resource-tab-0' type='button' role='tab' aria-selected='true') All Resources
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link#resource-pill-1(data-bs-toggle='pill' data-bs-target='#resource-tab-1' type='button' role='tab' aria-selected='false') Setting Up in QFC
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link#resource-pill-2(data-bs-toggle='pill' data-bs-target='#resource-tab-2' type='button' role='tab' aria-selected='false') Registration
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link#resource-pill-3(data-bs-toggle='pill' data-bs-target='#resource-tab-3' type='button' role='tab' aria-selected='false') Client Affairs
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link#resource-pill-4(data-bs-toggle='pill' data-bs-target='#resource-tab-4' type='button' role='tab' aria-selected='false') Tax
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link#resource-pill-5(data-bs-toggle='pill' data-bs-target='#resource-tab-5' type='button' role='tab' aria-selected='false') Employment Standards Office
+                    li.nav-item(role='presentation')
+                        button.fs-20.fw-normal.nav-link#resource-pill-6(data-bs-toggle='pill' data-bs-target='#resource-tab-6' type='button' role='tab' aria-selected='false') Data Protection
+        .col-12
+            .resource-center-tabs
+                .tab-content#resource-pills-tabContent
+
+                    //- =====================================================
+                    //- TAB: All Resources
+                    //- =====================================================
+                    #resource-tab-0.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='resource-pill-0' tabindex='0')
+                        .heading-box
+                            .h2.fs-40.fw-semibold.text-black All Resources
+                            .hb-top
+                                .hb-heading
+                                    h2.fs-40.fw-semibold Tax
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents.fs-20.fw-normal
+                                | Showing
+                                strong 30
+                                |  Documents
+                            .table-header
+                                p.fs-20.fw-normal FILE NAME
+                                p.fs-20.fw-normal DATE
+                                p.fs-20.fw-normal DOWNLOADS
+
+                        .resource-center-tabs-content-main
+
+                            //- ── Collapse group: INTERNATIONAL TAX ──
+                            .collapse-item
+                                button.rc-collapse-btn(type='button' data-bs-toggle='collapse' data-bs-target='#rc-tab0-intl-tax' aria-expanded='true' aria-controls='rc-tab0-intl-tax')
+                                    span.rc-collapse-title.fs-24.fw-semibold INTERNATIONAL TAX
+                                    span.rc-collapse-count.fs-16 12 documents
+                                    i.bi.bi-chevron-down
+                                #rc-tab0-intl-tax.collapse.show
+                                    .collapse-inner
+                                        h4.rc-sub-title.fs-20.fw-semibold CRS — COMMON REPORTING STANDARD
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal QFC CRS Regulatory Framework
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal CRS Implementation Training Video
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/play.svg" alt="play Icon")
+                                                            span.dl-label.fs-18.fw-medium Watch
+                                                            span.dl-meta.fs-18.fw-normal (MP4, 100 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium Live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon")
+                                                            span.dl-label.fs-18.fw-medium Access Portal
+                                            
+                                    
+                                    .collapse-inner
+                                        h4.rc-sub-title.fs-20.fw-semibold CRS — COMMON REPORTING STANDARD
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal QFC CRS Regulatory Framework
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium Live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium View Index
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal CRS Implementation Training Video
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/calculator.svg" alt="play Icon")
+                                                            span.dl-label.fs-18.fw-medium Launch Calculator
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium Live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon")
+                                                            span.dl-label.fs-18.fw-medium Access Portal
+                                            
+                                    
+                            //- ── Collapse group: DOMESTIC LEGISLATION ──
+                            .collapse-item
+                                button.rc-collapse-btn(type='button' data-bs-toggle='collapse' data-bs-target='#rc-tab0-domestic' aria-expanded='true' aria-controls='rc-tab0-intl-tax')
+                                    span.rc-collapse-title.fs-24.fw-semibold DOMESTIC LEGISLATION
+                                    span.rc-collapse-count.fs-16 6 items
+                                    i.bi.bi-chevron-down
+                                #rc-tab0-domestic.collapse.show
+                                    .collapse-inner.without-timeline
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal QFC CRS Regulatory Framework
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal CRS Implementation Training Video
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            
+                            //- ── Collapse group: DOUBLE TAXATON AGREEMENT ──
+                            .collapse-item
+                                button.rc-collapse-btn(type='button' data-bs-toggle='collapse' data-bs-target='#rc-tab0-double-taxation-agreement' aria-expanded='true' aria-controls='rc-tab0-intl-tax')
+                                    span.rc-collapse-title.fs-24.fw-semibold DOUBLE TAXATON AGREEMENT
+                                    span.rc-collapse-count.fs-16 3 items
+                                    i.bi.bi-chevron-down
+                                #rc-tab0-double-taxation-agreement.collapse.show
+                                    .collapse-inner.without-timeline.without-date
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal Double Taxation Agreements Repository
+                                                    .date-box
+                                                        p.fs-18.fw-medium 
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium View All Agreements
+                                            
+                    //- =====================================================
+                    //- TAB: Setting Up in QFC
+                    //- =====================================================
+                    #resource-tab-1.tab-pane.fade(role='tabpanel' aria-labelledby='resource-pill-1' tabindex='0')
+                        .heading-box
+                            .hb-top
+                                .hb-heading
+                                    h2 Setting Up in QFC
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents
+                                | Showing
+                                strong 0
+                                |  Documents
+                            .table-header
+                                p FILE NAME
+                                p DATE
+                                p DOWNLOADS
+                        .resource-center-tabs-content-main
+                            p.fs-20.fw-semibold.text-black Data Not Found...
+                    //- =====================================================
+                    //- TAB: Registration
+                    //- =====================================================
+                    #resource-tab-2.tab-pane.fade(role='tabpanel' aria-labelledby='resource-pill-2' tabindex='0')
+                        .heading-box
+                            .hb-top
+                                .hb-heading
+                                    h2 Setting Up in QFC
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents
+                                | Showing
+                                strong 0
+                                |  Documents
+                            .table-header
+                                p FILE NAME
+                                p DATE
+                                p DOWNLOADS
+                        .resource-center-tabs-content-main
+                            p.fs-20.fw-semibold.text-black Data Not Found...
+
+                    //- =====================================================
+                    //- TAB: Client Affairs
+                    //- =====================================================
+                    #resource-tab-3.tab-pane.fade(role='tabpanel' aria-labelledby='resource-pill-3' tabindex='0')
+                        .heading-box
+                            .hb-top
+                                .hb-heading
+                                    h2 Setting Up in QFC
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents
+                                | Showing
+                                strong 0
+                                |  Documents
+                            .table-header
+                                p FILE NAME
+                                p DATE
+                                p DOWNLOADS
+                        .resource-center-tabs-content-main
+                            p.fs-20.fw-semibold.text-black Data Not Found...
+
+                    //- =====================================================
+                    //- TAB: Tax
+                    //- =====================================================
+                    #resource-tab-4.tab-pane.fade(role='tabpanel' aria-labelledby='resource-pill-4' tabindex='0')
+                        .heading-box
+                            .hb-top
+                                .hb-heading
+                                    h2.fs-40.fw-semibold Tax
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents.fs-20.fw-normal
+                                | Showing
+                                strong 30
+                                |  Documents
+                            .table-header
+                                p.fs-20.fw-normal FILE NAME
+                                p.fs-20.fw-normal DATE
+                                p.fs-20.fw-normal DOWNLOADS
+
+                        .resource-center-tabs-content-main
+
+                            //- ── Collapse group: INTERNATIONAL TAX ──
+                            .collapse-item
+                                button.rc-collapse-btn(type='button' data-bs-toggle='collapse' data-bs-target='#rc-tab0-intl-tax' aria-expanded='true' aria-controls='rc-tab0-intl-tax')
+                                    span.rc-collapse-title.fs-24.fw-semibold INTERNATIONAL TAX
+                                    span.rc-collapse-count.fs-16 12 documents
+                                    i.bi.bi-chevron-down
+                                #rc-tab0-intl-tax.collapse.show
+                                    .collapse-inner
+                                        h4.rc-sub-title.fs-20.fw-semibold CRS — COMMON REPORTING STANDARD
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal QFC CRS Regulatory Framework
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal CRS Implementation Training Video
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/play.svg" alt="play Icon")
+                                                            span.dl-label.fs-18.fw-medium Watch
+                                                            span.dl-meta.fs-18.fw-normal (MP4, 100 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium Live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon")
+                                                            span.dl-label.fs-18.fw-medium Access Portal
+                                            
+                                    
+                                    .collapse-inner
+                                        h4.rc-sub-title.fs-20.fw-semibold CRS — COMMON REPORTING STANDARD
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal QFC CRS Regulatory Framework
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium Live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium View Index
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal CRS Implementation Training Video
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/calculator.svg" alt="play Icon")
+                                                            span.dl-label.fs-18.fw-medium Launch Calculator
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium Live
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/extranal-link.svg" alt="External Link Icon")
+                                                            span.dl-label.fs-18.fw-medium Access Portal
+                                            
+                                    
+                            //- ── Collapse group: DOMESTIC LEGISLATION ──
+                            .collapse-item
+                                button.rc-collapse-btn(type='button' data-bs-toggle='collapse' data-bs-target='#rc-tab0-domestic' aria-expanded='true' aria-controls='rc-tab0-intl-tax')
+                                    span.rc-collapse-title.fs-24.fw-semibold DOMESTIC LEGISLATION
+                                    span.rc-collapse-count.fs-16 6 items
+                                    i.bi.bi-chevron-down
+                                #rc-tab0-domestic.collapse.show
+                                    .collapse-inner.without-timeline
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal QFC CRS Regulatory Framework
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal CRS Implementation Training Video
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal 2024 Participating and Reportable Jurisdictions
+                                                            span.badge-new New
+                                                        ul.file-tags
+                                                            li.fs-16.fw-normal Policy
+                                                            li.fs-16.fw-normal QFC-TAX-CRS-2021
+                                                            li.fs-16.fw-normal v1.0
+                                                    .date-box
+                                                        p.fs-18.fw-medium 28 Jul 2006
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium English
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.2 MB)
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file-download.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium العربية
+                                                            span.dl-meta.fs-18.fw-normal (PDF, 3.0 MB)
+                                            
+                            //- ── Collapse group: DOUBLE TAXATON AGREEMENT ──
+                            .collapse-item
+                                button.rc-collapse-btn(type='button' data-bs-toggle='collapse' data-bs-target='#rc-tab0-double-taxation-agreement' aria-expanded='true' aria-controls='rc-tab0-intl-tax')
+                                    span.rc-collapse-title.fs-24.fw-semibold DOUBLE TAXATON AGREEMENT
+                                    span.rc-collapse-count.fs-16 3 items
+                                    i.bi.bi-chevron-down
+                                #rc-tab0-double-taxation-agreement.collapse.show
+                                    .collapse-inner.without-timeline.without-date
+                                        ul.resource-list
+                                            li
+                                                .inner-items
+                                                    .file-name-box
+                                                        .fn-title
+                                                            p.fs-20.fw-normal Double Taxation Agreements Repository
+                                                    .date-box
+                                                        p.fs-18.fw-medium 
+                                                    .download-box
+                                                        a.download-btn(href='#')
+                                                            img(src="assets/images/icons/resource-center-icons/file.svg" alt="File Download Icon")
+                                                            span.dl-label.fs-18.fw-medium View All Agreements
+                                            
+                    //- =====================================================
+                    //- TAB: Employment Standards Office
+                    //- =====================================================
+                    #resource-tab-5.tab-pane.fade(role='tabpanel' aria-labelledby='resource-pill-5' tabindex='0')
+                        .heading-box
+                            .hb-top
+                                .hb-heading
+                                    h2 Setting Up in QFC
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents
+                                | Showing
+                                strong 0
+                                |  Documents
+                            .table-header
+                                p FILE NAME
+                                p DATE
+                                p DOWNLOADS
+                        .resource-center-tabs-content-main
+                            p.fs-20.fw-semibold.text-black Data Not Found...
+
+                    //- =====================================================
+                    //- TAB: Data Protection
+                    //- =====================================================
+                    #resource-tab-6.tab-pane.fade(role='tabpanel' aria-labelledby='resource-pill-6' tabindex='0')
+                        .heading-box
+                            .hb-top
+                                .hb-heading
+                                    h2 Setting Up in QFC
+                                .hb-filters
+                                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Document Type', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['All Language', 'English', 'Arabic']}, {type: 'select2box', options:['Sort by Year', '2021', '2022', '2023', '2024', '2025', '2026']})
+                            p.showing-documents
+                                | Showing
+                                strong 0
+                                |  Documents
+                            .table-header
+                                p FILE NAME
+                                p DATE
+                                p DOWNLOADS
+                        .resource-center-tabs-content-main
+                            p.fs-20.fw-semibold.text-black Data Not Found...

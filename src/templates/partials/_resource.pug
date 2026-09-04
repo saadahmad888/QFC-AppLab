@@ -1,0 +1,490 @@
+include ../mixins/_filter-fields
++section('sec-padding d-none')
+    .row
+        .col.text-center
+            h4.mb-5.text-center.fw-medium.fs-24.section-title.text-primary Your one-stop-shop for all QFC brochures, guides, forms, and more
+            
+    .media-centre-tabs
+            .tabs-wrapper(id="myTab", role="tablist")
+                a.btn-tab(id="tab1" data-bs-toggle="tab" data-bs-target="#tab-pane-1" type="button" role="tab" aria-controls="tab-pane-1" aria-selected="false" ) All
+                a.btn-tab(id="tab2" data-bs-toggle="tab" data-bs-target="#tab-pane-2" type="button" role="tab" aria-controls="tab-pane-2" aria-selected="false") Setting Up in QFC
+                a.btn-tab(id="tab4" data-bs-toggle="tab" data-bs-target="#tab-pane-4" type="button" role="tab" aria-controls="tab-pane-4" aria-selected="false") Client Affairs
+                a.btn-tab.active(id="tab5" data-bs-toggle="tab" data-bs-target="#tab-pane-5" type="button" role="tab" aria-controls="tab-pane-5" aria-selected="true") Tax
+                a.btn-tab(id="tab6" data-bs-toggle="tab" data-bs-target="#tab-pane-6" type="button" role="tab" aria-controls="tab-pane-6" aria-selected="false") Employment Standards Office
+                a.btn-tab(id="tab7" data-bs-toggle="tab" data-bs-target="#tab-pane-7" type="button" role="tab" aria-controls="tab-pane-7" aria-selected="false") Data Protection
+
+            .tab-content(id="myTabContent")
+                .tab-pane.fade(id="tab-pane-1" role="tabpanel" aria-labelledby="tab1" tabindex="0")
+                    .row.mb-5.mt-5
+                        .col-lg 
+                            h3.fs-40.text-violet All
+                        .col-lg-auto
+                            +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+                    .row.mb-5.mt-5.align-items-center
+                        .col-lg 
+                            h3.fs-32.text-black.fw-500 Tax
+                    .documents-table.table-responsive
+                        .documents-table-scroll
+                            table.table
+                                thead 
+                                    tr
+                                        th File Name
+                                        th.text-center Date
+                                        th.text-center File Type
+                                        th.text-center File Size
+                                        th.text-center 
+                                tbody 
+                                    tr 
+                                        td.section-row(colspan="5") Domestic Legislation
+                                    tr.content-row
+                                        td
+                                            .file-name
+                                                span.file-icon
+                                                p 2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            //- a(href="#").open-panel EN
+                                            a(href="pdf-viewer.html") EN
+                                            a(href="pdf-viewer.html") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr 
+                                    td.section-row(colspan="5") Concessionary Statements of Practice (CSoP)
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        p PDF
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr 
+                                    td.section-row(colspan="5") Double Taxation Agreement        
+                    .row.mt-1.align-items-center
+                        .col-lg
+                            h5.fs-20.fw-500.text-secondary Double Taxation Agreements
+                        .col-lg-auto 
+                            a(href="#").btn-view
+                                | View Agreements
+                                img.img-fluid(src='assets/images/right-arrow.svg', loading='lazy', width='', height='', alt='')
+                    //- .panel-holder
+                    //-     .overlay
+                    //-     .side-panel
+                    //-         .side-panel-head
+                    //-             h3 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                    //-             button.close-panel ✕
+                    //-         .side-panel-content 
+                    //-             iframe(src="assets/doc/2024-Participating-and-Reportable-Jurisdictions-GTA-Decision-31-of-2025.pdf")
+                .tab-pane.fade(id="tab-pane-2" role="tabpanel" aria-labelledby="tab2" tabindex="0") 
+                    .row.mb-5.mt-5.align-items-center
+                        .col-lg 
+                            h3.fs-32.text-black.fw-500 Setting Up in QFC
+                        .col-lg-auto
+                            +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+                    .documents-table.table-responsive
+                        .documents-table-scroll
+                            table.table
+                                thead 
+                                    tr
+                                        th File Name
+                                        th.text-center Date
+                                        th.text-center File Type
+                                        th.text-center File Size
+                                        th.text-center 
+                                tbody 
+                                    tr 
+                                        td.section-row(colspan="5") Domestic Legislation
+                                    tr.content-row
+                                        td
+                                            .file-name
+                                                span.file-icon
+                                                p Help Sheet - What to do if you disagree?
+                                    td 
+                                        p 11 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            //- a(href="#").open-panel EN
+                                            a(href="pdf-viewer.html") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p Rates - Additional Charge and Compensation
+                                    td 
+                                        p 30 Nov 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p CRS MoF Decision 8 2025 (amends 17-2019) Unofficial Translation
+                                    td 
+                                        p 20 Feb 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr 
+                                    td.section-row(colspan="5") Concessionary Statements of Practice (CSoP)
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p CRS Reportable Jurisdictions for RY2024 from General Tax Authority-GTA
+                                    td 
+                                        p 30 Nov 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p CRS Reportable Jurisdictions for RY2023 from GTA
+                                    td 
+                                        p 20 Feb 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p CRS List of Reportable and Participating Jurisdiction GTA Decision 16 2019 - EN
+                                    td 
+                                        p 12 Aug 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p FATCA Inter-Governmental Agreement between Qatar and the US
+                                    td 
+                                        p 30 Nov 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                    //- .panel-holder
+                    //-     .overlay
+                    //-     .side-panel
+                    //-         .side-panel-head
+                    //-             h3 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                    //-             button.close-panel ✕
+                    //-         .side-panel-content 
+                    //-             iframe(src="assets/doc/2024-Participating-and-Reportable-Jurisdictions-GTA-Decision-31-of-2025.pdf")    
+                .tab-pane.fade(id="tab-pane-4" role="tabpanel" aria-labelledby="tab4" tabindex="0") Client Affairs
+                .tab-pane.fade.fade.show.active(id="tab-pane-5" role="tabpanel" aria-labelledby="tab5" tabindex="0")
+                    .row.mb-5.mt-5.align-items-center.sticky-row
+                        .col-lg 
+                            h3.fs-40.text-violet Tax
+                        .col-lg-auto
+                            +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+                    .documents-table.table-responsive
+                        .documents-table-scroll
+                            table.table
+                                thead 
+                                    tr
+                                        th File Name
+                                        th.text-center Date
+                                        th.text-center File Type
+                                        th.text-center File Size
+                                        th.text-center 
+                                tbody 
+                                    tr 
+                                        td.section-row(colspan="5") Domestic Legislation
+                                    tr.content-row
+                                        td
+                                            .file-name
+                                                span.file-icon
+                                                p 2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            //- a(href="#").open-panel EN
+                                            a(href="pdf-viewer.html") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr 
+                                    td.section-row(colspan="5") Concessionary Statements of Practice (CSoP)
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        p PDF
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr.content-row
+                                    td
+                                        .file-name
+                                            span.file-icon
+                                            p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 
+                                    td 
+                                        p 28 Jul 2006
+                                    td 
+                                        p PDF
+                                    td
+                                        p 2.0 MB
+                                    td 
+                                        .file-lang
+                                            a(href="#") EN
+                                            a(href="#") AR
+                                tr 
+                                    td.section-row(colspan="5") Double Taxation Agreement        
+                    .row.mt-1.align-items-center
+                        .col-lg
+                            h5.fs-20.fw-500.text-secondary Double Taxation Agreements
+                        .col-lg-auto 
+                            a(href="#").btn-view
+                                | View Agreements
+                                img.img-fluid(src='assets/images/right-arrow.svg', loading='lazy', width='', height='', alt='')
+                    //- .panel-holder
+                    //-     .overlay
+                    //-     .side-panel
+                    //-         .side-panel-head
+                    //-             h3 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                    //-             button.close-panel ✕
+                    //-         .side-panel-content 
+                    //-             iframe(src="assets/doc/2024-Participating-and-Reportable-Jurisdictions-GTA-Decision-31-of-2025.pdf")
+                .tab-pane.fade(id="tab-pane-6" role="tabpanel" aria-labelledby="tab6" tabindex="0") Employment Standards Office
+                .tab-pane.fade(id="tab-pane-7" role="tabpanel" aria-labelledby="tab7" tabindex="0") Data Protection

@@ -1,0 +1,82 @@
+include ../mixins/_socialMedia.pug
+include ../mixins/_menu.pug
+footer.footer-sec
+    .container-lg.pb-3.pb-lg-5.pt-5
+        .row
+            .col-12.col-sm-6.col-lg-4.text-start.order-2.order-lg-1  
+                .footer-nav.w-100
+                    h5.mb-2.mt-4.mt-lg-0 Subscribe to our newsletter
+                    p We’ll send you only what matters — no noise, no spam.
+                .news-letter 
+                    input(type="search", placeholder="Enter e-mail address", name="search")
+                    a.btn.btn-transparent.rounded-circle.border-1.border(href="#") 
+                        i.bi.bi-arrow-right.text-white
+            .col-lg-8.col-12.d-flex.flex-wrap.flex-md-nowrap.align-items-start.order-3.order-lg-2 
+                .footer-nav
+                    h5.mb-3.mb-lg-4.mt-4.mt-lg-0 About QFC
+                    +headerNav('page-footer', '', 
+                        { link: 'about.html', text: 'Overview'},
+                        { link: 'leadership.html', text: 'Leadership'},
+                        { link: 'ecosystem.html', text: 'Ecosystem'}
+                    )
+                .footer-nav
+                    h5.mb-3.mb-lg-4.mt-4.mt-lg-0 Business Services
+                    +headerNav('page-footer', '', 
+                        { link: 'index.html', text: 'Setup Guide'},
+                        { link: 'index.html', text: 'VIP Services'},
+                        { link: 'index.html', text: 'Start Your Setup'}
+                    )
+                .footer-nav
+                    h5.mb-3.mb-lg-4.mt-4.mt-lg-0 Regulatory & Legal
+                    +headerNav('page-footer', '', 
+                    { link: 'index.html', text: 'Laws & Regulations'},
+                    { link: 'index.html', text: 'Public Register'},
+                    { link: 'index.html', text: 'Start Your Setup'})
+                .footer-nav
+                    h5.mb-3.mb-lg-4.mt-4.mt-lg-0 Insights & Media
+                    +headerNav('page-footer', '', 
+                    { link: 'news.html', text: 'News'},
+                    { link: 'index.html', text: 'White Papers'},
+                    { link: 'reports-publications.html', text: 'Reports & Publications'})
+                .footer-nav
+                    h5.mb-3.mb-lg-4.mt-4.mt-lg-0 Contact & Support
+                    +headerNav('page-footer', '', 
+                    { link: 'index.html', text: 'Make an Inquiry'},
+                    { link: 'FAQ.html', text: 'FAQ'},
+                    { link: 'index.html', text: 'Social Media'})
+                
+            .col-12.col-sm-6.col-lg-6.mt-0.pt-0.mt-lg-5.pt-lg-5.order-1.order-lg-3 
+                a.logo.d-flex.align-items-center(href='index.html')
+                    img.footer-logo.img-fluid.mt-0(src="assets/images/logo-white-1.png" alt="")
+            .col-12.col-lg-6.mt-lg-5.pt-lg-5.mt-2.pt-2.order-4.order-lg-4  
+                //- +socialList('','footer-social', '#fff', ['facebook', 'linkedin', 'instagram', 'twitter', 'youtube', 'tiktok'])
+                ul.footer-social
+                    li 
+                        a(href="")
+                            img.img-fluid(src="assets/images/icons/facebook.png")
+                    li 
+                        a(href="")
+                            img.img-fluid(src="assets/images/icons/linkedin.png")
+                    li 
+                        a(href="")
+                            img.img-fluid(src="assets/images/icons/instagram.png")
+                    li 
+                        a(href="")
+                            img.img-fluid(src="assets/images/icons/twitter.png")
+                    li 
+                        a(href="")
+                            img.img-fluid(src="assets/images/icons/youtube.png")
+                    li 
+                        a(href="")
+                            img.img-fluid(src="assets/images/icons/tiktok.png")
+    .container-lg.pt-3.pt-lg-4.border-top
+        .row
+            .col-12.col-md-6.col-lg-6.copyright
+                p.fw-normal.mb-0 &copy; 2025 Qatar Financial Centre. All rights reserved.
+                        
+            .col-12.col-md-6.footer-terms
+                .footer-nav.d-flex.align-items-start 
+                    +headerNav('page-footer', '', 
+                    { link: 'terms.html', text: 'Terms'},
+                    { link: 'privacy-policy.html', text: 'Privacy'},
+                    { link: 'cookies.html', text: 'Cookies'})

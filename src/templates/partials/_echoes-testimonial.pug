@@ -1,0 +1,43 @@
++section('success my-5 pt-4')
+    .row.my-4
+        .col-md-7
+            +title('mb-3','Echoes of success', 'Hear real stories from professionals who advanced their  careers, achieved meaningful growth, <br> and unlocked new  opportunities at QFC')
+    .row
+        .echo-success.ecosystem-success
+                .slick-slider(id="testimonial-slider-2", class="testimonial-slider")
+                    each item, index in [1,2,3]
+                        .slide-item
+                            .row.h-100 
+                                .col-lg-8.slide-content
+                                    img(src="assets/images/icons/testimonial-icon-2.svg", class="img-fluid", alt="testimonial icon")
+                                    h2.fw-normal.fs-32.text-primary.my-4 Qatar’s B2B and B2G Markets <br> are huge and very sophistcated
+                                    a.btn.btn-transparent.position-relative.bottom-0(href="#", data-bs-toggle="modal", data-bs-target="#videoModal") View All 
+                                .col-lg-4
+                                    figure 
+                                        if index == 2
+                                            img(src="assets/images/testimonial3.png", class="img-fluid")
+                                            .d-flex.justify-content-between.caption-div
+                                                figcaption.fig-caption 
+                                                    h4 Majed Lababidi
+                                                    .d-flex.align-items-start.justify-content-center
+                                                        span 
+                                                        p Director of 
+                                        else 
+                                            img(src="assets/images/testimonial1.png", class="img-fluid")
+                                            .d-flex.justify-content-between.caption-div
+                                                figcaption.fig-caption 
+                                                    h4 Sara Daniel
+                                                    .d-flex.align-items-start.justify-content-center
+                                                        span 
+                                                        p Director -  Doha Tech Angels    
+                                    
+                .modal.fade.modal-xl(id="videoModal", tabindex="-1", aria-labelledby="videoModalLabel", aria-hidden="true")
+                    .modal-dialog 
+                        .modal-content
+                            .modal-header
+                                button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+                            .modal-body 
+                                .video-container 
+                                    video.img-fluid.w-100(src="assets/videos/video1.mp4" preload="none" muted id="overviewVideo") 
+                                    button.video-btn#videoToggle(aria-label="Play/Pause Video")
+                                        img(src="assets/images/icons/pause-icon.png", alt="pause icon")

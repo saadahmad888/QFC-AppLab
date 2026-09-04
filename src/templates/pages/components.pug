@@ -1,0 +1,379 @@
+doctype html
+html(lang="en" dir="ltr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css")
+
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+
+
+        noscript
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
+        link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css')
+        link(rel="stylesheet", href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        link(rel="stylesheet", href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        //- link(rel="stylesheet", href="assets/css/app.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        noscript
+            link(rel="stylesheet", href="assets/_css/app.css")
+            //- link(rel="stylesheet", href="assets/css/app.min.css")
+        title Qatar Financial Centre
+    body
+            
+        //- include ../partials/_header
+        include ../partials/_updated-header
+        include ../mixins/_card-list
+        include ../mixins/_breadcrumbs
+        include ../mixins/_inner-banner
+        include ../mixins/_slider
+        include ../mixins/_sections
+        include ../mixins/_section-title
+        include ../mixins/_accordion
+        include ../mixins/_event-list
+        include ../mixins/_tab-list
+        include ../mixins/_news-list
+        include ../mixins/_filter-fields
+        include ../mixins/_cardSwiper
+        include ../mixins/_start-business
+        include ../mixins/_imageSwiper
+        include ../mixins/_location-details
+        include ../mixins/_contact-card
+        include ../mixins/_contact-form
+
+
+        include ../home/_section-hero-banner 
+        include ../partials/_floating-enquiry
+        include ../partials/_floating-chat
+        //- +innerBanner('assets/images/about-banner-2.png','About Qatar Financial Centre', 'QFC is Qatar’s premier business hub, supporting <br> growth, innovation, and global partnerships.')  
+        //- +breadcrumbNav('', 'breadcrumb-menu','share', { link: 'index.html', text: 'Home', id: 'Home'},{ link: 'about.html', text: 'About Us', id: activeLink})
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Home Page Old Banner
+            include ../home/_section-banner 
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title QFC Journey Old section aka Wizard Section
+            include ../home/_section-journey 
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Updated Wizard Section
+            include ../home/_section-qfc-wizard
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Discover Counter Section
+            include ../home/_section-discover
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title QFC Advantages Section
+            include ../home/_section-advantage
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Card Slider Section
+            include ../home/_section-card-slider
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Old Tools that power Section
+            include ../home/_section-tools
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title updated Tools that power Section
+            include ../home/_section-business-tools
+        
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Testimonial Slider Section
+            include ../home/_section-testimonial
+    
+
+        include ../home/_section-latest-updates
+        +startupComponent('Get started with <br> Qatar Financial Centre', 'QFC is a leading onshore business and financial centre located in Doha, committed to promoting Qatar as a major business and commercial hub at the crossroads between East and West.','Start Your Setup','','', {image: 'assets/images/start-career.png'})
+        include ../home/_section-resource-center
+        //- include ../partials/_overview
+        +section('about-us') 
+            .row.align-items-center.justify-content-between
+                .col-12.col-lg-5.read-more-wrapper
+                    +title('mb-4','Shaping Qatar’s Business Landscape')  
+
+                    p.sub-title.fw-normal.fs-20.read-more-content.collapsed The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar’s dynamic market. Offering a unique combination of flexibility, international standards and strategic access, QFC empowers businesses to scale, innovate and thrive in one of the region’s most stable economies.Established under Law No. 7 of 2005 by the State of Qatar, QFC is a core pillar of Qatar’s diversification agenda under Qatar National Vision 2030. It provides a robust legal, regulatory, tax and business environment for both financial and non-financial firms to set up businesses in Qatar.The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar’s dynamic market. Offering a unique combination of flexibility, international standards and strategic access, QFC empowers businesses to scale, innovate and thrive in one of the region’s most stable economies.Established under Law No. 7 of 2005 by the State of Qatar, QFC is a core pillar of Qatar’s diversification agenda under Qatar National Vision 2030. It provides a robust legal, regulatory, tax and business environment for both financial and non-financial firms to set up businesses in Qatar.
+                    a.btn.btn-transparent.my-2.fs-20(href="about.html") Apply Now
+                    a.btn.more-btn.my-2.fs-20.read-more(href="javascript:void(0)") Read more
+                    a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+                .col-12.col-lg-6
+                    .video-container.ratio 
+                        video.w-100.overview-video(src="assets/videos/about.mp4" autoplay="" muted="" loop="" height="100%") 
+                        button.video-btn.bottom-right.video-toggle(aria-label="Play/Pause Video")
+                            img(src="assets/images/icons/pause-icon.png", alt="pause icon")
+        include ../partials/_discover-more
+        include ../partials/_sectors
+        include ../partials/_awards
+        include ../partials/_section-mous
+        include ../partials/_discover-new
+        include ../partials/_links
+        include ../partials/_discover-video
+        include ../partials/_discover-keys
+        include ../partials/_experience-life
+        //- include ../partials/_ecosystem-overview
+        .mt-5
+            include ../partials/_global-map-counter
+        include ../partials/_global-map
+        include ../partials/_echoes-testimonial
+        include ../partials/_faq
+        include ../partials/_workplace
+        //- include ../partials/_career-opportunity
+        include ../partials/_career-opportunity-cards
+        include ../partials/_reports-publications-list
+        include ../partials/_community-testimonial
+        include ../partials/_counter-cards
+        include ../partials/_insights-hub
+        //- include ../partials/_registration-journey
+        include ../partials/_registration-journey-steps
+        //- include ../partials/_qfc-empowering
+        include ../partials/_services
+        include ../partials/_designated-list
+        include ../partials/_business-tabs
+        include ../partials/_business-professional
+        include ../partials/_family-solutions
+        include ../partials/_ai-solutions
+        include ../partials/_find-solutions
+        include ../partials/_financial-lists
+        include ../partials/_financial-partners
+        include ../partials/_pdf-viewer
+        //- News Section
+        +section('updates py-60') 
+            .row 
+                .col-md
+                    +title('mb-4','News')
+                .col-md-auto 
+                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['All Categories', 'Category1']},
+                    {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+            .row.mt-4 
+                .col-12
+                    .news-list-page.row
+                        +newsList(
+                            {dateMonth: '26 Nov',type:'International', overlayLabel: true, text: 'The Qatar African Business forum (QABF) returns for its third edition',image:'assets/images/news-new.png', link:'news-details.html'},
+                            {dateMonth: '23 Dec 2025',type:'Webinar', overlayLabel: true, text: 'Masterclass: Labuan IBFC - fulfilling your Shariah-compliant business needs',image:'assets/images/news-new.png', link:'news-details.html'},
+                            {dateMonth: '26 Nov',type:'International', overlayLabel: true, text: 'The Qatar African Business forum (QABF) returns for its third edition',image:'assets/images/news-new.png', link:'news-details.html'},
+                            {dateMonth: '23 Dec 2025',type:'Webinar', overlayLabel: true, text: 'Masterclass: Labuan IBFC - fulfilling your Shariah-compliant business needs', image:'assets/images/news-new.png',link:'news-details.html'},
+                            {dateMonth: '26 Nov',type:'International', overlayLabel: true, text: 'The Qatar African Business forum (QABF) returns for its third edition', image:'assets/images/news-new.png',link:'news-details.html'},
+                            {dateMonth: '23 Dec 2025',type:'Webinar', overlayLabel: true, text: 'Masterclass: Labuan IBFC - fulfilling your Shariah-compliant business needs', image:'assets/images/news-new.png',link:'news-details.html'})
+        //- Events Section
+        +section('updates py-60') 
+            .row 
+                .col-md
+                    +title('mb-4','Events')
+                .col-md-auto 
+                    +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['All Categories', 'Category1']},
+                    {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+            .row.mt-4 
+                .col-12
+                    .news-list-page.event-list.row.events-page
+                        +newsList(
+                            {location: 'Davos, Switzerland', dateMonth: '26 Nov',type:'International', text: 'Corporate Registers Forum - 2024 Annual Conference',image:'assets/images/news-new.png', link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '23 Dec 2025',type:'Webinar', text: 'Corporate Registers Forum - 2024 Annual Conference',image:'assets/images/news-new.png', link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '26 Nov',type:'International', text: 'Corporate Registers Forum - 2024 Annual Conference',image:'assets/images/news-new.png', link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '23 Dec 2025',type:'Webinar', text: 'Corporate Registers Forum - 2024 Annual Conference', image:'assets/images/news-new.png',link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '26 Nov',type:'International', text: 'Corporate Registers Forum - 2024 Annual Conference', image:'assets/images/news-new.png',link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '23 Dec 2025',type:'Webinar', text: 'Corporate Registers Forum - 2024 Annual Conference', image:'assets/images/news-new.png',link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '26 Nov',type:'International', text: 'Corporate Registers Forum - 2024 Annual Conference',image:'assets/images/news-new.png', link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '23 Dec 2025',type:'Webinar', text: 'Corporate Registers Forum - 2024 Annual Conference',image:'assets/images/news-new.png', link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '26 Nov',type:'International', text: 'Corporate Registers Forum - 2024 Annual Conference',image:'assets/images/news-new.png', link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '23 Dec 2025',type:'Webinar', text: 'Corporate Registers Forum - 2024 Annual Conference', image:'assets/images/news-new.png',link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '26 Nov',type:'International', text: 'Corporate Registers Forum - 2024 Annual Conference', image:'assets/images/news-new.png',link:'events-detail.html', date: '07', month: 'nov'},
+                            {location: 'Davos, Switzerland', dateMonth: '23 Dec 2025',type:'Webinar', text: 'Corporate Registers Forum - 2024 Annual Conference', image:'assets/images/news-new.png',link:'events-detail.html', date: '07', month: 'nov'})
+
+        include ../partials/_leaders-list
+        include ../partials/_blogs-list
+
+        //- include ../partials/_media-news
+        include ../partials/_media-blog
+        
+        include ../partials/_ecosystem-organizations
+        
+        +section('terms py-4', 'privacy_policy')
+            .row
+                .col
+                    +title('mb-4 fs-28','QFCA Privacy Policy')
+            .row
+                .col-12
+                    .p-content.list-styled-disc
+                        p.fw-normal.text-secondary This privacy policy explains how the QFCA uses the personal data we collect from you when you use the Site.
+                        ul.fw-normal.text-secondary.fs-16
+                            each item in ['What data do we collect?','How do we collect your data?','How will we use your data?','Marketing','What are your data protection rights?','What are cookies?','How do we use cookies?','What type of cookies do we use?','How to manage cookies','Privacy policies of other websites','How to contact us']
+                                li #{item}
+    
+        include ../partials/_contact-section
+                
+        include ../partials/_media-publications
+        
+        include ../partials/_core-values
+        //- include ../partials/_workplace
+
+        include ../partials/_media-news
+        include ../partials/_media-events
+
+       
+
+        //- include ../partials/_insights-hub
+
+        +section('updates py-4', 'insight-global')
+            .row
+                .col
+                    +title('mb-4','Global Economy Watch')
+            .row.justify-content-center
+                .col-lg-6 
+                    .card.mb-4.card-list.publications.new-cards
+                        .card-body.p-0.h-100
+                            .publications-wrapper.h-100
+                                figure.mb-0.ratio
+                                    img.img-fluid(src='assets/images/pwc.png')
+                                .content-details.read-more-wrapper
+                                    h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+
+                                    p.fw-normal.text-secondary.fs-20.read-more-content.collapsed  President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.<br>President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.  
+                                    
+                                    //- a.btn.more-btn.fs-16.fw-medium(href="#") Read more
+                                    a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+                                    //- a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+                .col-lg-6 
+                    .card.mb-4.card-list.publications.new-cards
+                        .card-body.p-0.h-100
+                            .publications-wrapper.h-100
+                                figure.mb-0.ratio
+                                    img.img-fluid(src='assets/images/world-bank.png')
+                                .content-details.read-more-wrapper
+                                    h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+                                    p.fw-normal.text-secondary.fs-20.read-more-content.collapsed President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.
+                                    a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+                                    //- a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less 
+                .col-lg-6 
+                    .card.mb-4.card-list.publications.new-cards
+                        .card-body.p-0.h-100
+                            .publications-wrapper.h-100
+                                figure.mb-0.ratio
+                                    img.img-fluid(src='assets/images/pwc.png')
+                                .content-details.read-more-wrapper
+                                    h5.card-title.fw-medium.fs-24.text-secondary Client Affairs: Empowering Business Success at Every Step
+
+                                    p.fw-normal.text-secondary.fs-20.read-more-content.collapsed  President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.<br>President Trump’s trade and economic policies are creating opportunities and risks for the GCC. While global tariffs, weaker oil prices and higher borrowing costs are adding fiscal pressure, the region is actively responding with key investments, trade diversification, AI and data centre infrastructure and deeper US-GCC collaboration.  
+                                    
+                                    //- a.btn.more-btn.fs-16.fw-medium(href="#") Read more
+                                    a.btn.more-btn.my-2.fs-20.border-0(href="javascript:void(0)") Read more
+                                    //- a.btn.more-btn.my-2.fs-20.read-less.d-none(href="javascript:void(0)") Read less
+        +section('faq py-5')
+            +title('mb-4 fs-28', 'Everything You Need to Know','')
+            +accordionItems('accordionTab1',
+                    {id: 'ac-headingOneOne', targetId: 'ac-collapseOneOnene', heading: 'Who is the CEO of Qatar Financial Centre?', body: 'QFC’s CEO is Yousuf Mohamed Al-Jaida.'},
+                    {id: 'ac-headingOneTwo', targetId: 'ac-collapseOneTwo', heading: 'What is the role of the Qatar Financial Centre (QFC)?', body: 'QFC is an onshore business and financial platform that helps startups and established businesses from around the world to set up in Qatar, with legal, tax and regulatory advantages.'},
+                    {id: 'ac-headingOneThree', targetId: 'ac-collapseOneThree', heading: 'How can I register my company with QFC?', body: 'The QFC online portal allows you to register your startup or business online.' },
+                    {id: 'ac-headingOneFour', targetId: 'ac-collapseOneFour', heading: 'How much does it cost to register a company in Qatar?', body: 'The type of business can affect thecost. For more information, please get in touch with us.'},
+                    {id: 'ac-headingOneFive', targetId: 'ac-collapseOneFive', heading: 'Is it possible for a non-Qatari to start a business in Qatar?', body: 'Yes. Up to 100% foreign ownership is permitted by QFC.'},
+                    {id: 'ac-headingOneSix', targetId: 'ac-collapseOneSix', heading: 'How long does it take to register a business in Qatar?', body: 'The registration process through QFC can be completed in 7–10 working days, on average.'})
+
+        
+        include ../partials/_media-newsletter
+        
+        include ../partials/_reporting
+
+        +section('py-5 taxation-comp')
+            .media-centre-tabs.taxation-media
+                    .tabs-wrapper.mb-5.pb-3(id="myTab", role="tablist")
+                        a.btn-tab.active(id="tab1" data-bs-toggle="tab" data-bs-target="#tab-pane-1" type="button" role="tab" aria-controls="tab-pane-1" aria-selected="true" ) What is a Double Taxation Agreement?
+                        a.btn-tab(id="tab2" data-bs-toggle="tab" data-bs-target="#tab-pane-2" type="button" role="tab" aria-controls="tab-pane-2" aria-selected="false") Qatar’s DTAs
+                        a.btn-tab(id="tab3" data-bs-toggle="tab" data-bs-target="#tab-pane-3" type="button" role="tab" aria-controls="tab-pane-3" aria-selected="false") Treaty Benefits
+                    .tab-content(id="myTabContent")
+                        .tab-pane.fade.show.active(id="tab-pane-1" role="tabpanel" aria-labelledby="tab1" tabindex="0")
+                            .row.align-items-center.justify-content-between.g-0.taxation-media-content                
+                                .col-lg-5
+                                    figure.ratio
+                                        img.img-fluid.fig-radius(src='assets/images/tax-1.png', loading='lazy', width='', height='', alt='')
+                                .col-lg-6
+                                    h4.fw-500.fs-32.text-primary What is a Double Taxation Agreement?
+                                    p.fs-20.fw-400.text-secondary Double Taxation Agreements (DTAs) are treaties between two or more jurisdictions to avoid double taxation. They allow the contracting jurisdictions to share their taxation rights in relation to income earned by their respective residents. They also allow prevention of tax evasion and ensure that taxpayers in both jurisdictions are treated equally.        
+                        .tab-pane.fade(id="tab-pane-2" role="tabpanel" aria-labelledby="tab2" tabindex="0")
+                            .row.align-items-center.justify-content-between.g-0
+                                .col-lg-6
+                                    h4.fw-500.fs-32.text-primary Qatar’s DTAs
+                                    p.fs-20.fw-400.text-secondary Qatar has concluded more than 80 DTAs with most of its economic partners. While there are certain common features in these DTAs, each agreement remains a different and separate treaty with its own provisions. It is, therefore, necessary to check the respective agreement to ascertain the tax position and the benefits potentially available under the treaty.
+                                .col-lg-5
+                                    figure
+                                        //- img.img-fluid.fig-radius(src='assets/images/tax-2.png', loading='lazy', width='', height='', alt='')
+                                        video.fig-media(controls preload="metadata" loading="lazy")
+                                            source(src="https://videos.pexels.com/video-files/6580589/6580589-uhd_2732_1440_25fps.mp4" type="video/mp4")
+                                            | Your browser does not support the video tag.
+
+                        .tab-pane.fade(id="tab-pane-3" role="tabpanel" aria-labelledby="tab3" tabindex="0")
+                            .row.align-items-center.justify-content-between.g-0
+                                .col-lg-6
+                                    h4.fw-500.fs-32.text-primary Treaty Benefits
+                                    p.fs-20.fw-400.text-secondary Tax benefits under DTA include non-taxation of non-resident companies with no permanent establishments in Qatar and reduced rates of (or exemption from) withholding tax on payments made to Qatari residents, provided certain conditions are met.
+                                .col-lg-5
+                                    figure
+                                        //- img.img-fluid.fig-radius(src='assets/images/tax-3.png', loading='lazy', width='', height='', alt='')
+                                        .ratio.ratio-16x9
+                                            iframe.fig-media(
+                                                src="https://www.youtube.com/embed/21BZPF8T2Js?si=3tfoJvuaGeTqxRxA"
+                                                title="YouTube video"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen
+                                            )
+
+            
+
+
+        .all-component-section-wrapper
+            p.all-component-section-title All-in-One Text & Media Block Section
+            include ../partials/_all-in-one-text-media-block
+
+        .all-component-section-wrapper
+            .container-lg
+                p.all-component-section-title Video Testimonial Card
+            include ../partials/_video-gallery
+            
+        include ../partials/_footer
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        //- script(src='assets/js/vendor/swiper-bundle.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js')
+            
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js")
+
+        script(src='assets/js/custom.js')
+        script(src='assets/js/header.js')
+        script(src='assets/js/home.js')
+        script(src='assets/js/news-swiper.js')
+
+        script(src='assets/js/echosystem.js')
+        script(src='assets/js/designated-office-map.js')
+
+
+        //- script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
+    
+        script(async, src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js", crossorigin="anonymous")
+        script(type="importmap").
+            {
+                "imports": {
+                    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+                    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+                }
+            }
+        script(type="module").
+            import { Popover } from 'bootstrap';
+            //- new Popover(document.getElementById('popoverButton'))
+
+        script.
+            $(function(){
+                $('[data-bs-toggle="tooltip"]').tooltip();
+            })

@@ -1,0 +1,85 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css")
+
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.0/build/css/intlTelInput.css")
+
+        noscript
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
+        link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css')
+        link(rel="stylesheet", href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        link(rel="stylesheet", href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        //- link(rel="stylesheet", href="assets/css/app.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        noscript
+            link(rel="stylesheet", href="assets/_css/app.css")
+            //- link(rel="stylesheet", href="assets/css/app.min.css")
+        title Qatar Financial Centre
+    body.inner-page
+        - let activeLink = 'About'
+
+        include ../partials/_header
+        include ../mixins/_sections
+        include ../mixins/_section-title
+        include ../mixins/_breadcrumbs
+        include ../mixins/_inner-banner
+        include ../mixins/_tab-list
+        include ../mixins/_contact-form
+
+
+        //- +innerBanner('','Designated Office Premises', '', 'inner-banner-normal')  
+        +breadcrumbNav('', 'breadcrumb-menu','', { link: 'index.html', text: 'Home', id: 'Home'},  { link: 'search.html', text: 'Enquiry Form', id: activeLink})
+        include ../partials/_enquiry-list
+
+        include ../partials/_footer
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        //- script(src='assets/js/vendor/swiper-bundle.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js')
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        script(src='assets/js/header.js')
+        script(src='assets/js/custom.js')
+        script(src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.0/build/js/intlTelInput.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.0/build/js/i18n/ar.js")
+
+        script.
+            document.addEventListener('DOMContentLoaded', function() {
+                if (window.intlTelInput) {
+                    const phoneInputs = document.querySelectorAll('.phone-input');
+                    const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                    phoneInputs.forEach(function(input) {
+                        const options = {
+                            initialCountry: "qa",
+                            loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.0/build/js/utils.js"),
+                        };
+                        if (isRTL && window.intlTelInputGlobals && window.intlTelInputGlobals.i18n && window.intlTelInputGlobals.i18n.ar) {
+                            options.i18n = window.intlTelInputGlobals.i18n.ar;
+                        }
+                        window.intlTelInput(input, options);
+                    });
+                }
+            });
+
+
+        //- script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
+    
+        script(async, src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js", crossorigin="anonymous")
+        script(type="importmap").
+            {
+                "imports": {
+                    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+                    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+                }
+            }
+        script(type="module").
+            import { Popover } from 'bootstrap';
+            //- new Popover(document.getElementById('popoverButton'))
+
+       

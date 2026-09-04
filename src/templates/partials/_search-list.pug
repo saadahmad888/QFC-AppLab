@@ -1,0 +1,31 @@
++section('search py-50')
+    +title('fw-medium text-center','What are you looking for','')
+    
+    .search-bar-wrapper.my-4
+        .search-bar
+            input.form-control(type="text", placeholder="Search events, news, documents")
+
+    .filter-tabs.flex-column
+        .d-flex.justify-content-center.search-tabs
+            +tabList('simpleTabs', 
+                {item: 'All', id: 'all-tab', targetID: 'all', class: 'active'}, 
+                {item: 'Pages', id: 'pages-tab', targetID: 'pages'},
+                {item: 'Documents', id: 'documents-tab', targetID: 'documents'},
+                {item: 'News', id: 'news-tab', targetID: 'news'},
+                {item: 'Events', id: 'events-tab', targetID: 'events'})
+            
+        .tab-content.mt-lg-5.mt-4
+            .tab-pane.fade.active.show#all(role="tabpanel", aria-labelledby="all-tab")
+                include _pages-list
+                include _documents-list
+                include _news-list
+                include _events-list
+            .tab-pane.fade#pages(role="tabpanel", aria-labelledby="pages-tab")
+                include _pages-list
+            .tab-pane.fade#documents(role="tabpanel", aria-labelledby="documents-tab")
+                include _documents-list
+            .tab-pane.fade#news(role="tabpanel", aria-labelledby="news-tab")
+                include _news-list
+            .tab-pane.fade#events(role="tabpanel", aria-labelledby="events-tab")
+                include _events-list
+

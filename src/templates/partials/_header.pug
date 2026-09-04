@@ -1,0 +1,233 @@
+include ../mixins/_menu.pug
+header.header#main-header
+    div.container-lg.d-none.d-lg-block
+        .row.top-nav 
+            .col-md-12 
+                .navbar
+                    ul.navbar-nav.ms-auto.d-flex.flex-row
+                        li
+                            a.nav-item.nav-link(href="#") Client Portal
+                        li
+                            a.nav-item.nav-link(href="#") Vendor Portal
+                        li
+                            a.nav-item.nav-link(href="#") Resources
+                        li
+                            a.nav-item.nav-link(href="#") 
+                                img.img-fluid.access-normal(src="assets/images/icons/accessibility.png") 
+                                img.img-fluid.access-white.d-none(src="assets/images/icons/accessibility-white.png")
+                                i.bi.bi-chevron-down.mx-2
+                        li
+                            a.nav-item.nav-link(href="#") 
+                                | العربية
+                        
+                        
+    nav.navbar.navbar-expand-lg.navbar-light
+        div.container-lg.position-relative
+            a(href="index.html" class="navbar-brand")
+                img.img-fluid.main-logo(src="assets/images/logo.png")
+                img.img-fluid.inner-logo.d-none(src="assets/images/logo-white-1.png")
+            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse")
+                span.navbar-toggler-icon
+            div.collapse.navbar-collapse(id="navbarCollapse")
+                +headerNav('page-header', activeLink, 
+                    { 
+                        link: 'about.html', text: 'About Us', id: 'About',
+                        columns: [
+                            {
+                                heading: 'About Us',
+                                links: [
+                                    { link: 'about.html', text: 'Overview', id: 'About', subactive: 'active' },
+                                    { link: 'leadership.html', text: 'Leadership', id: 'About' },
+                                    { link: 'ecosystem.html', text: 'Ecosystem', id: 'About' },
+                                    { link: 'life-at-qfc.html', text: 'Life at QFC', id: 'About' },
+                                    { link: 'discover-qatar.html', text: 'Life in Qatar', id: 'About' },
+                                    { link: 'qfc-tech.html', text: 'Innovations', id: 'About' }
+                                ],
+                                sectionHeading: 'Frequently Accessed',
+                                buttons: [
+                                    { link: 'FAQ.html', text: 'FAQ' },
+                                    { link: 'reports-publications.html', text: 'Reports & Publications' },
+                                    { link: '#', text: 'Careers' },
+                                    { link: 'contact.html', text: 'Contact Us' }
+                                ]
+                            },
+                            {
+                                heading: 'Sample Heading',
+                                links: [
+                                    { link: '#', text: 'Law & Regulations', id: 'About' },
+                                    { link: '#', text: 'QFC Regulatory Authority', id: 'About' },
+                                    { link: 'designated-office.html', text: 'Designated Office Premises', id: 'About' }
+                                ]
+                            },
+                            {
+                                heading: 'Quick Links',
+                                links: [
+                                    { link: '#', text: 'Client Portal', id: 'About' },
+                                    { link: '#', text: 'Resources', id: 'About' },
+                                    { link: '#', text: 'Vendor Portal', id: 'About' }
+                                ],
+                                heading2: 'Downloads',
+                                links2: [
+                                    { link: '#', text: 'Annual Report', id: 'About' },
+                                    { link: '#', text: 'Introduction to QFC', id: 'About' }
+                                ]
+                            }
+                        ]
+                    },
+                    { 
+                        link: 'business.html', text: 'Doing Business', id: 'Business',
+                        columns: [
+                            {
+                                heading: 'Doing Business',
+                                links: [
+                                    { link: 'business.html', text: 'Overview', id: 'Business', subactive: 'active' },
+                                    { link: '#', text: 'Business Solutions', id: 'Business' },
+                                    { link: '#', text: 'Setup', id: 'Business' },
+                                    { link: '#', text: 'Operate', id: 'Business' },
+                                    { link: '#', text: 'Law & Regulations', id: 'Business' },
+                                    { link: '#', text: 'Public Register', id: 'Business' }
+                                ],
+                                sectionHeading: 'Frequently Accessed',
+                                buttons: [
+                                    { link: 'FAQ.html', text: 'FAQ' },
+                                    { link: 'reports-publications.html', text: 'Reports & Publications' },
+                                    { link: '#', text: 'Careers' },
+                                    { link: 'contact.html', text: 'Contact Us' }
+                                ]
+                            },
+                            {
+                                heading: 'Elite Onboarding Service',
+                                description: 'Fast-Track Your Business\nIncorporation in one hour with\nQFC Platinum',
+                                heading2: 'Innovation Dome',
+                                description2: 'Fast-Track Your Business\nIncorporation in one hour with\nQFC Platinum'
+                            },
+                            {
+                                heading: 'Quick Links',
+                                links: [
+                                    { link: '#', text: 'Start Your Setup', id: 'Business' },
+                                    { link: '#', text: 'Setup Checklist', id: 'Business' },
+                                    { link: '#', text: 'Client Portal', id: 'Business' },
+                                    { link: '#', text: 'Tax Card', id: 'Business' }
+                                ],
+                                heading2: 'Downloads',
+                                links2: [
+                                    { link: '#', text: 'Forms and Templates', id: 'Business' },
+                                    { link: '#', text: 'Policies and Guidelines', id: 'Business' }
+                                ]
+                            }
+                        ]
+                    },
+                    { 
+                        link: 'news.html', text: 'Latest News', id: 'News',
+                        columns: [
+                            {
+                                heading: 'Latest News',
+                                links: [
+                                    { link: 'events.html', text: 'Events', id: 'News', subactive: 'active' },
+                                    { link: 'news.html', text: 'News', id: 'News' },
+                                    { link: 'reports-publications.html', text: 'Reports & Publications', id: 'News' },
+                                    { link: 'blogs.html', text: 'Blogs', id: 'News' },
+                                    { link: 'community-newsletter.html', text: 'Community Newsletters', id: 'News' }
+                                ],
+                                sectionHeading: 'Frequently Accessed',
+                                buttons: [
+                                    { link: 'FAQ.html', text: 'FAQ' },
+                                    { link: 'reports-publications.html', text: 'Reports & Publications' },
+                                    { link: '#', text: 'Careers' },
+                                    { link: 'contact.html', text: 'Contact Us' }
+                                ]
+                            },
+                            {
+                                heading: 'Spotlight',
+                                spotlight: {
+                                    image: 'assets/images/mission.png',
+                                    alt: 'QFC hosts participants executive master\'s programme in leadership',
+                                    text: 'QFC hosts participants executive master\'s programme in leadership',
+                                    link: '#'
+                                }
+                            },
+                            {
+                                heading: 'Quick Links',
+                                links: [
+                                    { link: '#', text: 'Start Your Setup', id: 'News' },
+                                    { link: '#', text: 'Setup Checklist', id: 'News' },
+                                    { link: '#', text: 'Client Portal', id: 'News' },
+                                    { link: '#', text: 'Tax Card', id: 'News' }
+                                ],
+                                heading2: 'Downloads',
+                                links2: [
+                                    { link: '#', text: 'Forms and Templates', id: 'News' },
+                                    { link: '#', text: 'Policies and Guidelines', id: 'News' }
+                                ]
+                            }
+                        ]
+                    },
+                    { 
+                        link: 'support.html', text: 'Support Centre', id: 'support',
+                        columns: [
+                            {
+                                heading: 'Support Centre',
+                                links: [
+                                    { link: 'FAQ.html', text: 'FAQs', id: 'support', subactive: 'active' },
+                                    { link: '#', text: 'Make an Inquiry', id: 'support' },
+                                    { link: '#', text: 'Resources', id: 'support' }
+                                ],
+                                sectionHeading: 'Frequently Accessed',
+                                buttons: [
+                                    { link: 'FAQ.html', text: 'FAQ' },
+                                    { link: 'reports-publications.html', text: 'Reports & Publications' },
+                                    { link: '#', text: 'Careers' },
+                                    { link: 'contact.html', text: 'Contact Us' }
+                                ]
+                            },
+                            {
+                                heading: 'How to',
+                                links: [
+                                    { link: '#', text: 'Submit Filings', id: 'support' },
+                                    { link: '#', text: 'Amend Company Details', id: 'support' },
+                                    { link: '#', text: 'Renew', id: 'support' },
+                                    { link: '#', text: 'Update UBO', id: 'support' },
+                                    { link: '#', text: 'Request Certificates', id: 'support' },
+                                    { link: '#', text: 'Access the Client Portal', id: 'support' },
+                                    { link: '#', text: 'Book Appointments', id: 'support' }
+                                ]
+                            },
+                            {
+                                heading: 'Quick Links',
+                                links: [
+                                    { link: 'whistle-blowing.html', text: 'Whistleblowing', id: 'support' },
+                                    { link: '#', text: 'Data Protection', id: 'support' },
+                                    { link: '#', text: 'Client Portal', id: 'support' },
+                                    { link: '#', text: 'Tax Card', id: 'support' }
+                                ],
+                                heading2: 'Downloads',
+                                links2: [
+                                    { link: '#', text: 'Forms and Templates', id: 'support' },
+                                    { link: '#', text: 'Policies and Guidelines', id: 'support' }
+                                ]
+                            }
+                        ]
+                    }
+                )
+                form.d-flex.ms-auto
+                    button.btn-outline-light.d-flex(type="button"  id="search-btn")
+                        input.form-control(type="text" id="search", placeholder="Search")
+                        i.bi.bi-search.search-icon-btn
+                        i.bi.bi-x-lg.close-icon-btn.d-none
+                // Search Overlay
+                div.search-overlay(id="search-overlay")
+                    div.search-overlay-backdrop(id="search-backdrop")
+                    div.search-overlay-content
+                        form.search-overlay-form
+                            div.search-input-wrapper
+                                img.img-fluid.search-icon(src="assets/images/icons/search.svg", alt="Search")
+                                input.form-control.search-input(type="text" id="search-overlay-input", placeholder="What are you looking for...")
+                                button.search-close-btn(type="button" id="search-close-btn")
+                                    i.bi.bi-x-lg
+                div.navbar-nav.ms-3
+                    a.nav-item.nav-link.btn(href="#") 
+                        span.button-text Register Your Interest 
+                            i.bi.bi-circle-fill
+
+
+                

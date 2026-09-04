@@ -1,0 +1,480 @@
+// @use "sass:math";
+
+// @function radius($ts, $te, $be, $bs) {
+//     @if $dir == ltr {
+//         @return $ts $te $be $bs;
+//     }
+//     @else {
+//         @return $te $ts $bs $be;
+//     }
+// }
+// @each $state in map-keys($color-map) {
+//     #{'.alert-'+$state} {
+//       --#{$prefix}alert-color: var(--#{$prefix}#{$state}-text);
+//       --#{$prefix}alert-bg: var(--#{$prefix}#{$state}-bg-subtle);
+//       --#{$prefix}alert-border-color: var(--#{$prefix}#{$state}-border-subtle);
+//       --#{$prefix}alert-link-color: var(--#{$prefix}#{$state}-text);
+//     }
+// }
+// @each $name, $color in $color-map {
+//     #{'.bg-'+$name} {
+//         background: $color !important;
+//     }
+//     #{'.btn-'+$name} {
+//         background: $color;
+//         border-color: $color;
+//         &:hover, &:focus, &:active {
+//             background: rgba($color, 0.8);
+//             border-color: $color;
+//         }
+//     }
+//     #{'.btn-outline-'+$name} {
+//         background: transparent;
+//         border-color: $color;
+//         color: $color;
+//         &:hover, &:focus, &:active {
+//             background: rgba($color, 0.8);
+//             border-color: $color;
+//             box-shadow: none;
+//             outline: none;
+//         }
+//     }
+//     #{'.text-'+$name} {
+//         color: $color !important;
+//     }
+// }
+
+// $font-size-map: (
+//     40: 40px,
+//     38: 38px,
+//     32: 32px,
+//     28: 28px,
+//     24: 24px,
+//     22: 22px,
+//     20: 20px,
+//     18: 18px,
+//     16: 16px,
+//     15: 15px,
+//     14: 14px,
+//     12: 12px
+// );
+
+// @each $size, $font-size in $font-size-map {
+//     .fs-#{$size} {
+//         font-size: $font-size !important;
+
+//         // Adjustments for 26, 22, 20, and 18 px
+//         @if $size == 40 {
+//             @media (max-width: 1520px) { font-size: 32px !important; }
+//             @include media-breakpoint-down(lg) { font-size: 26px !important; }
+//             @include media-breakpoint-down(md) { font-size: 24px !important; }
+//         }
+//         @if $size == 32 {
+//             @include media-breakpoint-down(lg) { font-size: 24px !important; }
+//             @include media-breakpoint-down(md) { font-size: 22px !important; }
+//         }
+//         @if $size == 38 {
+//             @include media-breakpoint-down(lg) { font-size: 24px !important; }
+//             @include media-breakpoint-down(md) { font-size: 22px !important; }
+//         }
+//         @if $size == 28 {
+//             @include media-breakpoint-down(lg) { font-size: 22px !important; }
+//             @include media-breakpoint-down(md) { font-size: 20px !important; }
+//         }
+//         @if $size == 24 {
+//             @include media-breakpoint-down(md) { font-size: 20px !important; }
+//         }
+//         @if $size == 22 {
+//             @include media-breakpoint-down(md) { font-size: 18px !important; }
+//             @media (max-width: 1560px) { font-size: 20px !important; } // ThinkPad/Dell laptops, 125% zoom (1920@125% ≈ 1536px)
+
+//         }
+//         @if $size == 20 {
+//             @media (max-width: 1560px) { font-size: 18px !important; } // ThinkPad/Dell laptops, 125% zoom (1920@125% ≈ 1536px)
+//             @include media-breakpoint-down(xl) { font-size: 18px !important; }
+//             @include media-breakpoint-down(lg) { font-size: 18px !important; }
+//             @include media-breakpoint-down(md) { font-size: 16px !important; }
+//         }
+
+//         @if $size == 18 {
+//             @include media-breakpoint-down(xl) { font-size: 15px !important; }
+//         }
+
+//         // Adjustments for 16px and 15px at lg breakpoint
+//         @if $size == 16 {
+//             @include media-breakpoint-down(md) { font-size: 14px !important; }
+//         }
+//         @if $size == 15 {
+//             @include media-breakpoint-down(lg) { font-size: 13px !important; }
+//         }
+
+//         // Fixed font-size for 14px and 12px at lg breakpoint
+//         @if $size == 14 {
+//             @include media-breakpoint-down(lg) { font-size: 14px !important; }
+//             @include media-breakpoint-down(md) { font-size: 12px !important; }
+//         }
+
+//         @if $size == 12 {
+//             @include media-breakpoint-down(lg) { font-size: 12px !important; }
+//         }
+//     }
+// }
+
+// @function fluid-value($min, $max, $vmin, $vmax) {
+//     $minN: _num($min);
+//     $maxN: _num($max);
+//     $v1: _num($vmin);
+//     $v2: _num($vmax);
+
+//     @if $v1 ==$v2 {
+//       @error "fluid-value(): vmin and vmax must differ.";
+//     }
+
+//     $m: math.div(($maxN - $minN), ($v2 - $v1));
+//     $b: $minN - $m * $v1;
+
+//     @return clamp(_len($min), #{$b}px + #{ $m * 100 }vw, _len($max));
+//   }
+
+//   @function _num($val) {
+//     @if type-of($val) == 'number' {
+//       @return math.div($val, ($val * 0 + 1));
+//     }
+
+//     @error "_num(): expected a number, got #{type-of($val)}.";
+//   }
+
+//   @function _len($val) {
+//     @if type-of($val) == 'number' and unit($val) != '' {
+//       @return $val;
+//     }
+
+//     @if type-of($val) == 'number' and unitless($val) {
+//       @return $val * 1px;
+//     }
+
+//     @error "_len(): expected a numeric length, got #{type-of($val)}.";
+//   }
+
+//   @mixin _fluid-steps-one($prop, $vals, $bps) {
+//     $nVals: length($vals);
+//     $nBps: length($bps);
+
+//     @if $nVals < 2 or $nVals >4 {
+//       @error "fluid-steps(): $vals must have 2–4 values.";
+//     }
+
+//     @if $nBps < 2 {
+//       @error "fluid-steps(): $bps must have ≥2 breakpoints.";
+//     }
+
+//     $bp1: _len(nth($bps, 1));
+//     $bpL: _len(nth($bps, $nBps));
+
+//     @if _num($bp1)>=_num($bpL) {
+//       @error "fluid-steps(): breakpoints must be ascending.";
+//     }
+
+//     @if $nVals ==2 {
+//       $v1: nth($vals, 1);
+//       $v2: nth($vals, 2);
+//       #{$prop}: fluid-value($v1, $v2, $bp1, $bpL);
+
+//     }
+
+//     @else if $nVals ==3 {
+//       $v1: nth($vals, 1);
+//       $v2: nth($vals, 2);
+//       $v3: nth($vals, 3);
+//       $bpM: null;
+//       @if $nBps >= 3 {
+//         $bpM: _len(nth($bps, 2));
+//       }
+//       @else {
+//         $bpM: _len(math.div((_num($bp1) + _num($bpL)), 2) * 1px);
+//       }
+
+//       #{$prop}: fluid-value($v1, $v2, $bp1, $bpM);
+
+//       @media (min-width: #{$bpM}) {
+//         #{$prop}: fluid-value($v2, $v3, $bpM, $bpL);
+//       }
+
+//     }
+
+//     @else {
+//       $v1: nth($vals, 1);
+//       $v2: nth($vals, 2);
+//       $v3: nth($vals, 3);
+//       $v4: nth($vals, 4);
+
+//       @if $nBps < 4 {
+//         @error "fluid-steps(): 4 values need ≥4 breakpoints (got #{$nBps}).";
+//       }
+
+//       $bp2: _len(nth($bps, 2));
+//       $bp3: _len(nth($bps, 3));
+
+//       #{$prop}: fluid-value($v1, $v2, $bp1, $bp2);
+
+//       @media (min-width: #{$bp2}) {
+//         #{$prop}: fluid-value($v2, $v3, $bp2, $bp3);
+//       }
+
+//       @media (min-width: #{$bp3}) {
+//         #{$prop}: fluid-value($v3, $v4, $bp3, $bpL);
+//       }
+//     }
+//   }
+
+// @mixin fluid-steps($props, $vals, $bps: (320px, 768px, 1400px, 1600px)) {
+//     $props-list: null;
+//     @if type-of($props) == 'list' {
+//       $props-list: $props;
+//     }
+//     @else {
+//       $props-list: ($props,);
+//     }
+
+//     @each $prop in $props-list {
+//       @include _fluid-steps-one($prop, $vals, $bps);
+//     }
+//   }
+
+@use "sass:math";
+
+// ----------------------------------------------
+// Utilities (same as correct file)
+// ----------------------------------------------
+
+@function radius($ts, $te, $be, $bs) {
+  @if $dir == ltr {
+    @return $ts $te $be $bs;
+  } @else {
+    @return $te $ts $bs $be;
+  }
+}
+
+@each $state in map-keys($color-map) {
+  #{".alert-" + $state} {
+    --#{$prefix}alert-color: var(--#{$prefix}#{$state}-text);
+    --#{$prefix}alert-bg: var(--#{$prefix}#{$state}-bg-subtle);
+    --#{$prefix}alert-border-color: var(--#{$prefix}#{$state}-border-subtle);
+    --#{$prefix}alert-link-color: var(--#{$prefix}#{$state}-text);
+  }
+}
+
+@each $name, $color in $color-map {
+  #{".bg-" + $name} {
+    background: $color !important;
+  }
+  #{".btn-" + $name} {
+    background: $color;
+    border-color: $color;
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgba($color, 0.8);
+      border-color: $color;
+    }
+  }
+  #{".btn-outline-" + $name} {
+    background: transparent;
+    border-color: $color;
+    color: $color;
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgba($color, 0.8);
+      border-color: $color;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  #{".text-" + $name} {
+    color: $color !important;
+  }
+}
+
+// ----------------------------------------------
+// Clamp utilities (copied from correct file)
+// ----------------------------------------------
+
+@function _num($v) {
+  @if type-of($v) != "number" {
+    @error "_num(): expected number, got #{type-of($v)}";
+  }
+  @return if(unit($v) == "", $v, math.div($v, 1px));
+}
+
+@function _len($v) {
+  @if type-of($v) != "number" {
+    @error "_len(): expected number, got #{type-of($v)}";
+  }
+  @return if(unit($v) == "", $v * 1px, $v);
+}
+
+@function fluid-value($min, $max, $vmin, $vmax) {
+  $minN: _num($min);
+  $maxN: _num($max);
+  $v1: _num($vmin);
+  $v2: _num($vmax);
+
+  @if $v1 == $v2 {
+    @error "fluid-value(): vmin and vmax must differ.";
+  }
+
+  $m: math.div(($maxN - $minN), ($v2 - $v1));
+  $b: $minN - $m * $v1;
+
+  @return clamp(_len($min), calc(#{$b}px + #{$m * 100}vw), _len($max));
+}
+
+@mixin _fluid-steps-one($prop, $vals, $bps) {
+  $nVals: length($vals);
+  $nBps: length($bps);
+
+  @if $nVals < 2 or $nVals > 4 {
+    @error "fluid-steps(): $vals must have 2–4 values.";
+  }
+
+  @if $nBps < 2 {
+    @error "fluid-steps(): $bps must have ≥2 breakpoints.";
+  }
+
+  $bp1: _len(nth($bps, 1));
+  $bpL: _len(nth($bps, $nBps));
+
+  @if _num($bp1) >= _num($bpL) {
+    @error "fluid-steps(): breakpoints must be ascending.";
+  }
+
+  @if $nVals == 2 {
+    #{$prop}: fluid-value(nth($vals, 1), nth($vals, 2), $bp1, $bpL);
+  } @else if $nVals == 3 {
+    $bpM: _len(if($nBps >= 3, nth($bps, 2), math.div((_num($bp1) + _num($bpL)), 2) * 1px));
+
+    #{$prop}: fluid-value(nth($vals, 1), nth($vals, 2), $bp1, $bpM);
+
+    @media (min-width: #{$bpM}) {
+      #{$prop}: fluid-value(nth($vals, 2), nth($vals, 3), $bpM, $bpL);
+    }
+  } @else {
+    $bp2: _len(nth($bps, 2));
+    $bp3: _len(nth($bps, 3));
+
+    #{$prop}: fluid-value(nth($vals, 1), nth($vals, 2), $bp1, $bp2);
+
+    @media (min-width: #{$bp2}) {
+      #{$prop}: fluid-value(nth($vals, 2), nth($vals, 3), $bp2, $bp3);
+    }
+
+    @media (min-width: #{$bp3}) {
+      #{$prop}: fluid-value(nth($vals, 3), nth($vals, 4), $bp3, $bpL);
+    }
+  }
+}
+
+@mixin fluid-steps($props, $vals, $bps: (320px, 768px, 1200px, 1920px)) {
+  $props-list: if(type-of($props) == "list", $props, ($props));
+  @each $prop in $props-list {
+    @include _fluid-steps-one($prop, $vals, $bps);
+  }
+}
+
+@mixin fluid-clamp($prop, $min, $max, $vmin, $vmax) {
+  #{$prop}: fluid-value($min, $max, $vmin, $vmax);
+}
+
+// ----------------------------------------------
+// REPLACED TYPOGRAPHY SYSTEM (new clamp-based)
+// ----------------------------------------------
+
+$font-size-map: (
+  56: (
+    30px,
+    30px,
+    30px,
+    56px
+  ),
+  40: (
+    18px,
+    24px,
+    24px,
+    40px
+  ),
+  38: (
+    18px,
+    22px,
+    22px,
+    38px
+  ),
+  32: (
+    18px,
+    20px,
+    20px,
+    32px
+  ),
+  28: (
+    16px,
+    18px,
+    18px,
+    28px
+  ),
+  24: (
+    16px,
+    16px,
+    16px,
+    24px
+  ),
+  22: (
+    14px,
+    16px,
+    16px,
+    22px
+  ),
+  20: (
+    12px,
+    12px,
+    12px,
+    20px
+  ),
+  18: (
+    12px,
+    12px,
+    12px,
+    18px
+  ),
+  16: (
+    12px,
+    12px,
+    12px,
+    16px
+  ),
+  15: (
+    12px,
+    12px,
+    12px,
+    15px
+  ),
+  14: (
+    10px,
+    10px,
+    10px,
+    14px
+  ),
+  12: (
+    10px,
+    10px,
+    10px,
+    12px
+  )
+);
+
+// Generate classes using clamp
+@each $size, $range in $font-size-map {
+  .fs-#{$size} {
+    @include fluid-steps(font-size, $range);
+    // @include fluid-clamp(font-size, nth($range, 1), nth($range, 2), 320px, 1920px);
+  }
+}

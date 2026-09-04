@@ -1,0 +1,16 @@
+.section-title {
+    text-align: start;
+    text-transform: capitalize;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 24px !important;
+    }
+    @include media-breakpoint-down(lg){
+    padding-inline: 0 !important;
+    }
+}
+
+.sub-title {
+    text-transform: none;
+    text-align: start;
+    color: var(--secondary);
+}

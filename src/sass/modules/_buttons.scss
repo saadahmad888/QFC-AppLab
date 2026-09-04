@@ -1,0 +1,288 @@
+.btn:not(.more-btn) {
+    width: max-content;
+    padding: 17px 24px;
+
+    @include btnColor(linear-gradient(93.64deg, var(--primary) -23.72%, #603f83 82.41%));
+    span {
+        @include btnSpan();
+    }
+    &:hover {
+        background: linear-gradient(-93.64deg, #25125a -23.72%, #603f83 82.41%);
+        color: var(--white);
+        span {
+            // transform: translateX(16px);
+            // html[dir="rtl"] & {
+            //     transform: translateX(-16px);
+            // }
+            i {
+                opacity: 0;
+                transform: translateX(500%);
+                html[dir="rtl"] & {
+                    transform: translateX(-500%);
+                }
+            }
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &.btn-transparent {
+        border: 1px solid #3333331a;
+        background: var(--white);
+        color: var(--purple);
+
+        i {
+            color: var(--purple) !important;
+        }
+        &:hover {
+            background: var(--violet) !important;
+            color: var(--white) !important;
+            span {
+                // transform: translateX(16px);
+                // html[dir="rtl"] & {
+                //     transform: translateX(-16px);
+                // }
+                i {
+                    opacity: 0;
+                    transform: translateX(10%);
+                }
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.share-btn {
+    height: 29px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 4px;
+    background: #e8e8e8;
+    border-radius: 99px;
+    color: var(--violet);
+    font-weight: 500;
+    font-size: 14px;
+}
+.btn-view {
+    border-radius: 100px;
+    padding: 16px 32px;
+    border: 1px solid #c0c0c0;
+    font-weight: 500;
+    font-size: 16px;
+    color: $violet;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &:hover {
+        background-color: $violet;
+        color: $white;
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+.btn.anim {
+    width: max-content;
+    min-width: 140px;
+    padding: 17px 24px;
+    background: linear-gradient(93.64deg, var(--primary) -23.72%, #603f83 82.41%);
+    border-radius: 72px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    border: none;
+    line-height: 1;
+
+    span {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: transform 0.4s ease;
+        z-index: 2;
+
+        // White dot icon on the right (default state) - part of content flow
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: var(--white);
+            border-radius: 50%;
+            transition:
+                opacity 0.4s ease,
+                transform 0.4s ease;
+            opacity: 1;
+            flex-shrink: 0;
+        }
+    }
+
+    // Arrow icon on the left (hidden by default)
+    &::before {
+        content: "→";
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%) translateX(-20px);
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 500;
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    &:hover {
+        background: #441a70; // Solid dark purple on hover
+
+        // Hide the dot and slide it out to the right
+        span::after {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        // Show the arrow and slide it in from the left
+        &::before {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+
+        // Move text slightly to the right to accommodate arrow
+        span {
+            transform: translateX(10px);
+
+            html[dir="rtl"] & {
+                transform: translateX(-10px);
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 12px !important;
+        padding: 14px 20px;
+
+        span::after {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::before {
+            left: 20px;
+            font-size: 16px;
+        }
+
+        &:hover span {
+            transform: translateX(8px);
+
+            html[dir="rtl"] & {
+                transform: translateX(-8px);
+            }
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1400px) {
+        font-size: 12px !important;
+        padding: 14px 20px;
+    }
+}
+
+// start Update primary button with animation.
+@property --gradient-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 90deg;
+}
+
+.updated-primary-btn {
+    --gradient-angle: 90deg;
+
+    padding: 17px 24px;
+    border-radius: 50rem;
+    color: #fff;
+    display: inline-block;
+    border: 0;
+
+    background: linear-gradient(var(--gradient-angle), #3d126b 0%, #521892 50%, #7444b3 100%);
+    &:focus {
+        border: 0;
+    }
+}
+
+// End Update primary button with animation.
+
+.btn.btn-white {
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px #00000033;
+    padding: 17px 24px;
+    color: #3d126b;
+    border: 0;
+    transition: 0.03s all ease;
+    &:hover,
+    &:focus {
+        background: linear-gradient(var(--gradient-angle), #3d126b 0%, #521892 50%, #7444b3 100%);
+        color: #fff;
+        transition: 0.03s all ease;
+    }
+}
+
+.link {
+    position: relative;
+    width: fit-content;
+    &.white {
+        color: #fff;
+        &.with-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 4px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 7px;
+                inset-inline-end: -18px;
+                width: 14px;
+                height: 14px;
+                background-image: url("../images/icons/double-arrow-right.svg");
+                transition: 0.3s all ease;
+                @media only screen and (max-width: 1599.98px) {
+                    top: 5px;
+                    inset-inline-end: -20px;
+                }
+                @include media-breakpoint-down(xxl) {
+                    top: 2.5px;
+                    inset-inline-end: -20px;
+                }
+                html[dir="rtl"] & {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+    &:hover {
+        &.with-arrow {
+            &::after {
+                inset-inline-end: -22px;
+                transition: 0.3s all ease;
+            }
+        }
+    }
+}

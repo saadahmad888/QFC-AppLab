@@ -1,0 +1,23 @@
+mixin filterFields(...fields)
+    .filter-tabs
+        each field in fields
+            if field.type === 'input'
+                .filter-items.input-box
+                    input(type='text', placeholder=field.name)
+            if field.type === 'searchbox'
+                .filter-items.search-box
+                    input(type='text', placeholder=field.name)
+                    i.bi.bi-search
+            if field.type === 'selectbox'
+                .filter-items.select-box
+                    select
+                        each item in field.options
+                            option=item
+            if field.type === 'select2box'
+                .filter-items.select2-box
+                    select.select2
+                        each item in field.options
+                            option(value=item)= item
+            if field.type === 'datepickerbox'
+                .filter-items.datepicker-box
+                    input.datepicker(type='text', placeholder=field.name, readonly)

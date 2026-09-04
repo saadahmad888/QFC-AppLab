@@ -1,0 +1,39 @@
++section('contact-information py-60') 
+    .row
+        .col-xl-10.mx-auto
+            +title('mb-4','Your contact information','(This section may be left blank if you wish to remain anonymous. However, we recommend that you share your contact details so that, if necessary, we may seek additional information from you during our investigation process. Please note that all sections marked with an * below are mandatory).') 
+            p.mb-4.fs-20 Reference No. (system generated number); 
+                strong 03122025-7432
+            +title('mb-2 mt-5 fs-24 text-black','Subject(s) information','(The person(s)/company in respect of whom/which you are submitting this report)')
+            .contact-form.mt-4
+                +contactForm({column:'6', type:"text", label:"First name", placeholder:"First name"},
+                {column:'6', type:"text", label:"Title/Designation", placeholder:"Enter Title/Designation"},
+                {column:'6', type:"text", label:"Department", placeholder:"Enter Department"},
+                {column:'6', type:"radio", label:"QFC Licensed/Registered entity:", name:"qfc-licensed", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]})
+            +title('mb-2 mt-5 fs-24 text-black','Witness(es) information','(Information of any other person(s) who has/have information relating to the reported misconduct)')
+            .contact-form.mt-4
+                +contactForm({column:'6', type:"text", label:"First name", placeholder:"First name"},
+                {column:'6', type:"text", label:"Title/Designation", placeholder:"Enter Title/Designation"},
+                {column:'6', type:"text", label:"Department", placeholder:"Enter Department"},
+                {column:'6', type:"radio", label:"QFC Licensed/Registered entity:", name:"qfc-licensed", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]})
+            +title('mb-2 mt-5 fs-24 text-black','Details of the misconduct you are reporting','(Describe the misconduct and how you came to know about it. If you wish to report more than one allegation, please number each allegation in the text box below.)')
+            .contact-form.mt-4
+                +contactForm({column:'12', type:"text", label:"What alleged misconduct occurred?*", placeholder:"Enter the details"},
+                {column:'12', type:"text", label:"What did it happen and when did you become aware of it?*", placeholder:"Enter the details"},
+                {column:'12', type:"text", label:"Whare did it happen?*", placeholder:"Enter the details"},
+                {column:'12', type:"text", label:"How did it happen?*", placeholder:"Enter the details"},
+                {column:'12', type:"text", label:"Are there any other parties involved in the alleged misconduct? if yes, please provide their name and designations?*", placeholder:"Enter the details"},
+                {column:'12', type:"text", label:"Are you concerned that you or any other person may suffer(or has already suffered) consequences arising from this matter or from its reporting?*", placeholder:"Enter the details"},
+                {column:'12', type:"text", label:"Are you concerned that you or any other person may suffer(or has already suffered) consequences arising from this matter or from its reporting?*", placeholder:"Enter the details"},
+                {column:'6', type:"radio", label:"Have you reported the activity to your employer? *", name:"qfc-licensed", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]},
+                {column:'7', type:"radio", label:"Is there any individual who is conflicted by the misconduct and who should not be assisting in reviewing or assessing the alleged misconduct?", name:"qfc-licensed", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]},
+                {column:'7', type:"radio", label:"Were any internal controls to prevent the alleged misconduct circumvented? If yes, what controls were circumvented and how were they circumvented? *", name:"qfc-licensed", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]},
+                {column:'12', type:"text", label:"Are you concerned that you or any other person may suffer(or has already suffered) consequences arising from this matter or from its reporting?*", placeholder:"Enter the details"})
+            +title('mb-2 mt-4 fs-24 text-black','Attachments','')
+            .contact-form.mt-4
+                +contactForm({column:'6', type:"file", label:"Add an attachment if any", placeholder:"Drag files here or choose from folder"},
+                {column:'7', type:"radio", label:"QFC Licensed/Registered entity:", name:"qfc-licensed", options:[{id:"qfc-yes", value:"yes", text:"Yes", checked:false}, {id:"qfc-no", value:"no", text:"No", checked:true}]})
+            +title('mb-4 mt-5 fs-24 text-black','Declaration','I declare that all of the information provided by me in this form is, to the best of my knowledge and belief, true and correct and that all documents provided (if any) are true and accurate copies of the originals. I understand and agree that the QFC Authority will use the information provided in this form to investigate the matter(s) reported in accordance with the applicable regulations, rules, policies, and procedures. By clicking the “Submit” button below, I consent to the processing by the QFC Authority of my personal information set out in this report')
+            .div.d-flex.align-items-center.gap-4.mt-lg-4.mt-3
+                button.btn Submit
+                a.fs-16.text-purple.text-decoration-none(href="#") Print

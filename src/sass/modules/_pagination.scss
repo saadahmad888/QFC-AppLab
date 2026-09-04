@@ -1,0 +1,83 @@
+.pagination{
+    gap: 8px;
+    @include media-breakpoint-down(md) {
+        gap: 4px;
+    }
+    .page-item{
+        &.disable{
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .page-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            color: #3D126B;
+            border-radius: 100px;
+            border: 0;
+            &:focus{
+                box-shadow: none;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+            &[aria-label="Previous"], &[aria-label="Next"]{
+                border: 1px solid var(--violet);
+                border-radius: 100px;
+                // border-image: linear-gradient(-180deg, #345B99 23.62%, #25125A 55.43%) 1;
+                html[dir="rtl"] & {
+                    transform: scaleX(-1);
+                }
+            }
+            i {
+                color: #603F83;
+                &::before {
+                    content: '';
+                    font-weight: bold;
+                    font-size: 18px;
+                    // content: '';
+                    background-image: url(../../assets/images/icons/left-arrow-sm.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 7px;
+                    height: 12px;
+                    display: block;
+                }
+                &.next {
+                     &::before {
+                            transform: rotate(180deg);
+                     }
+                }
+            }
+        }
+        &:hover{
+            .page-link{
+                 background-color: #EFEFEF;
+            }
+            .page-link[aria-label="Previous"], .page-link[aria-label="Next"]{
+                background: var(--white) !important;
+            }
+        }
+        &:focus,
+        &.active{
+            .page-link{
+                background-color: #C0C0C0;
+                // background: linear-gradient(93.64deg, #25125A -23.72%, #603F83 82.41%);
+                color: var(--primary);
+                border: none;
+                img{
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+    .page-prev, .page-next{
+        .page-link {
+             border: none !important;
+        }
+    }
+}

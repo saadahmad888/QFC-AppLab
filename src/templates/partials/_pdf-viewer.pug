@@ -1,0 +1,13 @@
+//- include ../mixins/_filter-fields
++section('py-5 pdf-section')
+    .row.align-items-center.justify-content-between.mb-5
+        .col-lg-8.col-md-8.col-12
+            h4.fw-500.fs-32.text-primary.mb-0 2024-Participating-and-Reportable-Jurisdictions-GTA-Decision-31-of-2025
+        .col-lg-4.col-md-4.col-12
+            .controls.mt-5.mt-md-0
+                button.btn.gap-2.ms-auto.download-btn
+                    img(src="assets/images/icons/download.svg" alt="Download Icon" width="30" height="30")
+                    |Download PDF
+    .pdf-viewer(data-pdf-url="assets/doc/2024-Participating-and-Reportable-Jurisdictions-GTA-Decision-31-of-2025.pdf")
+        .zoom-container
+            .pdf-container

@@ -1,0 +1,26 @@
++section('tools pt-0')
+    .row.compliance
+        .col-md-7
+            +title('mb-5', 'Tools that power your <br> business','') 
+                
+        .col-md-5
+            .advantage-text.d-flex.flex-column.h-100
+                p.fs-20.fw-normal.text-secondary Empowering you at every step with smart, scalable solutions designed to accelerate your business success.
+        .col-md-6
+            +tabContents({class:'active', id:'tab1', contentID:'tab1-tab', image:'assets/images/tool1.png', title:'Compliance & Reporting', description:'Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.'},
+            {class:'', id:'tab2', contentID:'tab2-tab', image:'assets/images/tool2.png', title:'Company Setup', description:'Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.'},
+            {class:'', id:'tab3', contentID:'tab3-tab', image:'assets/images/tool3.png', title:'Operations Services', description:'Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.'},
+            {class:'', id:'tab4', contentID:'tab4-tab', image:'assets/images/tool2.png', title:'Registration Services', description:'Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.'},
+            {class:'', id:'tab5', contentID:'tab5-tab', image:'assets/images/tool1.png', title:'Offices & Co-Working', description:'Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.'})
+
+            <button class="btn">
+                <span>Explore</span>
+            </button>
+        .col-md-6
+            .compliance-list
+                +tabList('#customTab',
+                    {class:'active', id:'tab1-tab', targetID:'tab1', item:'Compliance & Reporting testtttt',title:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s'},
+                    {class:'', id:'tab2-tab', targetID:'tab2', item:'Company Setup',title:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s'},
+                    {class:'', id:'tab3-tab', targetID:'tab3', item:'Operations Services',title:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s'},
+                    {class:'', id:'tab4-tab', targetID:'tab4', item:'Registration Services',title:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s'},
+                    {class:'', id:'tab5-tab', targetID:'tab5', item:'Offices & Co-Working',title:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s'})

@@ -1,0 +1,33 @@
+mixin breadcrumbNav(id,className, share, ...items)
+        section(id=id, class=className)
+            .container-lg
+                .row
+                    .col 
+                        nav(aria-label='breadcrumb')
+                            ol.breadcrumb.mb-0
+                                each item in items
+                                    li.breadcrumb-item
+                                        a(class=(item.id === activeLink ? 'active ' : '') href=item.link)= item.text
+                    if share
+                        .col-auto
+                            .dropdown.share-dropdown
+                                a.share-btn(href="#", role="buton", data-bs-toggle="dropdown", aria-expanded="false")
+                                    img(src="assets/images/icons/share-icon.svg", alt="Share Icon")
+                                    |Share
+                                ul.dropdown-menu
+                                    li 
+                                        a(href="#").dropdown-item 
+                                            img(src="assets/images/instagram.svg", alt="instagram")
+                                            | Instagram
+                                    li 
+                                        a(href="#").dropdown-item
+                                            img(src="assets/images/facebook.svg", alt="facebook")
+                                            | Facebook
+                                    li 
+                                        a(href="#").dropdown-item
+                                            img(src="assets/images/linkedin.svg", alt="linkedin")
+                                            | LinkedIn
+                                    li 
+                                        a(href="#").dropdown-item
+                                            img(src="assets/images/copy-link.svg", alt="copy-link")
+                                            | Copy Link         

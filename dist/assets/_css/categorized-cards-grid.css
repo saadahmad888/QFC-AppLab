@@ -1,0 +1,157 @@
+/* =============================================================================
+   Categorized Cards Grid Component
+   Author: Applab
+   Description: A multi-category grid of informational cards with optional
+                headline, description, and call-to-action link per card.
+   ============================================================================= */
+
+/* ---- Section wrapper ---- */
+.categorized-cards-grid {
+    padding-block: var(--section-spacing-desktop, 100px);
+}
+
+@media (max-width: 1560px) {
+    .categorized-cards-grid {
+        padding-block: var(--section-spacing-laptop, 4rem);
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .categorized-cards-grid {
+        padding-block: var(--section-spacing-tablet, 3rem);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .categorized-cards-grid {
+        padding-block: var(--section-spacing-mobile, 2rem);
+    }
+}
+
+/* ---- Category block ---- */
+.ccg-category {
+    margin-bottom: 3rem;
+}
+
+.ccg-category:last-child {
+    margin-bottom: 0;
+}
+
+/* ---- Category headline ---- */
+.ccg-category-headline {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #521892;
+    margin-bottom: 0.5rem;
+}
+
+/* ---- Category description ---- */
+.ccg-category-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 1.75rem;
+    max-width: 860px;
+}
+
+.ccg-category-description p {
+    margin-bottom: 0;
+}
+
+/* ---- Cards grid ---- */
+.ccg-cards-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+@media (max-width: 1199.98px) {
+    .ccg-cards-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ccg-cards-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Info card ---- */
+.ccg-card {
+    background: #ffffff;
+    border: 1px solid #e8e8ef;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.ccg-card:hover {
+    box-shadow: 0 4px 24px rgba(82, 24, 146, 0.08);
+    border-color: #c5aee8;
+}
+
+/* ---- Card title ---- */
+.ccg-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+/* ---- Card description ---- */
+.ccg-card-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.ccg-card-description p {
+    margin-bottom: 0;
+}
+
+/* ---- CTA link ---- */
+.ccg-card-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #521892;
+    text-decoration: none;
+    position: relative;
+    padding-inline-end: 28px;
+    transition: text-decoration 0.2s ease;
+}
+
+.ccg-card-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 0;
+    transform: translateY(-45%);
+    background-image: url("../images/icons/chevrons-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 20px;
+    height: 100%;
+    transition: 0.25s all ease;
+}
+
+html[dir=rtl] .ccg-card-link::before {
+    transform: translateY(-45%) scaleX(-1);
+}
+
+.ccg-card-link:hover {
+    color: #521892;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}

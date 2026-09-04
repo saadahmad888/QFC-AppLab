@@ -1,0 +1,50 @@
++section('discover with-bg')
+    .row 
+        .col-md-6 
+            +title('mb-5 lh-md','We support businesses, from<br>start-ups to large corporations','')
+            p.text-secondary.fw-normal.fs-22 QFC is a leading onshore business and financial centre located in Doha, committed to promoting Qatar as a major business and commercial hub at the crossroads between East and West.
+                <br>
+                <br>
+                | We invite businesses, from start-ups to large corporations seeking to expand to the region, to take advantage of a robust legal and regulatory environment aligned with international best practice, covering both regulated and non-regulated activities. With QFC, you can accelerate your business growth in Qatar and beyond.
+            a.btn.my-5(href="#") 
+                span.button-text Discover QFC 
+                    i.bi.bi-circle-fill
+        //- .col-md-6 
+            //- .counter-container.counter-num
+            //-     .counter-sec.d-flex.align-items-center.flex-column.justify-content-center.h-100
+            //-         - var counterValue = typeof continuousCounter !== 'undefined' ? continuousCounter : '12534'
+            //-         .counter(data-target=counterValue data-cms-value=typeof continuousCounter !== 'undefined' ? continuousCounter : '')#continuous-counter
+            //-             each item in [1,2,3,4,5]
+            //-                 .digit-wrapper
+            //-                     .digits
+            //-                         each sitem in [1,2,3,4,5,6,7,8,9,10]
+            //-                             span=sitem-1
+                        
+            //-             .digit-wrapper
+            //-                 .digits
+            //-                     span +
+            //-                     span +
+            //-         .counter-text
+            //-             p.fs-5.fw-normal.text-secondary QFC Registered Firms
+        .col-md-6
+            .counter-container.counter-num
+                .counter-sec.d-flex.align-items-center.flex-column.justify-content-center.h-100
+                    .swiper.counterSwiper
+                        .swiper-wrapper
+                            each data, i in [ { number: 12534, text: "QFC Registered Firms" }, { number: 78, text: "Global Partners" }, { number: 2400, text: "Successful Licenses" } ]
+                                .swiper-slide
+                                    .counter-item.mb-5
+                                        .counter(data-target=data.number)
+                                            each item in [1,2,3,4,5]
+                                                .digit-wrapper
+                                                    .digits
+                                                        each sitem in [1,2,3,4,5,6,7,8,9,10]
+                                                            span=sitem-1
+                                            
+                                            .digit-wrapper
+                                                .digits
+                                                    span +
+                                                    span +
+                                        
+                                        .counter-text
+                                            p.fs-5.fw-normal.text-secondary= data.text

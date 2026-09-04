@@ -1,0 +1,23 @@
++section('updates pt-0')
+    .row.my-4
+        .col-7.col-md-9.d-flex.align-items-center
+            +title('mb-0','Latest Updates')
+        .col-5.col-md-3.d-flex.align-items-center.justify-content-end
+            a.btn.btn-transparent(href="#") 
+                span.button-text View More
+                    i.bi.bi-circle-fill 
+    .row 
+        .col-md-7
+            h6.fw-normal.text-primary.mb-3.fs-24 News
+
+            include ../partials/_latest-news
+
+        .col-md-1.d-flex.align-items-center.justify-content-center  
+            .border-end
+        .col-md-4 
+                h6.fw-normal.text-primary.mb-3.fs-24 Events 
+                +eventList(
+                    {date:'23 Dec 2025', type: 'News', text: 'QFC Signs MoU With Meeza to Boost Qatar’s Digital Services Sector'},
+                    {date:'23 Dec 2025', type: 'News', text: 'QFC Signs MoU With Meeza to Boost Qatar’s Digital Services Sector'},
+                    {date:'23 Dec 2025', type: 'News', text: 'QFC Signs MoU With Meeza to Boost Qatar’s Digital Services Sector'})
+                            

@@ -1,0 +1,20 @@
++section('ecosystem-map py-3')
+    .row
+        .col-12.col-lg-6.text-center.mb-4.mb-lg-0
+            +title('mb-4','QFC Companies Across the Globe', 'The QFC is home to companies originating from all over the world. Join the QFC Community to be <br> strategically placed between the East and West and grow your business in Qatar and in the region with <br> our compelling legal, tax and business environment.')
+        .col-12.col-lg-6 
+            .counter-container.counter-num
+                .counter-sec.d-flex.align-items-center.flex-column.justify-content-center.h-100
+                    .counter(data-target="3200")#continuous-counter-global-map
+                        each item in [1,2,3,4]
+                            .digit-wrapper
+                                .digits
+                                    each sitem in [1,2,3,4,5,6,7,8,9,10]
+                                        span=sitem-1
+                        
+                        .digit-wrapper
+                            .digits
+                                span +
+                                span +
+                    .counter-text
+                        p.fs-5.fw-normal.text-secondary Registered firms worldwide

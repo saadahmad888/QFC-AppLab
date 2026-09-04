@@ -1,0 +1,46 @@
++section('designated py-50') 
+    .row 
+        .col-12
+            +tabList('simpleTabs', 
+                {item: 'Map', id: 'board-tab', targetID: 'board', class: 'active'}, 
+                {item: 'List', id: 'exec-tab', targetID: 'exec'})
+            
+            .tab-content.mt-lg-5.mt-4
+                .tab-pane.fade.active.show#board(role="tabpanel", aria-labelledby="board-tab")
+                    .map-container
+                        #designated-office-map.map-container__map
+                        //- .map-marker
+                        //-     +locationDetails('HNBK Square 1', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                
+                .tab-pane.fade#exec(role="tabpanel", aria-labelledby="exec-tab")
+                    .row.mb-lg-5.mb-4 
+                        .col-auto
+                            +filterFields({type: 'select2box', options:['Select Area', 'HnBK Square']})
+                    .row.g-3.mb-lg-5.mb-4
+                        .col.col-lg-4.col-md-6
+                            +locationDetails('HNBK Square 1', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                        .col.col-lg-4.col-md-6
+                            +locationDetails('Al Emadi Financial Square', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                        .col.col-lg-4.col-md-6
+                            +locationDetails('Al Baraha Tower', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                        .col.col-lg-4.col-md-6
+                            +locationDetails('Al Baraha Tower', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                        .col.col-lg-4.col-md-6
+                            +locationDetails('Al Baraha Tower', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                        .col.col-lg-4.col-md-6
+                            +locationDetails('Al Baraha Tower', 'Building Number 7, Al Sulaimi Street, Number 920, Fareej Abdel Aziz, Zone 14', 'Contact Us')
+                    
+                    include ../partials/_pagination  
+          
+
+.offcanvas.offcanvas-end(id="leadershipModal", tabindex="-1", aria-labelledby="leadershipModal", class="h-100 designated-location-modal")
+    .offcanvas-header
+        button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+    .offcanvas-body 
+        .contact-card
+            .row
+                .col-12.mt-4
+                    +title('mb-4 title-offcanvas','Contact Us', 'Get in touch with our team for any service-related queries or assistance.')
+                    +contactCard('Amer Sarhan', ['+974 3455 6778', '+974 3455 6778'], ['amaersarhan@hnbk.qa', 'amaersarhan@hnbk.qa'])
+                    +contactCard('Kamel Ibrahim', ['+974 3455 6778', '+974 3455 6778'], ['kamelibrahim@hnbk.qa', 'kamelibrahim@hnbk.qa'])
+    

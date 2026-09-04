@@ -1,0 +1,136 @@
+.business {
+    &-tabs {
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            @include media-breakpoint-down(lg) {
+                flex-direction: row;
+                overflow-x: auto;
+                margin-bottom: 24px;
+                padding-bottom: 8px;
+                @include fluid-steps(gap, 12px 24px 32px 40px);
+            }
+        }
+
+        &-content {
+            min-height: 400px;
+        }
+    }
+
+    p {
+        color: #333333;
+    }
+
+    &-tab {
+        &-btn {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            // background: var(--white);
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #5c5c5c;
+            text-align: left;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            white-space: nowrap;
+            @include media-breakpoint-up(xl) {
+                max-width: 86%;
+            }
+
+            &:hover {
+                border: 1px solid var(--Black-black-200, #a1a1a1);
+                box-shadow: 0px 5px 5.2px 0px rgba(0, 0, 0, 0.08);
+                color: #000;
+            }
+
+            &.active {
+                background: #f4f4f4;
+                border-color: #a1a1a1;
+                color: var(--black);
+                border-width: 1px;
+                font-weight: 500;
+                color: #000;
+                border: 1px solid var(--Black-black-200, #a1a1a1);
+                box-shadow: 0px 5px 5.2px 0px rgba(0, 0, 0, 0.08);
+            }
+
+            @include media-breakpoint-down(lg) {
+                min-width: 180px;
+                text-align: center;
+            }
+        }
+        &-content {
+            .tab-pane {
+                h3,
+                p,
+                .business-sub-links {
+                    opacity: 0;
+                }
+                &.active {
+                    h3,
+                    p,
+                    .business-sub-links {
+                        opacity: 1;
+                        animation: fadeIn 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    &-sub {
+        &-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--violet);
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--purple);
+                transform: translateX(4px);
+            }
+        }
+    }
+
+    ul {
+        list-style: disc !important;
+        padding-left: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--black);
+            margin-bottom: 12px;
+            list-style: disc !important;
+            color: #5c5c5c;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

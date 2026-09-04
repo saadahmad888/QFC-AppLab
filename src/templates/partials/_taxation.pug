@@ -1,0 +1,270 @@
+include ../mixins/_filter-fields
++section('py-5 taxation-comp')
+    .media-centre-tabs.taxation-media
+            .tabs-wrapper.mb-5.pb-3(id="myTab", role="tablist")
+                a.btn-tab.active(id="tab1" data-bs-toggle="tab" data-bs-target="#tab-pane-1" type="button" role="tab" aria-controls="tab-pane-1" aria-selected="true" ) What is a Double Taxation Agreement?
+                a.btn-tab(id="tab2" data-bs-toggle="tab" data-bs-target="#tab-pane-2" type="button" role="tab" aria-controls="tab-pane-2" aria-selected="false") Qatar’s DTAs
+                a.btn-tab(id="tab3" data-bs-toggle="tab" data-bs-target="#tab-pane-3" type="button" role="tab" aria-controls="tab-pane-3" aria-selected="false") Treaty Benefits
+            .tab-content(id="myTabContent")
+                .tab-pane.fade.show.active(id="tab-pane-1" role="tabpanel" aria-labelledby="tab1" tabindex="0")
+                    .row.align-items-center.justify-content-between.g-0.taxation-media-content                
+                        .col-lg-5
+                            figure.ratio
+                                img.img-fluid.fig-radius(src='assets/images/tax-1.png', loading='lazy', width='', height='', alt='')
+                        .col-lg-6
+                            h4.fw-500.fs-32.text-primary What is a Double Taxation Agreement?
+                            p.fs-20.fw-400.text-secondary Double Taxation Agreements (DTAs) are treaties between two or more jurisdictions to avoid double taxation. They allow the contracting jurisdictions to share their taxation rights in relation to income earned by their respective residents. They also allow prevention of tax evasion and ensure that taxpayers in both jurisdictions are treated equally.        
+                .tab-pane.fade(id="tab-pane-2" role="tabpanel" aria-labelledby="tab2" tabindex="0")
+                    .row.align-items-center.justify-content-between.g-0
+                        .col-lg-6
+                            h4.fw-500.fs-32.text-primary Qatar’s DTAs
+                            p.fs-20.fw-400.text-secondary Qatar has concluded more than 80 DTAs with most of its economic partners. While there are certain common features in these DTAs, each agreement remains a different and separate treaty with its own provisions. It is, therefore, necessary to check the respective agreement to ascertain the tax position and the benefits potentially available under the treaty.
+                        .col-lg-5
+                            figure
+                                //- img.img-fluid.fig-radius(src='assets/images/tax-2.png', loading='lazy', width='', height='', alt='')
+                                video.fig-media(controls preload="metadata" loading="lazy")
+                                    source(src="https://videos.pexels.com/video-files/6580589/6580589-uhd_2732_1440_25fps.mp4" type="video/mp4")
+                                    | Your browser does not support the video tag.
+
+                .tab-pane.fade(id="tab-pane-3" role="tabpanel" aria-labelledby="tab3" tabindex="0")
+                    .row.align-items-center.justify-content-between.g-0
+                        .col-lg-6
+                            h4.fw-500.fs-32.text-primary Treaty Benefits
+                            p.fs-20.fw-400.text-secondary Tax benefits under DTA include non-taxation of non-resident companies with no permanent establishments in Qatar and reduced rates of (or exemption from) withholding tax on payments made to Qatari residents, provided certain conditions are met.
+                        .col-lg-5
+                            figure
+                                //- img.img-fluid.fig-radius(src='assets/images/tax-3.png', loading='lazy', width='', height='', alt='')
+                                .ratio.ratio-16x9
+                                    iframe.fig-media(
+                                        src="https://www.youtube.com/embed/21BZPF8T2Js?si=3tfoJvuaGeTqxRxA"
+                                        title="YouTube video"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    )
+
+    .row.mb-5.mt-5.d-none
+        .filter-taxation
+            +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Status', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['Type', 'Double Taxation (DTA)', 'Protocol']},{ type: 'datepickerbox', name: 'Signed Before' }, {type: 'select2box', options:['Sort By', 'A - Z', 'Z - A']})
+        .documents-table.table-responsive
+            table.table
+                thead 
+                    tr
+                        th File Name
+                        th.text-center File Size
+                        th.text-center Status
+                        th.text-center Date
+                        th 
+                        th
+                tbody 
+                    tr.content-row
+                        td
+                            .file-name
+                                span.file-icon
+                                p 2024 Participating and Reportable Jurisdictions – GTA Decision 31 of 2025
+                        td
+                            p 2.0 MB
+                        td 
+                            p Effective
+                        td 
+                            p 28 Jul 2006
+                        td 
+                            .file-lang
+                                //- a(href="#").open-panel EN
+                                a(href="pdf-viewer.html") EN
+                                a(href="pdf-viewer.html") AR
+                    tr.content-row
+                        td
+                            .file-name
+                                span.file-icon
+                                p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 Participating and Reportable Jurisdictions
+                        td
+                            p 2.0 MB
+                        td 
+                            p Effective
+                        td 
+                            p 28 Jul 2006
+                        td 
+                            .file-lang
+                                a(href="#") EN
+                                a(href="#") AR
+                    tr.content-row
+                        td
+                            .file-name
+                                span.file-icon
+                                p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+                        td
+                            p 2.0 MB
+                        td 
+                            p Effective
+                        td 
+                            p 28 Jul 2006
+                        td 
+                            .file-lang
+                                a(href="#") EN
+                                a(href="#") AR
+                    tr.content-row
+                        td
+                            .file-name
+                                span.file-icon
+                                p 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025 
+                        td
+                            p 2.0 MB
+                        td 
+                            p Effective
+                        td 
+                            p 28 Jul 2006
+                        td 
+                            .file-lang
+                                a(href="#") EN
+                                a(href="#") AR        
+        //- .panel-holder
+        //-     .overlay
+        //-     .side-panel
+        //-         .side-panel-head
+        //-             h3 2024 Participating and Reportable Jurisdictions - GTA Decision 31 of 2025
+        //-             button.close-panel ✕
+        //-         .side-panel-content 
+        //-             iframe#pdfViewer(src="assets/doc/2024-Participating-and-Reportable-Jurisdictions-GTA-Decision-31-of-2025.pdf")            
+
+    .taxation-table-section.my-5
+        .sticky-header
+            .row.align-items-center
+                .col-lg-3.col-12.d-flex.align-items-center.justify-content-between
+                    .section-heading
+                        h2.fs-40.fw-semibold.text-primary
+                            |Double Taxation
+                            br
+                            |Agreements
+                    button.filter-toggle-btn.d-lg-none(type="button" aria-label="Toggle filters" aria-expanded="false")
+                        i.bi.bi-sliders
+                .col-lg-9.col-12
+                    .filer-box.d-flex.align-items-center.justify-content-end
+                        +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['Status', 'Effective', 'Expired', 'On Hold']}, {type: 'select2box', options:['Type', 'Double Taxation (DTA)', 'Protocol']},{ type: 'datepickerbox', name: 'Signed Before' }, {type: 'select2box', options:['Sort By', 'A - Z', 'Z - A']})
+                        a.btn.btn-go(href="#") Go
+                        a.btn-reset(href="#") Reset
+            .row.align-items-center.table-meta-row
+                .col-lg-6.col-md-6.col-12
+                    .number-of-documents
+                        p.mb-0.fs-20.fw-normal.text-black
+                            | Showing
+                            strong  30
+                            |  Documents
+                .col-lg-6.col-md-6.col-12
+                    .item-per-page-box.d-flex.align-items-center.justify-content-end.gap-3
+                        p.mb-0.fs-20.fw-normal.text-gray3 Items per page:
+                        +filterFields({type: 'select2box', options:['10', '20', '30', '40', '50']})
+            .table-thead-mirror(aria-hidden="true")
+                table.table
+                    thead
+                        tr
+                            th FILE NAME
+                            th DATE
+                            th STATUS
+                            th DOWNLOADS
+        .table-box
+            .table-responsive
+                table.table
+                    thead
+                        tr
+                            th.fs-20.fw-medium.text-black FILE NAME
+                            th.fs-20.fw-medium.text-black DATE
+                            th.fs-20.fw-medium.text-black STATUS
+                            th.fs-20.fw-medium.text-black DOWNLOADS
+                    tbody
+                        tr.content-row
+                            td
+                                .file-name
+                                    p.fs-20 Qatar – Algeria Double Taxation Agreement
+                                        span.badge-new New
+                            td
+                                p.fs-18.fw-medium 28 Jul 2006
+                            td
+                                span.status-badge.effective Effective
+                            td
+                                .file-box
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | English
+                                        span.file-info  (PDF, 3.2 MB)
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | العربية
+                                        span.file-info  (PDF, 3.0 MB)
+                        tr.content-row
+                            td
+                                .file-name
+                                    p.fs-20 Qatar – Austria Double Taxation Agreement
+                                    .file-tags
+                                        span.tag DTA
+                                        span.tag QFC-DTA-JPN-2023
+                            td
+                                p.fs-18.fw-medium 20 Dec 2009
+                            td
+                                span.status-badge.effective Effective
+                            td
+                                .file-box
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | English
+                                        span.file-info  (PDF, 3.2 MB)
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | العربية
+                                        span.file-info  (PDF, 3.0 MB)
+                        tr.content-row
+                            td
+                                .file-name
+                                    p.fs-20 Qatar – China Double Taxation Agreement
+                            td
+                                p.fs-18.fw-medium 01 Jan 1993
+                            td
+                                span.status-badge.on-hold On Hold
+                            td
+                                .file-box
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | English
+                                        span.file-info  (PDF, 3.2 MB)
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | العربية
+                                        span.file-info  (PDF, 3.0 MB)
+                        tr.content-row
+                            td
+                                .file-name
+                                    p.fs-20 Qatar – France Double Taxation Agreement
+                            td
+                                p.fs-18.fw-medium 28 Jul 2006
+                            td
+                                span.status-badge.expired Expired
+                            td
+                                .file-box
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | English
+                                        span.file-info  (PDF, 3.2 MB)
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | العربية
+                                        span.file-info  (PDF, 3.0 MB)
+                        tr.content-row
+                            td
+                                .file-name
+                                    p.fs-20 Qatar – Germany Double Taxation Agreement
+                            td
+                                p.fs-18.fw-medium 14 Apr 2010
+                            td
+                                span.status-badge.effective Effective
+                            td
+                                .file-box
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | English
+                                        span.file-info  (PDF, 3.2 MB)
+                                    a.download-link.fs-18(href="#")
+                                        i.bi.bi-file-earmark-arrow-down
+                                        | العربية
+                                        span.file-info  (PDF, 3.0 MB)
+
+

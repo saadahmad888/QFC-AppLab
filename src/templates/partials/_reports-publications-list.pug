@@ -1,0 +1,144 @@
++section('updates') 
+    .row.mb-5.pb-3 
+        .col.mb-3
+            +tabList('simpleTabs', 
+                {item: 'Annual Reports', id: 'annualreport-tab', targetID: 'annualreport', class: 'active'}, 
+                {item: 'Research & Reports', id: 'researchreport-tab', targetID: 'researchreport'},
+                {item: 'Mixed Reports', id: 'mixedreports-tab', targetID: 'mixedreports'})
+        .col-auto.mb-3
+            +filterFields({type: 'searchbox', name: 'Search'}, {type: 'select2box', options:['All Categories', 'Category1']},
+            {type: 'select2box', options:['All Language', 'Category1']}, {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+    .row 
+        .col-12
+            .tab-content
+                .tab-pane.active#annualreport
+                    .row 
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-1.png')
+                                        .publications-details
+                                            span.fw-semibold.fs-20 2023
+                                            h5.card-title.fw-medium.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") View more
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-3.png')
+                                        .publications-details
+                                            span.fw-semibold.fs-20 2023
+                                            h5.card-title.fw-normal.text-secondary.fs-24 QFC Annual Review
+                                            
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") View more
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-4.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-4.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 From Regulation to Realisation: Shaping the Future of Digital Assets
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                .tab-pane#researchreport
+                    .row 
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-1.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-3.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-4.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-1.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 From Regulation to Realisation: Shaping the Future of Digital Assets
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                .tab-pane#mixedreports
+                    .row 
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-1.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+                        .col-12.col-md-6
+                            .card.mb-4.card-list.publications
+                                .card-body.p-0.h-100
+                                    .publications-wrapper.h-100
+                                        figure.mb-0
+                                            img.img-fluid(src='assets/images/public-3.png')
+                                        .publications-details
+                                            h5.card-title.fw-normal.text-secondary.fs-24 Promoting Qatar as a Global Hub for Business Growth
+                                            p.card-text.fw-normal.fs-18.mb-0 Welcome to the inaugural Digital Assets Policy Roundtable hosted in Doha, Qatar.
+                                            .publications-btns
+                                                a.btn.more-btn.fs-16(href="#") English
+                                                a.btn.more-btn.fs-16(href="") Arabic
+
+        .col-12.pt-5.d-flex.align-items-center.justify-content-center
+            a.btn.btn-transparent(href="#") 
+                span.button-text View More
+                    i.bi.bi-circle-fill

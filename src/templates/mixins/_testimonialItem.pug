@@ -1,0 +1,18 @@
+mixin testimonialItem(...list)
+    each item in list
+        .testimonial-wrapper(class=item.className) 
+            .testimonial-content
+                if item.image==true
+                    figure
+                        img.img-fluid(src="assets/images/icons/testimonial-icon.svg", alt="Testimonial Icon")
+                if item.heading
+                    p.fs-24.fw-normal.text-primary.mb-0=item.heading
+                if item.text 
+                    p.fs-20.fw-normal=item.text
+
+            .testimonial-author.d-flex.align-items-center
+                figure.mb-0
+                    img.img-fluid(src="assets/images/yousuf-mohammed.png", alt="Yousuf Mohamed Al-Jaida")
+                .testimonial-author-info
+                    h4.fs-24.fw-medium.text-secondary Yousuf Mohamed Al-Jaida
+                    p.fs-16.fw-normal.mb-0 Chief Executive Officer, QFC Authority

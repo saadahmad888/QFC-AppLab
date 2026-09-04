@@ -1,0 +1,47 @@
+.fsb-relevant-information-section {
+    .section-heading {
+        .title,
+        h2 {
+            color: #521892;
+            margin-bottom: 2.5rem;
+        }
+    }
+    #fsb-relevant-info {
+        &.accordion {
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            .accordion-item{
+                border-bottom: 1px solid #D5D7DA !important;
+                border-radius: 0;
+                &:last-child{
+                    border-bottom: 0 !important;
+                }
+                .accordion-button{
+                    &::after{
+                        background-color: #F9FAFB;
+                    }
+                }
+                .desc{
+                    margin-bottom: 1.5rem;
+                }
+                .file-item{
+                    display: flex;
+                    width: fit-content;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 8px;
+                    margin-bottom: 1.5rem;
+                    color: #421375;
+                    font-weight: 500;
+                }
+                .question{
+                    margin-bottom: 5px;
+                }
+                .answer{
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}

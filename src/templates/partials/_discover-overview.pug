@@ -1,0 +1,26 @@
++section('discover-qatar') 
+    .row 
+        .col-12 
+            //- Local video
+            //- .video-container.h-100.ratio 
+            //-     video.w-100.h-100(src="assets/videos/about.mp4" autoplay="" muted="" loop="" height="100%" id="overviewVideo") 
+            //-     button.discover-video-btn.video-btn#videoToggle(aria-label="Play/Pause Video")
+            //-         img(src="assets/images/icons/pause-icon.png", alt="pause icon")
+            
+            //- Youtube video
+            .video-container.h-100.ratio
+                iframe.w-100.h-100(
+                    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                )        
+    .row.py-60.mt-40 
+        .col-12.col-lg-7.flex-auto.mb-4
+            +title('mb-4','Robust Economy','Qatar’s strategic focus on sustainable progress favours resolute economic diversification and broadened participation with a global outlook. Its legal framework sets out progressive and well-integrated policies that seamlessly align commercial and industrial activities with Qatar National Vision 2030, a blueprint for the country’s economic, human, social, and environmental development. <br> <br> Local and international investors can establish or expand their commercial presence against the backdrop of a competitive, resilient, and fast-growing economy.  <br> <br> Grounded in an open and consistently growing business environment, Qatar’s national economic aspirations aim to strengthen opportunities for foreign direct investment (FDI), raising productivity and competitiveness on all levels.')  
+            
+            a.btn.btn-transparent(href="#") 
+                span.button-text Read More
+        .col-12.col-lg-5.flex-auto.mb-4 
+            figure
+                img.w-100.rounded-4.discover-img(src="assets/images/discover-qatar.png") 

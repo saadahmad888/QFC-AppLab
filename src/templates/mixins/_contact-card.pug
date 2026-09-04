@@ -1,0 +1,23 @@
+mixin contactCard(name, phone, email)
+    .contact-card__wrapper
+        h3.contact-card__name.text-primary.fs-20.fw-medium= name
+        .contact-card__phone.mb-2
+            - const phones = Array.isArray(phone) ? phone : [phone]
+            each phoneNumber in phones
+                .contact-card__item
+                    img(src="assets/images/icons/phone-icon.svg" width="15" height="15" alt="")
+                    a.contact-card__text.fs-18(
+                        href=`tel:${phoneNumber}`
+                    )= phoneNumber
+
+        .contact-card__email.mb-2
+            - const emails = Array.isArray(email) ? email : [email]
+            each emailAddress in emails
+                .contact-card__item
+                    img(src="assets/images/icons/mail-icon.svg" width="15" height="15" alt="")
+                    a.contact-card__text.fs-18(
+                        href=`mailto:${emailAddress}`
+                    )= emailAddress
+
+
+

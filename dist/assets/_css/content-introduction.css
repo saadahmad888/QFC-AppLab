@@ -1,0 +1,81 @@
+/* =============================================================================
+   Content Introduction Component
+   Author: Applab
+   Description: An optional eyebrow label, large headline, and rich-text
+                description block used to introduce a page section.
+   ============================================================================= */
+
+/* ---- Section wrapper ---- */
+.content-introduction {
+    padding-block: var(--section-spacing-desktop, 100px);
+}
+
+@media (max-width: 1560px) {
+    .content-introduction {
+        padding-block: var(--section-spacing-laptop, 4rem);
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .content-introduction {
+        padding-block: var(--section-spacing-tablet, 3rem);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .content-introduction {
+        padding-block: var(--section-spacing-mobile, 2rem);
+    }
+}
+
+/* ---- Eyebrow title ---- */
+.ci-eyebrow {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+/* ---- Main headline ---- */
+.ci-headline {
+    font-size: 48px;
+    font-weight: 700;
+    color: #521892;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1199.98px) {
+    .ci-headline {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ci-headline {
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ---- Description ---- */
+.ci-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.7;
+    max-width: 900px;
+}
+
+.ci-description p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .ci-description {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,75 @@
++section('business-tools-sec')
+    .business-tools-sec-inner
+        .row
+            .col-12
+                .section-heading
+                    +title('mb-3', 'Tools that power your business','')
+                    p.description.fs-22.fw-normal.text-secondary
+                        |Empowering you at every step with smart, scalable solutions designed to accelerate your business success.
+        .pointer-tabs
+            .row
+                .col-lg-7.col-12.order-lg-13.order-23
+                    .pointer-tabs-link-box
+                        #nav-pills-tab.nav.flex-column.nav-pills.me-3(role='tablist' aria-orientation='vertical')
+                            .gradient-opacity-box
+                            button.fs-22#reporting-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#reporting-content' type='button' role='tab' aria-controls='reporting-content' aria-selected='true') Compliance & Reporting
+                            button.fs-22#company-tab.nav-link(data-bs-toggle='pill' data-bs-target='#company-content' type='button' role='tab' aria-controls='company-content' aria-selected='false') Company Setup
+                            button.fs-22#operations-tab.nav-link(data-bs-toggle='pill' data-bs-target='#operations-content' type='button' role='tab' aria-controls='operations-content' aria-selected='false') Operations Services
+                            button.fs-22#registration-tab.nav-link(data-bs-toggle='pill' data-bs-target='#registration-content' type='button' role='tab' aria-controls='registration-content' aria-selected='false') Registration Services
+                            button.fs-22#offices.nav-link(data-bs-toggle='pill' data-bs-target='#offices-content' type='button' role='tab' aria-controls='offices-content' aria-selected='false') Offices & Co-Working
+
+                .col-lg-5.col-12.order-lg-23.order-13
+                    .pointer-tabs-content-box
+                        #nav-pills-tabContent.tab-content
+                            #reporting-content.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='reporting-tab' tabindex='0') 
+                                .pointer-tabs-content-item
+                                    figure
+                                        img(src="assets/images/tool1.png" alt="")
+                                    h4.title.fs-24.fw-normal.text-black.mb-3
+                                        |Compliance & Reporting
+                                    p.desc.fs-20.fw-normal.text-gray-color.mb-4
+                                        |Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.
+                                    a.updated-primary-btn.fs-16.fw-medium(href="#")
+                                        |Explore
+                            #company-content.tab-pane.fade(role='tabpanel' aria-labelledby='company-tab' tabindex='0')
+                                .pointer-tabs-content-item
+                                    figure
+                                        img(src="assets/images/tool2.png" alt="")
+                                    h4.title.fs-24.fw-normal.text-black.mb-3
+                                        |Company Setup
+                                    p.desc.fs-20.fw-normal.text-gray-color.mb-4
+                                        |Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.
+                                    a.updated-primary-btn.fs-16.fw-medium(href="#")
+                                        |Explore
+                            #operations-content.tab-pane.fade(role='tabpanel' aria-labelledby='operations-tab' tabindex='0')
+                                .pointer-tabs-content-item
+                                    figure
+                                        img(src="assets/images/tool3.png" alt="")
+                                    h4.title.fs-24.fw-normal.text-black.mb-3
+                                        |Operations Services
+                                    p.desc.fs-20.fw-normal.text-gray-color.mb-4
+                                        |Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.
+                                    a.updated-primary-btn.fs-16.fw-medium(href="#")
+                                        |Explore
+                            #registration-content.tab-pane.fade(role='tabpanel' aria-labelledby='registration-tab' tabindex='0')
+                                .pointer-tabs-content-item
+                                    figure
+                                        img(src="assets/images/tool1.png" alt="")
+                                    h4.title.fs-24.fw-normal.text-black.mb-3
+                                        |Registration Services
+                                    p.desc.fs-20.fw-normal.text-gray-color.mb-4
+                                        |Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.
+                                    a.updated-primary-btn.fs-16.fw-medium(href="#")
+                                        |Explore
+                            #offices-content.tab-pane.fade(role='tabpanel' aria-labelledby='offices' tabindex='0')
+                                .pointer-tabs-content-item
+                                    figure
+                                        img(src="assets/images/tool2.png" alt="")
+                                    h4.title.fs-24.fw-normal.text-black.mb-3
+                                        |Offices & Co-Working
+                                    p.desc.fs-20.fw-normal.text-gray-color.mb-4
+                                        |Start by confirming whether your business activity is permitted under QFC’s legal and regulatory framework. QFC licenses a wide range of non-regulated sectors and regulated sectors through the QFC Regulatory Authority.
+                                    a.updated-primary-btn.fs-16.fw-medium(href="#")
+                                        |Explore
+
+

@@ -1,0 +1,51 @@
+.fsb-setup-process-section {
+    &-inner {
+        background-color: #f9fafb;
+        border-radius: 16px;
+        padding: 48px;
+        @include media-breakpoint-down(md) {
+            padding: 20px;;
+        }
+        .section-heading {
+            .sub-title,
+            p {
+                color: #000;
+                margin-bottom: 0;
+            }
+            .title,
+            h2 {
+                color: #521892;
+                margin-bottom: 1rem;
+            }
+            .desc {
+                margin-bottom: 2rem;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 16px;
+            }
+        }
+        #fsb-process-step {
+            margin-top: 60px;
+            &.accordion {
+                background-color: transparent;
+                padding: 0;
+                border-radius: 0;
+                &:last-child{
+                    border-bottom: 0 !important;
+                }
+                .accordion-item {
+                    border-bottom: 1px solid #e6e6e6 !important;
+                    border-radius: 0 !important;
+                    .accordion-button {
+                        font-weight: 500;
+                        &::after {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

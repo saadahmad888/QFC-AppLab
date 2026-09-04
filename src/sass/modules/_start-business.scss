@@ -1,0 +1,119 @@
+.setup {
+    background: linear-gradient(298.1deg, #895EBB 3.27%, var(--violet) 125.83%);
+    border-radius: 16px 0 0 16px;
+    padding: 6rem 4rem;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+
+    html[dir="rtl"] & {
+        border-radius: 0 16px 16px 0px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 40px 15px !important;
+        border-radius: 16px;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .btn {
+        @include media-breakpoint-down(md) {
+            padding-inline: 10px !important;
+            height: 40px
+        }
+
+        @include btnColor(var(--white));
+        span {
+            @include btnSpan();
+        }
+        &:hover {
+            background: linear-gradient(-93.64deg, #25125A -23.72%, #603F83 82.41%);
+            span {
+                // transform: translateX(16px);
+                // html[dir="rtl"] & {
+                //     transform: translateX(-16px);
+                // }
+                i {
+                    opacity: 0;
+                    transform: translateX(500%);
+                    html[dir="rtl"] & {
+                        transform: translateX(-500%);
+                    }
+                }
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &.btn-transparent {
+            border: 1px solid rgba(51, 51, 51, 0.1019607843);
+            color: #603F83;
+            i {
+                color: var(--purple) !important;
+            }
+        }
+    }
+}
+
+.setup-figure {
+    @include media-breakpoint-down(md) {
+        padding: 0 !important;
+        border-radius: 16px !important;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 16px 16px 0px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    html[dir="rtl"] & {
+        border-radius: 16px 0 0 16px;
+
+        &.ps-0 {
+            padding-inline-start: 0 !important;
+        }
+    }
+
+    figure {
+        height: 100%;
+        max-width: 100%;
+        margin: 0;
+
+        img {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+.start-business:has(.new-styles){
+    padding-block: 60px;
+    &:hover{
+        .setup-figure figure{
+            
+            img{
+                scale: none;
+            }
+        }
+    }
+    .setup-figure figure{
+        border-radius: 0 16px 16px 0;
+        img{
+            width: 100%;
+        }
+    }
+    .new-styles{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}

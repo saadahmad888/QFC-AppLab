@@ -1,0 +1,323 @@
+section.ng-activities-section
+    .container-lg
+        .row
+            .col-lg-7.col-md-6.col-12.order-lg-1.order-md-1.order-2
+                .section-heading
+                    h2.fs-40.fw-medium.text-primary
+                        |Non-Regulated Activities
+                    p.fs-20.fw-normal.text-gray3
+                        |Complete reference guide for business licensing codes, activity descriptions, and regulatory conditions in the Qatar Financial Centre
+            .col-lg-5.col-md-6.col-12.order-lg-2.order-md-2.order-1
+                .expandable-search
+                    .input-group
+                        input.form-control.fs-16.fw-medium(type='text' placeholder='Search' aria-label='Search' aria-describedby='expandable-search-input')
+                        span#expandable-search-input.input-group-text 
+                            button(type="button")
+                                img(src="assets/images/icons/search.svg" alt="Search Icon")
+
+        .row
+            .col-lg-4.col-md-4.col-12
+                .ng-activities-nav
+                    #nav-pills-tab.nav.flex-column.nav-pills(role='tablist' aria-orientation='vertical')
+                        button#reporting-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#reporting-content' type='button' role='tab' aria-controls='reporting-content' aria-selected='true') Shipping & Maritime Services
+                            ul
+                                li
+                                    a.fs-20.fw-normal(href="#c1") C1. Shipping Agents
+                                li
+                                    a.fs-20.fw-normal(href="#c2") C2. Ship Broking
+                                li
+                                    a.fs-20.fw-normal(href="") C3. Private Credit Rating
+                                li
+                                    a.fs-20.fw-normal(href="") C4. Vessel Classification
+                        
+                        button#headquarters-tab.nav-link(data-bs-toggle='pill' data-bs-target='#headquarters-content' type='button' role='tab' aria-controls='headquarters-content' aria-selected='false') Headquarters & Treasury Operations
+                            ul
+                                li
+                                    a.fs-20.fw-normal(href="") C5. Shipping Agents
+                                li
+                                    a.fs-20.fw-normal(href="") C6. Ship Broking
+                                li
+                                    a.fs-20.fw-normal(href="") C7. Private Credit Rating
+                                li
+                                    a.fs-20.fw-normal(href="") C8. Vessel Classification
+                                li
+                                    a.fs-20.fw-normal(href="") C9. Vessel Classification
+                        button#professional-tab.nav-link(data-bs-toggle='pill' data-bs-target='#professional-content' type='button' role='tab' aria-controls='professional-content' aria-selected='false') Professional Services
+                            ul
+                                li
+                                    a.fs-20.fw-normal(href="#c10") C10. Advisory and Consultancy
+                                li
+                                    a.fs-20.fw-normal(href="") C11. Software Resale and Distribution
+                                li
+                                    a.fs-20.fw-normal(href="") C12. Information Technology and Programming
+                                li
+                                    a.fs-20.fw-normal(href="") C13. FinTech Services
+                                li
+                                    a.fs-20.fw-normal(href="") C13A. Token Services
+                        button#trust-tab.nav-link(data-bs-toggle='pill' data-bs-target='#trust-content' type='button' role='tab' aria-controls='trust-content' aria-selected='false') Trusts & Fiduciary Services
+                            ul
+                                li
+                                    a.fs-20.fw-normal(href="") C13. Shipping Agents
+                                li
+                                    a.fs-20.fw-normal(href="") C14. Ship Broking
+                                li
+                                    a.fs-20.fw-normal(href="") C15. Private Credit Rating
+                                li
+                                    a.fs-20.fw-normal(href="") C16. Vessel Classification
+                        button#company-tab.nav-link(data-bs-toggle='pill' data-bs-target='#company-content' type='button' role='tab' aria-controls='company-content' aria-selected='false') Company Administration & Insolvency
+                            ul
+                                li
+                                    a.fs-20.fw-normal(href="") C17. Shipping Agents
+                                li
+                                    a.fs-20.fw-normal(href="") C18. Ship Broking
+                                li
+                                    a.fs-20.fw-normal(href="") C19. Private Credit Rating
+                                li
+                                    a.fs-20.fw-normal(href="") C20. Vessel Classification
+
+            .col-lg-8.col-md-8.col-12
+                .ng-activities-tabs
+                    #nav-pills-tabContent.tab-content
+                        #reporting-content.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='reporting-tab' tabindex='0') 
+                            .main-heading
+                                h4.fs-32.fw-medium.text-black
+                                    |Shipping & Maritime Services
+                                p.fs-20.fw-normal.text-gray3
+                                    |Vessel agency, ship broking, classification services, and credit rating for maritime activities.
+                                a.fs-18.fw-medium.link-with-double-arrow(href="#")
+                                    |Click here to view the full Non-Regulated Activities 
+                            .ng-detail-box#c1
+                                .ng-detail-box-inner
+                                    .tag-box
+                                        p.tag.fs-24.fw-medium.text-black
+                                            |C1
+                                    .detailed-content
+                                        .heading-box
+                                            h5.fs-24.fw-medium.text-black
+                                                |Shipping Agents
+                                            p.fs-20.fw-normal.text-gray3
+                                                |Activities related to the management, agency, and operational support of vessels and maritime transport.
+                                        .list-box
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5230-001
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Arranging and negotiating the buying and selling of ships for unaffiliated Persons
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5230-002
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Handling paperwork and customs (and other requirements relating to shipping)
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5230-003
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Organising storage, fuel and maintenance of vessels
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5230-004
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Other ancillary services relating to shipping agencies
+                                        .shipping-agent-box
+                                            p.title.fs-20.fw-semibold.text-primary.text-uppercase
+                                                |Shipping Agents
+                                            .shipping-agent-list
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |Custom Clearance:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |Unless otherwise permitted by the QFCA, may not provide custom clearance services to any Person.
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |Port Authority:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |All activities subject to compliance with Qatar Ports Management Authority regulations.
+                            .ng-detail-box#c2
+                                .ng-detail-box-inner
+                                    .tag-box
+                                        p.tag.fs-24.fw-medium.text-black
+                                            |C2
+                                    .detailed-content
+                                        .heading-box
+                                            h5.fs-24.fw-medium.text-black
+                                                |Ship Broking
+                                            p.fs-20.fw-normal.text-gray3
+                                                |Chartering, sale and purchase broking, and maritime commercial negotiation services.
+                                        .list-box
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-001
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Arranging or negotiating the employment of a vessel
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-002
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Arranging the transportation of goods and commodities
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-003
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Brokerage for time and bareboat charter
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-004
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Other ancillary services relating to ship broking
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-005
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Initiating and originating deals for the sale of ships
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-006
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Assisting in negotiations for the sale of ships
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |5231-007
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Assisting in drawing up a contract for sale of ships
+                                            
+                                        .shipping-agent-box
+                                            p.title.fs-20.fw-semibold.text-primary.text-uppercase
+                                                |Shipping Agents
+                                            .shipping-agent-list
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |Custom Clearance:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |Unless otherwise permitted by the QFCA, may not provide custom clearance services to any Person.
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |Qualified Brokers:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |Personnel must hold recognized maritime brokerage qualifications or equivalent experience.
+                        #headquarters-content.tab-pane.fade(role='tabpanel' aria-labelledby='headquarters-tab' tabindex='0') Data not Found...
+                        #professional-content.tab-pane.fade(role='tabpanel' aria-labelledby='professional-tab' tabindex='0')
+                            .main-heading
+                                h4.fs-32.fw-medium.text-black
+                                    |Professional Services
+                                p.fs-20.fw-normal.text-gray3
+                                    |Advisory, consultancy, IT, legal, accounting, architectural, and administrative professional services.
+                                //- a.fs-18.fw-medium.link-with-double-arrow(href="#")
+                                //-     |Click here to view the full Non-Regulated Activities
+                            .ng-detail-box#c10
+                                .ng-detail-box-inner
+                                    .tag-box
+                                        p.tag.fs-24.fw-medium.text-black
+                                            |C10
+                                    .detailed-content
+                                        .heading-box
+                                            h5.fs-24.fw-medium.text-black
+                                                |Advisory and Consultancy
+                                            p.fs-20.fw-normal.text-gray3
+                                                |Management consulting, tax, HR, immigration, and specialized industry advisory services.
+                                        .list-box.with-title
+                                            .title-box
+                                                .tag-box
+                                                    p.tag.fs-20.fw-medium.text-primary
+                                                        |C10.1
+                                                h6.fs-20.fw-medium.text-primary
+                                                    |Management and Business Consulting
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-001
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Strategic, operating model and organisational planning
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-002
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Financial planning and budgeting
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-003
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Providing advice on the feasibility of entering new businesses or markets
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-004
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Reviewing data and assisting in the preparation of initial public offering documents and private placement documents
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-005
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Advising clients on how to fund their business
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-006
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Business and investment valuations and other financial modelling
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-018
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Advising on mergers, joint ventures and acquisitions
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-007
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Human resources strategy and talent management advisory
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |7020-008
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Immigration and workforce mobility consulting
+                                        .list-box.with-title
+                                            .title-box
+                                                .tag-box
+                                                    p.tag.fs-20.fw-medium.text-primary
+                                                        |C10.2
+                                                h6.fs-20.fw-medium.text-primary
+                                                    |Tax Consultancy
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |6920-001
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Advising on tax issues
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |6920-002
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Tax compliance services
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |6920-004
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Preparation of tax returns
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |6920-006
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Transfer pricing advisory and documentation
+                                            .list-item
+                                                p.list-title.fs-20.fw-medium.text-black
+                                                    |6920-007
+                                                p.list-desc.fs-20.fw-normal.text-black
+                                                    |Tax dispute resolution and representation services
+                                            
+                                        .shipping-agent-box
+                                            p.title.fs-20.fw-semibold.text-primary.text-uppercase
+                                                |General Conditions
+                                            .shipping-agent-list
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |Professional Competence:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |Must possess required knowledge and skill for carrying on all activities set out in its licence (Rule 3.7).
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |No Regulated Activities:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |May not carry on any Regulated Activity unless holding appropriate approval from the QFCRA.
+                                                .shipping-agent-list-item
+                                                    p.list-title.fs-20.fw-medium.text-primary
+                                                        |Indemnity Insurance:
+                                                    p.list-desc.fs-20.fw-normal.text-gray3
+                                                        |Professional indemnity insurance required for all advisory activities (minimum QAR 2,000,000).
+                            
+                        #trust-content.tab-pane.fade(role='tabpanel' aria-labelledby='trust-tab' tabindex='0') Data not Found...
+                        #company-content.tab-pane.fade(role='tabpanel' aria-labelledby='company-tab' tabindex='0') Data not Found...

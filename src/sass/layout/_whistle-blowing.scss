@@ -1,0 +1,42 @@
+.reporting-channels {
+    ul {
+        padding-left: 20px;
+        li {
+            margin-bottom: 3px;
+            list-style: disc;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    a.btn {
+        margin-top: 20px;
+    }
+}
+
+.about-us {
+    .video-container {
+        overflow: hidden;
+        --bs-aspect-ratio: 58.15%;
+
+        .video-btn {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            &.bottom-right {
+                top: unset;
+                left: unset;
+                inset-inline-start: 32px;
+                inset-block-end: 32px;
+                transform: unset;
+            }
+        }
+    }
+}
+
+.empowering {
+    .ratio {
+        --bs-aspect-ratio: 58.15%;
+    }
+}

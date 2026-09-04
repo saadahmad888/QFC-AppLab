@@ -1,0 +1,26 @@
++section('financial-partners sec-padding pt-5 pt-lg-0 pb-5')
+    .row
+        .col-12
+            h2.fs-40.text-primary.fw-medium.mb-lg-5.mb-4 Our Trusted Partner
+    //- .financial-partners-marquee
+    //-     .financial-partners-slick
+    //-         each i in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
+    //-             .financial-partners-marquee__item
+    //-                 img(
+    //-                 src=`assets/images/partner-${i}.png`
+    //-                 width="140"
+    //-                 height="48"
+    //-                 alt="Partner"
+    //-                 loading="eager"
+    //-                 decoding="sync"
+    //-                 )
+    .financial-partners-marquee
+        .financial-partners-marquee__track
+            each i in [1,2,3,4,5,1,2,3,4,5]
+                .financial-partners-marquee__item
+                    img(
+                        src=`assets/images/partner-${i}.png`
+                        width="140"
+                        height="48"
+                        alt="Partner"
+                    )

@@ -1,0 +1,149 @@
+#simpleTabs{
+    border: 0;
+    .nav{
+        &-link{
+            background: var(--white);
+            color: var(--dark-grey);
+            border: 0;
+            padding: 16px;
+            font-weight: 400;
+            &.active{
+                color: var(--violet);
+                border-bottom: 3px solid var(--violet);
+                font-weight: 500;
+            }
+            @include media-breakpoint-down(sm){
+                padding: 12px 8px;
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+.leadership{
+    .tab-content{
+        margin-top: 40px;
+    }
+}
+.element-card{
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+    figure{
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        max-width: 245px;
+        margin: 0 auto;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            background: #3D126B;
+            border-radius: 50%;
+            z-index: -1;
+            aspect-ratio: 1;
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    img{
+        aspect-ratio: 238 / 285;
+        object-fit: cover;
+        border-radius: 0 0 210px 210px !important;
+    }
+    h4{
+        text-align: center;
+    }
+    p{
+        color: var(--dark-grey);
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    &:hover{
+        figure{
+            scale: 1.05;
+        }
+    }
+}
+#leadershipModal{
+    width: 700px;
+    @include media-breakpoint-up(xl){
+        height: 100vh;
+    }
+    border-radius: 0;
+    overflow-x: hidden;
+    z-index: 99999;
+
+    &.designated-location-modal{
+        width: 50%;
+        @media only screen and (max-width: 575.98px){
+            width: 100%;
+        }
+    }
+    
+    // &::before{
+    //     content: "";
+    //     position: absolute;
+    //     background: url('../images/icons/pattern-new-white.svg') no-repeat top right;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: -1;
+    //     background-size: contain;
+    //     inset-inline-end: -100px;
+    // }
+    .offcanvas{
+        &-header{
+            padding-block-end: 0;
+            .btn-close{
+                border: 1px solid #C0C0C0;
+                padding: 16px;
+                border-radius: 50%;
+                background: none;
+                background-color: var(--white);
+                opacity: 1;
+                display: flex;
+                align-items: center;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    background-color: var(--violet);
+                    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+                    background-image: none;
+                    mask-repeat: no-repeat;
+                    mask-size: 12px;
+                    mask-position: center center;
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover{
+                    background-color: var(--violet);
+                    &::after{
+                        background-color: var(--white);
+                    }
+                }
+            }
+        }
+        &-body{
+            padding-inline: 50px;
+            padding-block-start: 0;
+            position: relative;
+            @include media-breakpoint-down(md){
+                padding-inline: 15px;
+            }
+            .element-card{
+                h3, h5, p{
+                    text-align: start;
+                }
+                .col-md-8{
+                    place-content: center;
+                    margin-top: 24px;
+                }
+                @include media-breakpoint-down(md){
+                    h3, h5{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

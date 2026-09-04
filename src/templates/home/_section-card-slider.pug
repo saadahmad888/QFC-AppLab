@@ -1,0 +1,20 @@
++section('start-journey pb-0')
+    .row 
+        .col-md-7
+            +title('mb-5', 'Start Your Journey <br> with QFC', '')
+                
+        .col-md-5 
+            .advantage-text.d-flex.flex-column.h-100
+                p.fw-normal.text-secondary.fs-22 Discover a seamless registration process designed for ease, clarity, and speed. Our team is here to guide you every step of the way
+                a.btn(href="#") 
+                    span.button-text Start your Journey 
+                        i.bi.bi-circle-fill 
+section.start-journey
+    .container-sm
+        .row
+            +sliderList('card-slider','card-slider', 
+                {index: '01', title: 'Check Eligibility', text: 'Before you begin, ensure your business activities align with QFC’s permitted sectors', image: 'assets/images/icons/paper.png'},
+                {index: '02', title: 'Submit Your Interest', text: 'Provide the necessary documentation to support your application', image: 'assets/images/icons/file.png'},
+                {index: '03', title: 'Submit Documents', text: 'Provide the necessary documentation to support your application', image: 'assets/images/icons/upload.png'}, 
+                {index: '04', title: 'Sign Agreements', text: 'Provide the necessary documentation to support your application', image: 'assets/images/icons/contract.png'},
+                {index: '05', title: 'Receive  Approval', text: 'Provide the necessary documentation to support your application', image: 'assets/images/icons/check.png'})     

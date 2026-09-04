@@ -1,0 +1,41 @@
+$font-primary: var(--primary-font);
+$width: 100%;
+
+$primary: #25125A;
+$black: #000;
+$white: #fff;
+$secondary: #333333; 
+$light-primary: #50417b;
+$gray-color: #666666;
+$grey: #6666661A;
+$purple: #603F83;
+$dark-purple: #521892;
+$violet: #3D126B;
+$dark-grey: #767676;
+$light-black: #5C5C5C;
+$border-color: #E3E3E3;
+$light-grey: #717680;
+$grey1:#D1D1D1;
+$grey2:#EBEBEB;
+$light-bg:#F4F4F4;
+$gray3: #414651;
+$color-map: (
+	primary: var(--primary),
+	white: var(--white),
+	black: var(--black),
+	secondary: var(--secondary),
+	light-primary: var(--light-primary),
+	light-bg: var(--light-bg),
+	grey: var(--grey),
+	purple: var(--purple),
+	dark-purple: var(--dark-purple),
+	violet: var(--violet),
+	dark-grey: var(--dark-grey),
+	light-black: var(--light-black),
+	border-color: var(--border-color),
+	grey1: var(--grey1),
+	grey2: var(--grey2),
+	gray-color: var(--gray-color),
+	gray3: var(--gray3),
+	light-grey: var(--light-grey)
+);

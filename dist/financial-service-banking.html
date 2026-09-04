@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap">
+    </noscript>
+    <link rel="stylesheet" href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="stylesheet" href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <noscript>
+      <link rel="stylesheet" href="assets/_css/app.css">
+    </noscript>
+    <title>Qatar Financial Service Banking</title>
+  </head>
+  <body>
+    <div class="search-backdrop"></div>
+    <header class="site-header">
+      <div class="container-lg">
+        <div class="top-nav">
+          <ul>
+            <li><a class="fs-15 fw-normal" href="">Client Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Vendor Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Resources</a></li>
+            <li><a class="fs-15 fw-normal" href="">عربي</a></li>
+            <li>
+              <div class="font-accessibility">
+                <button class="fs-15 fw-normal" type="button">A+</button>
+                <button class="fs-15 fw-normal" type="button">A-</button>
+              </div>
+            </li>
+            <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="dark" src="assets/images/QFC-logo.svg" alt="Logo"><img class="light" src="assets/images/logo-white-1.png" alt="Logo"></a>
+              <div class="d-flex gap-3">
+                <div class="search-box d-block d-lg-none">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div>
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu"><img src="assets/images/icons/menu-icons.svg" alt="hamburger icon"></button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="javascript:void(0)" data-mega-menu-trigger="megaAbout">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="doingBusiness">Doing Business</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="latestNews">Latest News</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="supportCentre">Support Centre</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end-buttons">
+                <div class="search-box">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div><a class="updated-primary-btn fs-16 fw-medium" href="">Start Your Setup</a>
+              </div>
+            </div>
+          </nav>
+          <div id="searchBox">
+            <div class="search-collapse-box">
+              <div class="input-group"><span class="input-group-text" id="search-input"> <img src="assets/images/icons/MagnifyingGlass.svg" alt=""></span>
+                <input class="form-control fs-20 fw-normal" type="text" placeholder="What are you looking for..." aria-describedby="search-input">
+              </div>
+              <button class="close" type="button"><img src="assets/images/icons/times.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="mega-menu-wrapper" id="megaMenuWrapper">
+            <div class="mega-menu-panel" id="megaAbout">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">About Us</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#">Life at QFC</a></li>
+                        <li><a href="#">Life in Qatar</a></li>
+                        <li><a href="#">Innovations</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Sample Heading</h4>
+                      <ul>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">QFC Regulatory Authority</a></li>
+                        <li><a href="#">Designated Office Premises</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Vendor Portal</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Introduction to QFC</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="doingBusiness">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Doing Business</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Business Solutions</a></li>
+                        <li><a href="#">Setup</a></li>
+                        <li><a href="#">Operate</a></li>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">Public Register</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Elite Onboarding Service</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Innovation Dome</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="latestNews">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Latest News</h4>
+                      <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Reports & Publications</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="spotlight-card"><a class="title fs-20 fw-normal" href="#">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></a>
+                        <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                        <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="supportCentre">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Support Centre</h4>
+                      <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Make an Inquiry</a></li>
+                        <li><a href="#">Resources</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">How to</h4>
+                      <ul>
+                        <li><a href="#">Submit Filings</a></li>
+                        <li><a href="#">Amend Company Details</a></li>
+                        <li><a href="#">Renew</a></li>
+                        <li><a href="#">Update UBO</a></li>
+                        <li><a href="#">Request Certificates</a></li>
+                        <li><a href="#">Access the Client Portal</a></li>
+                        <li><a href="#">Book Appointments</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" id="mobileMenu" data-bs-backdrop="static" tabindex="-1" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel"> <a class="navbar-brand" href="#"><img src="assets/images/QFC-logo.svg" alt="Logo"></a></h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-body-inner">
+            <ul>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false" aria-controls="aboutUs">About Us<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="aboutUs">
+                  <p class="nav-title">About Us</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Ecosystem</a></li>
+                    <li><a href="#">Life at QFC</a></li>
+                    <li><a href="#">Life in Qatar</a></li>
+                    <li><a href="#">Innovations</a></li>
+                  </ul>
+                  <p class="nav-title">Sample Heading</p>
+                  <ul>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">QFC Regulatory Authority</a></li>
+                    <li><a href="#">Designated Office Premises</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Vendor Portal</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Introduction to QFC</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#business" role="button" aria-expanded="false" aria-controls="business">Doing Business<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="business">
+                  <p class="nav-title">Doing Business</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#">Setup</a></li>
+                    <li><a href="#">Operate</a></li>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">Public Register</a></li>
+                  </ul>
+                  <p class="nav-title">Elite Onboarding Service</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Innovation Dome</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#latestNews" role="button" aria-expanded="false" aria-controls="latestNews">Latest News<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="latestNews">
+                  <p class="nav-title">Latest News</p>
+                  <ul>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reports & Publications</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                  </ul>
+                  <div class="spotlight-card">
+                    <p class="title fs-20 fw-normal">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></p>
+                    <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                    <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                  </div>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#sportsCenter" role="button" aria-expanded="false" aria-controls="sportsCenter">Support Centre<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="sportsCenter">
+                  <p class="nav-title">Support Centre</p>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Make an Inquiry</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                  <p class="nav-title">How to</p>
+                  <ul>
+                    <li><a href="#">Submit Filings</a></li>
+                    <li><a href="#">Amend Company Details</a></li>
+                    <li><a href="#">Renew</a></li>
+                    <li><a href="#">Update UBO</a></li>
+                    <li><a href="#">Request Certificates</a></li>
+                    <li><a href="#">Access the Client Portal</a></li>
+                    <li><a href="#">Book Appointments</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-nav">
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">Client Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Vendor Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Resources</a></li>
+            </ul>
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">عربي</a></li>
+              <li>
+                <div class="font-accessibility">
+                  <button class="fs-16 fw-normal" type="button">A+</button>
+                  <button class="fs-16 fw-normal" type="button">A-</button>
+                </div>
+              </li>
+              <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+        <div class="inner-banner">
+          <div class="inner-banner-holder position-relative inner-banner-normal">
+            <div class="container-lg">
+              <div class="row"> 
+                <div class="col-12">
+                  <div class="banner-title">
+                        <h4 class="section-title fw-normal text-primary fs-40">Banking</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="breadcrumb-menu" id="">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col"> 
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Financial Solutions</a></li>
+                    <li class="breadcrumb-item"><a class="active " href="financial-service-banking.html">Traditional Finance Banking</a></li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+    <div class="text-media-block">
+      <div class="container-lg">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 col-md-6 col-12">
+            <div class="content-box">
+              <h4 class="title fs-40 fw-medium text-primary">Your Partner in Traditional Financial Services</h4>
+              <p class="content-para fs-20 fw-normal text-secondary">The QFC’s banking ecosystem initiates business success by turning possibility into momentum. Under the QFC framework, firms operate in a well-regulated environment to offer a full range of traditional banking activities, from deposit-taking, and credit facilities to investment and treasury services, delivered with the excellence that today's markets demand.<br>Firms can also serve clients across private banking, corporate and wholesale banking, wealth management, investment banking, and treasury functions. <br>At QFC, a business is more than a transaction; every client becomes a financial partner that contributes to Qatar’s expanding financial landscape. </p>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 col-md-6 offset-md-0 col-12">
+            <div class="media-box">
+              <div class="media-image">
+                <figure class="tmb-figure"><img src="assets/images/financial-service-banking/media-block.png" alt="Qatar Financial Centre"></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <section class="fsb-what-we-offer-section pt-0">
+          <div class="container-lg">
+            <div class="fsb-what-we-offer-section-inner">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="sub-title fs-14 fw-medium">WHAT WE OFFER </p>
+                    <h2 class="title fs-40 fw-semibold">Explore the Range of Activities we License </h2>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="fsb-what-we-offer-section-inner-col">
+                    <h3 class="heading fs-32 fw-medium">Regulated Activities </h3>
+                    <ul>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Deposit-taking  </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Arranging credit facilities </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Private banking </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Investment banking and advisory services </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Lending and structured finance </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Wealth management and portfolio services </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="fsb-what-we-offer-section-inner-col second-item">
+                    <h3 class="heading fs-32 fw-medium">Non-regulated activities</h3>
+                    <h4 class="sub-heading fs-20 fw-medium text-primary">Treasury and Management Offices</h4>
+                    <ul>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Intra-group treasury operations </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Group holding and management office </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Company headquarters and administrative support functions </p>
+                      </li>
+                    </ul>
+                    <h4 class="sub-heading fs-20 fw-medium text-primary">Financial Consulting and Advisory<span>(excluding regulated investment advice)</span></h4>
+                    <ul>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Strategic planning, budgeting and feasibility studies </p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Risk management and business restructuring </p>
+                      </li>
+                    </ul>
+                    <h4 class="sub-heading fs-20 fw-medium text-primary">Credit Rating and Investment Grading</h4>
+                    <ul>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Private credit rating services on a contractual basis</p>
+                      </li>
+                      <li>
+                        <p class="fs-20 fw-normal text-black">Ratings may only be published publicly with prior Qatar Financial Centre Authority (QFCA) approval.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fsb-why-company-section pt-0">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading">
+                  <h2 class="title fs-40 fw-semibold">Here’s why companies choose to set up a business with QFC:</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="fsb-why-company-section-item"><img src="assets/images/icons/shake-hands.svg" alt="">
+                  <p class="title fs-24 fw-medium text-black">100% foreign ownership</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="fsb-why-company-section-item"><img src="assets/images/icons/users.svg" alt="">
+                  <p class="title fs-24 fw-medium text-black">100% repatriation of profits</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="fsb-why-company-section-item"><img src="assets/images/icons/balance.svg" alt="">
+                  <p class="title fs-24 fw-medium text-black">Trading in any currency with no restrictions</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="fsb-why-company-section-item"><img src="assets/images/icons/building.svg" alt="">
+                  <p class="title fs-24 fw-medium text-black">Competitive 10% corporate tax on locally sourced profits</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="fsb-why-company-section-item"><img src="assets/images/icons/book.svg" alt="">
+                  <p class="title fs-24 fw-medium text-black">Legal environment based on Common Law</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="fsb-why-company-section-item"><img src="assets/images/icons/file-medal.svg" alt="">
+                  <p class="title fs-24 fw-medium text-black">Access to 80+ double taxation agreements</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fsb-setup-process-section pt-0">
+          <div class="container-lg">
+            <div class="fsb-setup-process-section-inner">
+              <div class="row justify-content-between">
+                <div class="col-lg-4 col-12">
+                  <div class="section-heading">
+                    <p class="sub-title fs-14 fw-medium">GET STARTED</p>
+                    <h2 class="title fs-40 fw-semibold">Setup Process</h2>
+                    <p class="desc fs-20 fw-normal">Setting up a business at QFC is a transparent, efficient and seamless process. While requirements vary slightly for fintech firms, investment companies and fund managers, the overall journey remains the same, helping you and your business grow with confidence.</p><img src="assets/images/financial-service-banking/step-process.png" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <div class="accordion" id="fsb-process-step">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fs-24" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-process-step-accordion-collapseOne" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseOne">1. Share Your Interest</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="fsb-process-step-accordion-collapseOne">
+                        <div class="accordion-body">
+                          <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fs-24 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-process-step-accordion-collapseTwo" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseTwo">2. Confirm your activities and legal structure</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="fsb-process-step-accordion-collapseTwo">
+                        <div class="accordion-body">
+                          <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fs-24 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-process-step-accordion-collapseThree" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseThree">3. Submit your online application</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="fsb-process-step-accordion-collapseThree">
+                        <div class="accordion-body">
+                          <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fs-24 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-process-step-accordion-collapseFour" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseFour">4. Prepare your business plan</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="fsb-process-step-accordion-collapseFour">
+                        <div class="accordion-body">
+                          <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fs-24 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-process-step-accordion-collapseFive" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseFive">5. Assessment and Approval</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="fsb-process-step-accordion-collapseFive">
+                        <div class="accordion-body">
+                          <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fs-24 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-process-step-accordion-collapseSix" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseSix">6. License, Registration and Setup</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="fsb-process-step-accordion-collapseSix">
+                        <div class="accordion-body">
+                          <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fsb-relevant-information-section pt-0 pb-0">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading">
+                  <h2 class="title fs-40 fw-medium">Relevant information</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="accordion" id="fsb-relevant-info">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-relevant-info-accordion-collapseOne" aria-expanded="true" aria-controls="fsb-relevant-info-accordion-collapseOne">Guides</button>
+                    </h2>
+                    <div class="accordion-collapse collapse show" id="fsb-relevant-info-accordion-collapseOne">
+                      <div class="accordion-body">
+                        <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet</p><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">QFCRA-Guidance-on-Targeted-Financial-Sanctions.pdf<img src="assets/images/icons/chevrons-right.svg" alt="icon"></a><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">A-Guide-to-our-Approach-to-Regulation.pdf <img src="assets/images/icons/chevrons-right.svg" alt="icon"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-relevant-info-accordion-collapseTwo" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseTwo">Regulations</button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="fsb-relevant-info-accordion-collapseTwo">
+                      <div class="accordion-body">
+                        <p class="fs-18 fw-normal text-black desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dui vitae lorem interdum accumsan vel ut ante.</p><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">QFCRA-Guidance-on-Targeted-Financial-Sanctions.pdf<img src="assets/images/icons/chevrons-right.svg" alt="icon"></a><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">A-Guide-to-our-Approach-to-Regulation.pdf <img src="assets/images/icons/chevrons-right.svg" alt="icon"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-relevant-info-accordion-collapseThree" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseThree">FAQs  </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="fsb-relevant-info-accordion-collapseThree">
+                      <div class="accordion-body">
+                        <p class="question fs-20 fw-semibold text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+                        <p class="answer fs-18 fw-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dui vitae lorem interdum accumsan vel ut ante.</p>
+                        <p class="question fs-20 fw-semibold text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+                        <p class="answer fs-18 fw-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dui vitae lorem interdum accumsan vel ut ante.</p>
+                        <p class="question fs-20 fw-semibold text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+                        <p class="answer fs-18 fw-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dui vitae lorem interdum accumsan vel ut ante.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsb-relevant-info-accordion-collapseFour" aria-expanded="false" aria-controls="fsb-relevant-info-accordion-collapseFour">Resources</button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="fsb-relevant-info-accordion-collapseFour">
+                      <div class="accordion-body"><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">Link 1<img src="assets/images/icons/chevrons-right.svg" alt="icon"></a><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">Link 2<img src="assets/images/icons/chevrons-right.svg" alt="icon"></a><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">Link 3<img src="assets/images/icons/chevrons-right.svg" alt="icon"></a><a class="file-item" href="#"><img src="assets/images/icons/resource-center-icons/file-download.svg" alt="File">Access all Resources<img src="assets/images/icons/chevrons-right.svg" alt="icon"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            <section class="start-business">
+              <div class="container-lg">
+                <div class="row gx-0"> 
+                  <div class="col-md-7 setup">
+                        <h4 class="section-title fw-normal text-primary fs-40 mb-4 text-white">Get started with <br> Qatar Financial Centre</h4>
+                        <p class="sub-title fw-normal fs-20 text-white">QFC is a leading onshore business and financial centre located in Doha, committed to promoting Qatar as a major business and commercial hub at the crossroads between East and West.</p><a class="btn btn-transparent mt-5" href="#"><span class="button-text">Start Your Setup<i class="bi bi-circle-fill"> </i></span></a>
+                  </div>
+                  <div class="col-md-5 px-0 setup-figure">
+                    <figure class="mb-4"><img class="img-fluid" src="assets/images/start-career.png"></figure>
+                  </div>
+                </div>
+              </div>
+            </section>
+        <section class="fsb-additional-information-section pt-0">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading">
+                  <h2 class="title fs-40 fw-medium">Here’s why companies choose to set up a business with QFC:</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="fsb-additional-information-section-col">
+                  <h4 class="title fs-24 fw-medium text-black">Regulated activities</h4>
+                  <p class="desc fs-20 fw-normal text-black">Investment managers, insurers, asset managers, fund administrators, and representative offices follow the regulated application route, including submission of a RBP and meeting minimum capital and governance requirements.</p><a class="btn btn-transparent fs-16" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="fsb-additional-information-section-col second-item">
+                  <h4 class="title fs-24 fw-medium text-black">Non-regulated activities </h4>
+                  <p class="desc fs-20 fw-normal text-black">Fintech firms, holding companies, management offices and investment clubs follow a slightly different application track focused on business planning and eligibility. Prudential capital requirements typically do not apply to non-regulated activities </p><a class="btn btn-transparent fs-16" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <footer class="footer-sec">
+      <div class="container-lg pb-3 pb-lg-5 pt-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 text-start order-2 order-lg-1"> 
+            <div class="footer-nav w-100">
+              <h5 class="mb-2 mt-4 mt-lg-0">Subscribe to our newsletter</h5>
+              <p>We’ll send you only what matters — no noise, no spam.</p>
+            </div>
+            <div class="news-letter"> 
+              <input type="search" placeholder="Enter e-mail address" name="search"><a class="btn btn-transparent rounded-circle border-1 border" href="#"> <i class="bi bi-arrow-right text-white"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12 d-flex flex-wrap flex-md-nowrap align-items-start order-3 order-lg-2"> 
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">About QFC</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="about.html">Overview</a></li>
+                    <li><a class="nav-item nav-link" href="leadership.html">Leadership</a></li>
+                    <li><a class="nav-item nav-link" href="ecosystem.html">Ecosystem</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Business Services</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Setup Guide</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">VIP Services</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Regulatory & Legal</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Laws &amp; Regulations</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Public Register</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Insights & Media</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="news.html">News</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">White Papers</a></li>
+                    <li><a class="nav-item nav-link" href="reports-publications.html">Reports &amp; Publications</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Contact & Support</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Make an Inquiry</a></li>
+                    <li><a class="nav-item nav-link" href="FAQ.html">FAQ</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Social Media</a></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 mt-0 pt-0 mt-lg-5 pt-lg-5 order-1 order-lg-3"> <a class="logo d-flex align-items-center" href="index.html"><img class="footer-logo img-fluid mt-0" src="assets/images/logo-white-1.png" alt=""></a></div>
+          <div class="col-12 col-lg-6 mt-lg-5 pt-lg-5 mt-2 pt-2 order-4 order-lg-4"> 
+            <ul class="footer-social">
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/facebook.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/linkedin.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/instagram.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/twitter.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/youtube.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/tiktok.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg pt-3 pt-lg-4 border-top">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 copyright">
+            <p class="fw-normal mb-0">&copy; 2025 Qatar Financial Centre. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 footer-terms">
+            <div class="footer-nav d-flex align-items-start"> 
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="terms.html">Terms</a></li>
+                    <li><a class="nav-item nav-link" href="privacy-policy.html">Privacy</a></li>
+                    <li><a class="nav-item nav-link" href="cookies.html">Cookies</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+      {
+          "imports": {
+              "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+              "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+          }
+      }
+    </script>
+    <script type="module">
+      import { Popover } from 'bootstrap';
+      //- new Popover(document.getElementById('popoverButton'))
+    </script>
+  </body>
+</html>

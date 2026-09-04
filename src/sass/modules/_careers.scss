@@ -1,0 +1,163 @@
+.career {
+    &-opportunity {
+        .sub-title {
+            margin-bottom: 20px;
+        }
+    }
+}
+.button-list {
+    li {
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+        margin-bottom: 20px;
+        i {
+            color: var(--violet);
+            font-size: 16px;
+        }
+    }
+    &.list-career-opportunity {
+        padding-inline-start: 30px;
+        li {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -30px;
+                top: 15px;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 3px;
+                background-color: var(--black);
+            }
+        }
+    }
+}
+.card {
+    &-list2 {
+        // background: #f4f4f4 !important;
+        // border-radius: 16px !important;
+        // border-color: #e3e3e3;
+        height: 100% !important;
+        border: 0 !important;
+        .left-img {
+            flex: 0 0 45% !important;
+            gap: 24px;
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 100% !important;
+            }
+            figure {
+                border-radius: 16px;
+                position: relative;
+                height: 100%;
+
+                img {
+                    position: relative;
+                    width: 100%;
+                    border-radius: 16px;
+                    // scale: 1.01;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 16px;
+                    background:
+                        linear-gradient(175.17deg, #3d126b -32.5%, rgba(61, 18, 107, 0) 33.51%),
+                        linear-gradient(152.43deg, rgba(61, 18, 107, 0) 35.31%, #3d126b 140.4%);
+                }
+            }
+        }
+        .right-details {
+            padding: 0px 32px 0px 0;
+            max-height: 380px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 15px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @media (max-width: 1560px) and (min-width: 1200px) {
+                max-height: 300px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 15px;
+            }
+
+            .card-title {
+                position: sticky;
+                top: 0;
+                background-color: #f4f4f4;
+                z-index: 1;
+                padding-top: 32px;
+                padding-bottom: 10px;
+                @include media-breakpoint-down(sm) {
+                    padding-top: 15px;
+                }
+            }
+
+            .button-list {
+                padding-inline-start: 30px;
+                position: relative;
+                li {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -30px;
+                        top: 15px;
+                        transform: translateY(-50%);
+                        width: 16px;
+                        height: 16px;
+                        background-color: var(--primary);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 0;
+            gap: 24px;
+            display: flex;
+            min-height: 330px;
+            height: 330px;
+            max-height: 330px;
+            background-color: #f4f4f4;
+            border-radius: 16px;
+            border-color: #e3e3e3;
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+    &.work-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 40px 48px;
+        gap: 40px;
+        background:
+            radial-gradient(140.79% 433.23% at -5.36% -23.12%, rgba(255, 255, 255, 0) 0%, #f4f3ff 100%), #ffffff !important;
+        border: 1px solid #e3e3e3 !important;
+        box-shadow: none !important;
+        .card-title {
+            display: inline-block;
+        }
+        .card-text {
+            color: rgba(51, 51, 51, 0.8);
+        }
+        .details {
+            padding-block-start: 40px !important;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+mixin accordionItems(id, ...lists)
+    .accordion(id=id)
+        each item in lists
+            .accordion-item
+                h2.accordion-header(id=item.id)
+                    button.accordion-button.collapsed(
+                        type="button",
+                        data-bs-toggle="collapse",
+                        data-bs-target="#"+item.targetId,
+                        aria-expanded="false",
+                        aria-controls=item.targetId
+                    ) 
+                        span.pe-60=item.heading
+                .accordion-collapse.collapse(
+                    id= item.targetId,
+                    aria-labelledby=item.id,
+                )
+                    .accordion-body=item.body
+
+            

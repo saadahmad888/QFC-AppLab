@@ -1,0 +1,162 @@
+.imageSwiper {
+    &.swiper {
+        overflow-x: clip !important;
+        overflow-y: visible !important;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // @include media-breakpoint-up(xl){
+        //     overflow: visible;
+        // }
+        // @include media-breakpoint-down(xl){
+        //     padding-bottom: 60px;
+        // }
+        .swiper-slide {
+            // width: 524px !important;
+            margin-inline-end: 20px;
+
+            a {
+                color: inherit;
+            }
+
+            figure {
+                img {
+                    border-radius: 16px;
+                    aspect-ratio: 524 / 300;
+                    object-fit: cover;
+                }
+            }
+
+            .fig-caption {
+                padding-block: 1.5rem;
+
+                h2 {
+                    line-height: 31px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+
+                p {
+                    line-height: 25px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                // width: 100% !important;
+
+                figure {
+                    img {
+                        aspect-ratio: 2;
+                    }
+                }
+
+                .fig-caption {
+                    h2 {
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 18px;
+            width: auto;
+            height: 45px;
+            background: rgba(174, 174, 174, 0.2);
+            border-radius: 98px;
+            inset-inline-start: unset;
+            margin-bottom: -66px;
+            position: absolute;
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+            @include media-breakpoint-down(xl) {
+                margin-bottom: -50px;
+                position: absolute;
+                bottom: 80px;
+            }
+            html[dir="rtl"] & {
+                width: fit-content;
+                inset-inline-start: unset;
+                inset-inline-end: 50%;
+                transform: translateX(-50%);
+            }
+            .swiper-pagination-bullet {
+                width: 14px;
+                height: 14px;
+                background: var(--white) !important;
+                opacity: 1;
+
+                &.swiper-pagination-bullet-active {
+                    background: var(--purple) !important;
+                }
+            }
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: -88px;
+    gap: 8px;
+    width: 54px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    font-size: 0;
+    border: 1px solid #603f83;
+    z-index: 9;
+
+    &::after {
+        font-family: bootstrap-icons !important;
+        color: #603f83;
+        font-size: 1.25rem;
+    }
+
+    &:hover {
+        background: var(--violet);
+
+        &::after {
+            color: var(--white);
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.swiper-button-next {
+    &::after {
+        content: "\f285" !important;
+    }
+    html[dir="rtl"] & {
+        transform: scaleX(-1);
+    }
+}
+
+.swiper-button-prev {
+    inset-inline-start: unset !important;
+    inset-inline-end: 80px !important;
+    html[dir="rtl"] & {
+        transform: scaleX(-1);
+    }
+
+    @include media-breakpoint-down(sm) {
+        inset-inline-end: 60px;
+    }
+
+    &::after {
+        content: "\f284" !important;
+    }
+}

@@ -1,0 +1,34 @@
++section('video-gallery')
+    .row 
+        .col-md
+            +title('mb-4','Echos')
+        .col-md-auto 
+            +filterFields({type: 'searchbox', name: 'Search'},
+            {type: 'select2box', options:['Sort by Year', '2025', '2024', '2023', '2022']})
+    .row.py-60 
+        .col-12 
+            .gallery-container.d-flex.align-items-center#gallery-container.justify-content-center.flex-wrap
+                each item in [1,2,3,4,5,6,7,8,9,10,11,12]
+                    .gallery-wrapper
+                        .gallery-item
+                            a(href="assets/videos/video1.mp4" data-fancybox data-width="640" data-height="360")
+                                img(src="assets/images/testimonial1.png" alt="Video 1" class="img-fluid")
+                                .play-button
+                                    img(src="assets/images/icons/play-button.png" alt="Video 1" class="img-fluid")
+                        .gallery-item-details.mt-2
+                            h5.fs-24.fw-medium.text-secondary Doha Tech Angels
+                            p.fs-20.fw-normal.text-secondary Meet Sara Daniel, Managing Director of Doha Tech Angels (DTA) - Qatar’s first private investment club. DTA is on a mission to empower the next generation of tech disruptors, offering not...
+                            a(href="#" class="text-primary fs-16 fw-medium", data-bs-toggle="offcanvas" data-bs-target="#gallleryViewModal") Read more
+    include ../partials/_pagination
+
+.offcanvas.offcanvas-end(id="gallleryViewModal", tabindex="-1", aria-labelledby="gallleryViewModal")
+    .offcanvas-body 
+        button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+        .gallery-wrapper
+            .gallery-item
+                a
+                    img(src="assets/images/testimonial1.png" alt="Video 1" class="img-fluid")
+                    
+            .gallery-item-details.mt-2
+                h5.fs-24.fw-medium.text-primary Doha Tech Angels
+                p.fs-20.fw-normal.text-secondary Meet Ali Husseini, Managing Partner & CTO of Reson8 Media - where creativity meets technology to craft compelling stories and immersive experiences. Reson8 helps brands create, resonate, and innovate through cutting-edge solutions in channel branding, real-time graphics, data-driven design, and virtual storytelling.During Web Summit Qatar, Reson8 Media registered with QFC and Media City Qatar. Ali was fascinated by how fast and seamless the process was, setting the stage for Reson8’s expansion in the region’s fast-growing media landscape.

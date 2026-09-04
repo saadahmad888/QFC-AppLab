@@ -1,0 +1,67 @@
++section('contact py-60')
+    +title('mb-lg-5 mb-4 fw-medium', 'Connect with us and let’s discuss.','')
+    .row.mb-4
+        .col-12.col-md-6
+            .contact-form
+                +contactForm({column:'6', type:"text", label:"First name", placeholder:"First name", rowClass:"align-items-center gy-3"},
+                {column:'6', type:"text", label:"Last name", placeholder:"Last name"},
+                {column:'6', type:"text", label:"Email Address", placeholder:"Enter email address"},
+                {column:'6', type:"tel", label:"Phone Number", placeholder:"Enter phone number", phoneId:"phone-code"},
+                {column:'12', type:"select", label:"Reason for Contact", placeholder:"Select", options:[{value:"1", text:'Department'}]},
+                {column:'12', type:"textarea", label:"Enter your Query", placeholder:"Describe your query in detail"},
+                {column:'12', type:"file", label:"Add an attachment if any", placeholder:"Drag files here or choose from folder"},
+                {column:'12', type:"checkbox", label:"By ticking, you are accepting our Terms of use", checklabel:"checkbox-1", columnClass:"contact-form-checkbox-col"},
+                {column:'12', type:"checkbox", label:"Add me to your newsletter and keep me updated", checklabel:"checkbox-2", columnClass:"contact-form-checkbox-col"},
+                {column:'6', type:"button", label:"Submit", className:'btn'})
+        .col-12.col-md-6
+            .contact-map.overflow-hidden.h-100
+                figure.mb-0.h-100 
+                    img.w-100.h-100(src="assets/images/google-map.png", alt="location map") 
+                .contact-map-popup 
+                    h4.fs-20.fw-medium.text-secondary QFC Headquarters
+                    .contact-address
+                        p.fs-16.fw-normal.text-secondary.mb-1 Lusail Boulevard,
+                        p.fs-16.fw-normal.text-secondary.mb-1 Next to the Downtown Lusail Tram Station,
+                        p.fs-16.fw-normal.text-secondary.mb-1 Lusail Boulevard, Building 16,
+                        p.fs-16.fw-normal.text-secondary 69 Street 169, Lusail.
+                        p.fs-16.fw-normal.text-secondary.mb-1 P. O. Box: 23245, Doha-Qatar
+                    .contact-phone 
+                        p.fs-16.fw-normal.text-secondary.mb-0 
+                            img(src="assets/images/icons/contact-phone.png", alt="Phone icon")
+                            | +974 4496 7777
+                    .contact-fax
+                        p.fs-16.fw-normal.text-secondary.mb-0 
+                            img(src="assets/images/icons/contact-fax.png", alt="Phone icon")
+                            | +974 4496 7676
+                    .contact-email
+                        p.fs-16.fw-normal.text-secondary.mb-0 
+                            img(src="assets/images/icons/contact-mail.png", alt="Phone icon")
+                            | info@qfc.qa
+    .row.pt-5.align-items-lg-center 
+        .col-md-4 
+            +title('mb-3', 'Make a Complaint','We value your feedback and are committed to resolving any concerns')
+        .col-md-8
+            .d-flex.gap-4.card-wrapper
+                each item in [1,2]
+                    .card.card-list.newsletter.contact.changestyle(class=item === 2 ? 'card-second' : '')#client
+                        .card-body.p-4
+                            h5.card-title.fw-medium.text-secondary.fs-24= item === 1 ? 'Existing Clients' : 'New User?'
+                            p.card-text.fw-normal.fs-20 If you are an existing client, please raise your complaint via the client portal 
+                            if item === 2
+                                a.btn.btn-transparent.p-0.mt-2(href="#", data-bs-toggle="offcanvas", data-bs-target="#submitPopup", aria-controls="submitPopup") Submit Complaint
+                            else
+                                a(href="#", class="btn btn-transparent p-0 mt-2") Access Client Portal
+
+
+.offcanvas.offcanvas-end.h-100(id="submitPopup", tabindex="-1", aria-labelledby="submitPopup")
+    .offcanvas-header
+        button.btn-close(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+    .offcanvas-body 
+       +title('mb-3 fs-28', 'Make a Complaint','If you are an existing client, please raise your complaint via client portal. If you are a prospective client, please use this form.')
+       .contact-form
+                +contactForm({column:'6', type:"text", label:"First name", placeholder:"First name", rowClass:"align-items-center gy-3 mt-3"},
+                {column:'6', type:"text", label:"Last name", placeholder:"Last name"},
+                {column:'6', type:"text", label:"Email Address", placeholder:"Enter email address"},
+                {column:'6', type:"tel", label:"Phone Number", placeholder:"Enter phone number", phoneId:"phone-code-offcanvas"},
+                {column:'12', type:"textarea", label:"Enter your Query", placeholder:"Describe your query in detail"},
+                {column:'6', type:"button", label:"Submit", className:'btn mt-3'})

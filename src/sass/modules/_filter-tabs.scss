@@ -1,0 +1,71 @@
+.filter{
+    &-items {
+        padding: 16px 24px;
+        border: 1px solid #C0C0C0;
+        height: 54px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(sm){
+            padding: 10px;
+            height: 42px;
+            input, select{
+                font-size: 12px !important;
+            }
+        }
+        input{
+            border: 0;
+            box-shadow: none;
+            width: 100%;
+            &::placeholder{
+                color: var(--violet);
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        &.search-box{
+            display: flex;
+            width: 138px;
+            max-width: 100%;
+            transition: width 0.3s ease-in-out;
+            &:focus-within{
+                width: 320px;
+            }
+
+            &.faq{
+                position: relative;
+                &::before {
+                    content: "";
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.06348 1.66797C13.1481 1.66797 16.459 4.97887 16.459 9.06348C16.459 10.8046 15.8554 12.4035 14.8486 13.667L18.0938 16.9111C18.4188 17.2365 18.4189 17.7645 18.0938 18.0898C17.7684 18.4152 17.2405 18.415 16.915 18.0898L13.6709 14.8457C12.4068 15.8543 10.8064 16.459 9.06348 16.459C4.97887 16.459 1.66797 13.1481 1.66797 9.06348C1.66797 4.97887 4.97887 1.66797 9.06348 1.66797ZM9.06348 3.33398C5.89935 3.33398 3.33398 5.89935 3.33398 9.06348C3.33398 12.2276 5.89935 14.793 9.06348 14.793C12.2276 14.793 14.793 12.2276 14.793 9.06348C14.793 5.89935 12.2276 3.33398 9.06348 3.33398Z' fill='%233D126B'/%3e%3c/svg%3e");
+                    position: absolute;
+                    inset-inline-start: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: 1;
+                    pointer-events: none;
+                }
+            }
+        }
+        i{
+            color: var(--violet);
+        }
+        select{
+            border: 0;
+            color: var(--violet);
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    &-tabs{
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}

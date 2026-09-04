@@ -1,0 +1,36 @@
++section('journey pb-0')
+    .row.journey-sec.p-5.rounded-4
+        .col-md-7 
+            .journey-img 
+                figure.d-md-block.d-none.h-100
+                    img.img-fluid.h-100(src="assets/images/journey.png")
+                .fig-caption.d-flex.flex-column.flex-md-row.align-items-start.w-75.justify-content-between
+                    h4.fw-normal.text-primary We’ll Light the Path
+                        <br> Ahead
+                    p.d-flex.flex-column.align-items-baseline.fw-semibold.text-white 20+ 
+                        span.fs-6.fw-normal Years of Experience
+
+        .col-md-5 
+                .journey-form 
+                        +title('', 'Your QFC Journey', 'Choose who you are and what you need, and we’ll light the path ahead.', '')
+                        form
+                            .col-md-12 
+                                .form-group.my-4
+                                    label(for="role") I am a
+                                    select.form-control(id="role")
+                                        option select
+                            .col-md-12 
+                                .form-group.my-4
+                                    label(for="interest") I am interested in
+                                    select.form-control(id="interest")
+                                        option select
+                            .col-md-12 
+                                .form-group.my-4
+                                    label(for="Specifically") Specifically
+                                    select.form-control(id="Specifically")
+                                        option select
+                            .col-md-12 
+                                    .form-group.my-4
+                                    a.btn(href="#") 
+                                        span.button-text Submit 
+                                            i.bi.bi-circle-fill 

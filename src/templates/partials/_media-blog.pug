@@ -1,0 +1,25 @@
++section('updates py-4', 'media-blog')
+    .row
+        .col
+            +title('mb-4','Blogs')
+        .col-auto 
+            a.btn.btn-transparent(href="#")
+                span.button-text View All
+                    i.bi.bi-circle-fill
+    .row.mt-4.blog-list-modern
+        .col-12
+            .swiper.mediaSwiper#blogSwiper
+                .swiper-wrapper 
+                    each i in [1,2,3,4,5]
+                        .swiper-slide
+                            a.news-box.bordererd(href="").d-inline-block
+                                p.label.fs-14.position-relative Business
+                                .news-details
+                                    h2.text-secondary.fw-medium.fs-20 QFC Signs MoU With Meeza to Boost Qatar's Digital Services Sector
+                                    .date-location.d-flex.align-items-center.gap-2.mb-2
+                                        p.fs-16.text-light-black Aisha Al Mansoori
+                                        i.bi.bi-circle-fill.text-primary
+                                        p.fs-16.text-light-black 10 Jan 2023
+                                        i.bi.bi-circle-fill.text-primary
+                                        p.fs-16.text-light-black 3 mins read
+                .swiper-pagination

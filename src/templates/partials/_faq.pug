@@ -1,0 +1,40 @@
++section('faq py-5')
+    .row
+        .col-12.col-sm-3
+            .faq-menu
+                ul.faq-menu-list.p-0.m-0.list-unstyled
+                    li.has-submenu.open
+                        a.active.menu-toggle(href='#') About QFC
+                        ul.submenu 
+                            li 
+                                a(href='#' data-tab="tab-1").submenu-link.active Submenu-1
+                            li 
+                                a(href='#' data-tab="tab-2").submenu-link.active Submenu-2
+                    li
+                        a(href='#') Licensing & Registration
+                    li
+                        a(href='#') Legal & Regulatory Framework
+                    li
+                        a(href='#') Taxation & Incentives
+                    li
+                        a(href='#') Compliance & Reporting
+        .col-12.col-sm-9 
+            .filter-items.search-box.faq.mb-4
+                    input(type='text', placeholder="Search")
+            +title('mb-4 fs-28', 'Everything You Need to Know','')
+            .faq-tab#tab-1
+                +accordionItems('accordionTab1',
+                    {id: 'ac-headingOneOne', targetId: 'ac-collapseOneOnene', heading: 'Who is the CEO of Qatar Financial Centre?', body: 'QFC’s CEO is Yousuf Mohamed Al-Jaida.'},
+                    {id: 'ac-headingOneTwo', targetId: 'ac-collapseOneTwo', heading: 'What is the role of the Qatar Financial Centre (QFC)?', body: 'QFC is an onshore business and financial platform that helps startups and established businesses from around the world to set up in Qatar, with legal, tax and regulatory advantages.'},
+                    {id: 'ac-headingOneThree', targetId: 'ac-collapseOneThree', heading: 'How can I register my company with QFC?', body: 'The QFC online portal allows you to register your startup or business online.' },
+                    {id: 'ac-headingOneFour', targetId: 'ac-collapseOneFour', heading: 'How much does it cost to register a company in Qatar?', body: 'The type of business can affect thecost. For more information, please get in touch with us.'},
+                    {id: 'ac-headingOneFive', targetId: 'ac-collapseOneFive', heading: 'Is it possible for a non-Qatari to start a business in Qatar?', body: 'Yes. Up to 100% foreign ownership is permitted by QFC.'},
+                    {id: 'ac-headingOneSix', targetId: 'ac-collapseOneSix', heading: 'How long does it take to register a business in Qatar?', body: 'The registration process through QFC can be completed in 7–10 working days, on average.'})
+            .faq-tab#tab-2
+                +accordionItems('accordionTab2',
+                    {id: 'ac-headingTwoOne', targetId: 'ac-collapseTwoOne', heading: 'Who is the CEO of Qatar ?', body: 'QFC’s CEO is Yousuf Mohamed Al-Jaida.'},
+                    {id: 'ac-headingTwoTwo', targetId: 'ac-collapseTwoTwo', heading: 'What is the role of the Qatar Financial Centre (QFC)?', body: 'QFC is an onshore business and financial platform that helps startups and established businesses from around the world to set up in Qatar, with legal, tax and regulatory advantages.'},
+                    {id: 'ac-headingTwoThree', targetId: 'ac-collapseTwoThree', heading: 'How can I register my company with QFC?', body: 'The QFC online portal allows you to register your startup or business online.' },
+                    {id: 'ac-headingTwoFour', targetId: 'ac-collapseTwoFour', heading: 'How much does it cost to register a company in Qatar?', body: 'The type of business can affect thecost. For more information, please get in touch with us.'},
+                    {id: 'ac-headingTwoFive', targetId: 'ac-collapseTwoFive', heading: 'Is it possible for a non-Qatari to start a business in Qatar?', body: 'Yes. Up to 100% foreign ownership is permitted by QFC.'},
+                    {id: 'ac-headingTwoSix', targetId: 'ac-collapseTwoSix', heading: 'How long does it take to register a business in Qatar?', body: 'The registration process through QFC can be completed in 7–10 working days, on average.'})

@@ -1,0 +1,94 @@
+doctype html
+html(lang="en" dir="ltr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css")
+        noscript
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
+
+        link(rel="stylesheet", href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+        link(rel="stylesheet", href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');")
+
+        noscript
+            link(rel="stylesheet", href="assets/_css/app.css")
+
+        title Qatar Financial Service Banking
+    body
+        - let activeLink = 'About'
+
+        include ../partials/_updated-header
+        include ../mixins/_sections
+        include ../mixins/_section-title
+        include ../mixins/_breadcrumbs
+        include ../mixins/_inner-banner
+        include ../mixins/_card-list
+        include ../mixins/_slider
+        include ../mixins/_cardSwiper
+        include ../mixins/_imageSwiper
+        include ../mixins/_accordion
+        include ../mixins/_start-business
+        include ../mixins/_event-list
+
+
+
+        
+        +innerBanner('','Banking', '', 'inner-banner-normal')
+        +breadcrumbNav('', 'breadcrumb-menu','', { link: 'index.html', text: 'Home', id: 'Home'},  { link: 'index.html', text: 'Financial Solutions', id: 'FinancialSolutions'}, { link: 'financial-service-banking.html', text: 'Traditional Finance Banking', id: activeLink})
+        .text-media-block
+            .container-lg
+                .row.align-items-center.g-5
+                    .col-lg-5.col-md-6.col-12
+                        .content-box
+                            h4.title.fs-40.fw-medium.text-primary
+                                | Your Partner in Traditional Financial Services
+                            p.content-para.fs-20.fw-normal.text-secondary
+                                | The QFC’s banking ecosystem initiates business success by turning possibility into momentum. Under the QFC framework, firms operate in a well-regulated environment to offer a full range of traditional banking activities, from deposit-taking, and credit facilities to investment and treasury services, delivered with the excellence that today's markets demand.
+                                br
+                                |Firms can also serve clients across private banking, corporate and wholesale banking, wealth management, investment banking, and treasury functions. 
+                                br
+                                |At QFC, a business is more than a transaction; every client becomes a financial partner that contributes to Qatar’s expanding financial landscape. 
+                    .col-lg-6.offset-lg-1.col-md-6.offset-md-0.col-12
+                        .media-box
+                            .media-image
+                                figure.tmb-figure
+                                    img(src="assets/images/financial-service-banking/media-block.png" alt="Qatar Financial Centre")
+                            
+
+        include ../partials/_fsb-what-we-offer.pug
+        include ../partials/_fsb-why-company.pug
+        include ../partials/_fsb-setup-process.pug
+        include ../partials/_fsb-relevant-information.pug
+        +startupComponent('Get started with <br> Qatar Financial Centre', 'QFC is a leading onshore business and financial centre located in Doha, committed to promoting Qatar as a major business and commercial hub at the crossroads between East and West.','Start Your Setup','','', {image: 'assets/images/start-career.png'})
+        include ../partials/_fsb-additional-information.pug
+
+
+        include ../partials/_footer
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        //- script(src='assets/js/vendor/swiper-bundle.min.js')
+        //- script(src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js')
+        
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        script(src='assets/js/header.js')
+        script(src='assets/js/custom.js')
+
+
+        //- script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
+    
+        script(async, src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js", crossorigin="anonymous")
+        script(type="importmap").
+            {
+                "imports": {
+                    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+                    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+                }
+            }
+        script(type="module").
+            import { Popover } from 'bootstrap';
+            //- new Popover(document.getElementById('popoverButton'))
+
+        

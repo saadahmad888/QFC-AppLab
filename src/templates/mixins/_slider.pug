@@ -1,0 +1,97 @@
+include ./_card-list
+
+mixin sliderList(id, className, ...sliderItems)
+    if id === 'banner-slider'
+        .slider
+            .slide-track
+                each item in sliderItems  
+                    .slide(class=item.className) 
+                        img(src=item.image,alt="")
+                        .overlay
+                        .slide-caption 
+                            h4.text-white.fw-normal.fs-24=item.title
+                            p.fw-normal.fs-18=item.text
+                            a.know-more.text-white.fs-18(href="#") 
+                                span=item.buttontext
+                                i.bi.bi-arrow-right
+
+    if id === 'card-slider'
+
+        .swiper.pre-init.collapsed(id=id, class=className)
+            .swiper-wrapper
+                each  item in sliderItems 
+                    .swiper-slide
+                        +cardList('slider-card','card-journey', item)
+            .swiper-pagination
+
+    if id === 'testimonial-slider'
+        .slick-slider(id=id, class=className)
+            each  item in sliderItems  
+                .slide-item
+                    .row.h-100 
+                        .col-lg-6.slide-content
+                            label.btn=item.label
+                            h2.fw-normal.fs-28.text-secondary.my-4=item.heading 
+                            p.fw-normal.fs-18.text-secondary!=item.details
+                        .col-lg-6
+                            figure 
+                                img(src=item.image, class="img-fluid")
+                                .caption-div
+                                    a.btn.btn-transparent(href="#", data-bs-toggle="modal", data-bs-target="#videoModal")
+                                                img(src="assets/images/icons/pause.svg", alt="Play Video" class="img-fluid me-2")
+                                                | Play Video 
+                                    figcaption.fig-caption 
+                                        h4=item.name
+                                        .d-flex.align-items-start.justify-content-center
+                                            span 
+                                            p=item.role       
+    if id === 'image-slider'
+        each item in sliderItems 
+            .swiper-slide
+                a(href="#")
+                    figure.mb-0 
+                        img.img-fluid(src=item.image) 
+                    .fig-caption 
+                        h2.fs-24.fw-semibold.text-secondary!=item.heading 
+                        p.fs-18.fw-normal.text-secondary!=item.text
+
+    if id === 'explore-slider'
+        //- .slick-slider(class=className, id=id)
+        //-     each item in sliderItems
+        //-         .slide-item
+        //-             .row 
+        //-                 .col-lg-7
+        //-                     figure 
+        //-                         img(src=item.image, class="img-fluid")
+        //-                 .col-lg-5
+        //-                     .p-content
+        //-                         h2.fw-normal.text-primary.mb-4!=item.heading
+        //-                         p.fw-normal.text-secondary!=item.description
+        //-                         a.btn.btn-transparent.mt-3(href="#")
+        //-                             span.button-text=item.button
+        //-                                 i.bi(class=item.iconClass)
+
+        .swiper(class=className, id=id)
+            .swiper-wrapper
+                each item in sliderItems
+                    .swiper-slide
+                        .row 
+                            .col-lg-7
+                                figure 
+                                    img(src=item.image, class="img-fluid")
+                            .col-lg-5
+                                .p-content
+                                    h2.fw-normal.text-primary.mb-4!=item.heading
+                                    p.fw-normal.text-secondary!=item.description
+                                    a.btn.btn-transparent.mt-3(href="#")
+                                        span.button-text=item.button
+                                            i.bi(class=item.iconClass)
+                        
+            .swiper-button-prev
+            .swiper-button-next
+    if id === 'setup-slider'
+        .slick-slider(class=id, id=id)
+            each item in sliderItems 
+                .slide-item 
+                    figure 
+                        img(src=item.image, class="img-fluid")

@@ -1,0 +1,45 @@
+mixin newsList(...newsLists)
+    each news in newsLists   
+        .news-box 
+            if news.link
+                a(href=news.link)
+                    figure 
+                        if news.image
+                            img.img-fluid(src=news.image, alt="News Image" ,class=news.class)
+                        if (news.overlayLabel || (news.date && news.month)) && news.type
+                            p.label.fs-14=news.type
+                        if news.date && news.month
+                            .date-box 
+                                - const monthLabel = (news.month || '').toString()
+                                - const monthText = monthLabel ? (monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1)) : ''
+                                h4.fs-38.text-secondary.fw-normal=news.date
+                                hr
+                                p.fw-medium.fs-16=monthText
+            else 
+                figure 
+                    if news.image
+                        img.img-fluid(src=news.image, alt="News Image" ,class=news.class)
+                    if (news.overlayLabel || (news.date && news.month)) && news.type
+                        p.label.fs-14=news.type
+                    if news.date && news.month
+                        .date-box 
+                            - const monthLabel = (news.month || '').toString()
+                            - const monthText = monthLabel ? (monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1)) : ''
+                            h4.fs-38.text-secondary.fw-normal=news.date
+                            hr
+                            p.fw-medium.fs-16=monthText
+            .news-details
+                .date-location.d-flex.align-items-center.gap-2.mb-2
+                    if news.dateMonth
+                        p.fs-14=news.dateMonth
+                    if news.location
+                        i.bi.bi-circle-fill.text-secondary
+                        i.bi.bi-geo-alt 
+                        p.fs-14=news.location
+                    if news.readTime
+                        i.bi.bi-circle-fill.text-secondary
+                        p.fs-14=news.readTime
+                a(href=news.link).text-secondary.fw-medium.fs-20=news.text
+            if !(news.overlayLabel || (news.date && news.month)) && news.type
+                p.label.fs-14=news.type
+                            

@@ -1,0 +1,351 @@
+/* QFC Accessibility Toolbar */
+.qfc-a11y-wrapper {
+  position: relative;
+}
+
+.qfc-a11y-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.qfc-a11y-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  transition: opacity 0.2s;
+}
+
+.qfc-a11y-trigger:hover {
+  opacity: 0.8;
+}
+
+.qfc-a11y-trigger:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.qfc-a11y-trigger img {
+  width: 20px;
+  height: 20px;
+}
+
+.qfc-a11y-panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 220px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1050;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.qfc-a11y-menu.open .qfc-a11y-panel {
+  display: block;
+}
+
+html[dir="rtl"] .qfc-a11y-panel {
+  right: auto;
+  left: 0;
+}
+
+.qfc-a11y-section {
+  padding: 8px 0;
+}
+
+.qfc-a11y-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--dark-grey);
+  padding: 8px 14px 4px;
+  margin: 0;
+}
+
+.qfc-a11y-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: var(--secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.12s;
+}
+
+.qfc-a11y-option:hover {
+  background-color: var(--light-bg);
+}
+
+.qfc-a11y-option:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+.qfc-a11y-option.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.qfc-a11y-option.active::after {
+  content: '✓';
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.qfc-a11y-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 4px 0;
+  border: none;
+}
+
+/* 1. Base Dark Mode Variables (Bootstrap Native overrides) */
+html.dark-mode body,
+html.dark-mode {
+  /* Core body colors */
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --bs-body-bg-rgb: 18, 18, 18;
+  --bs-body-color-rgb: 224, 224, 224;
+
+  /* Redefine Bootstrap white/light to dark */
+  --bs-white: #1e1e1e;
+  --bs-white-rgb: 30, 30, 30;
+  --bs-light: #2d2d2d;
+  --bs-light-rgb: 45, 45, 45;
+  --bs-light-bg-subtle: #1e1e1e;
+
+  /* Component backgrounds (Cards, Modals, Offcanvas, Dropdowns) */
+  --bs-tertiary-bg: #1e1e1e;
+  --bs-secondary-bg: #2d2d2d;
+  --bs-card-bg: #1e1e1e;
+  --bs-card-color: #ffffff;
+  --bs-dropdown-bg: #1e1e1e;
+  --bs-dropdown-color: #ffffff;
+  --bs-modal-bg: #1e1e1e;
+  --bs-modal-color: #ffffff;
+  --bs-offcanvas-bg: #1e1e1e;
+  --bs-offcanvas-color: #ffffff;
+
+  /* Custom QFC Accessibility Toolbar variables */
+  --light-bg: #1e1e1e;
+  --border-color: #333333;
+  --secondary: #d0d0d0;
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* 2. Comprehensive White Module Overrides Extracted From All CSS Files */
+html.dark-mode .business-tools-sec-inner,
+html.dark-mode .label,
+html.dark-mode label.position-relative,
+html.dark-mode .btn-transparent,
+html.dark-mode .filter-items,
+html.dark-mode .filter-items input,
+html.dark-mode .filter-items select,
+html.dark-mode .select2-box .select2-container--default .select2-selection--single,
+html.dark-mode .select2-dropdown,
+html.dark-mode .media-centre-tabs,
+html.dark-mode .global-tabs,
+html.dark-mode .sticky-tabs,
+html.dark-mode .card-list,
+html.dark-mode .publications,
+html.dark-mode .main-nav,
+html.dark-mode .breadcrumb-menu,
+html.dark-mode header,
+html.dark-mode .qfc-a11y-panel,
+html.dark-mode .cardSwiper .card,
+html.dark-mode .chat-box-section .chat-box,
+html.dark-mode .chat-box-section .chat-box-body,
+html.dark-mode .chat-box-section .chat-box-input,
+html.dark-mode .chat-box-section .chat-btn-box .tooltip-box,
+html.dark-mode .header.sticky-header,
+html.dark-mode .header .navbar #search-btn,
+html.dark-mode .search-overlay .search-input-wrapper,
+html.dark-mode .hero-banner .hero-banner-main,
+html.dark-mode .updates .news-list .news-box .date-box,
+html.dark-mode .qfc-wizard-inner,
+html.dark-mode .testimonial-slider .fig-caption span,
+html.dark-mode .news-list-page .news-box figure .date-box,
+html.dark-mode .blog-list-modern .news-box,
+html.dark-mode .search-bar-wrapper .search-bar .form-control,
+html.dark-mode body:has(.inner-banner) header.site-header .search-btn,
+html.dark-mode body:has(.inner-banner) header.site-header.is-scrolled.is-hidden:not(.sticky-header),
+html.dark-mode .sticky-row,
+html.dark-mode .documents-table thead tr,
+html.dark-mode .documents-table thead th,
+html.dark-mode .panel-holder .side-panel,
+html.dark-mode .panel-holder .close-panel,
+html.dark-mode .taxation-table-section .sticky-header,
+html.dark-mode .taxation-table-section .table-meta-row,
+html.dark-mode .resource-center-section .heading-box,
+html.dark-mode .ng-activities-section .ng-activities-nav .nav-link,
+html.dark-mode .ng-activities-section .ng-activities-tabs .tab-content .main-heading,
+html.dark-mode .site-header.is-scrolled,
+html.dark-mode body:has(.inner-banner) header.site-header.is-scrolled:not(.sticky-header),
+html.dark-mode body.search-open:has(.inner-banner) header.site-header.is-scrolled:not(.sticky-header),
+html.dark-mode body.search-open .site-header.is-scrolled,
+html.dark-mode body.no-banner .site-header.is-scrolled {
+  background-color: var(--bs-tertiary-bg) !important;
+  background-image: none !important;
+  color: var(--bs-body-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* 3. Text Color Overrides */
+html.dark-mode .nav-link.fs-20.fw-medium {
+  color: #ffffff !important;
+}
+
+/* 4. Comprehensive Custom Dark Text Overrides */
+html.dark-mode .chat-box-section .chat-btn-box .tooltip-box p,
+html.dark-mode .chat-box-section .chat-box-input .input-group input,
+html.dark-mode .header .navbar-nav li:has(.sub-menu) .sub-menu .menu-column .menu-buttons .btn-menu-item,
+html.dark-mode .header .navbar-nav li .sub-menu li .submenu-item-wrapper .nav-item,
+html.dark-mode .header .navbar-nav li .sub-menu li .mobile-submenu-toggle i,
+html.dark-mode .header .navbar-nav li .sub-menu li a,
+html.dark-mode .search-overlay .search-input,
+html.dark-mode .site-header .main-nav #navbarSupportedContent .navbar-nav .nav-item .nav-link,
+html.dark-mode .site-header #mobileMenu .offcanvas-body-inner ul li a,
+html.dark-mode .site-header #mobileMenu .offcanvas-body .bottom-nav ul li a,
+html.dark-mode .site-header #mobileMenu .offcanvas-body .bottom-nav ul li .font-accessibility button,
+html.dark-mode .mega-menu-panel ul li a,
+html.dark-mode .frequently-list li a,
+html.dark-mode body.no-banner .site-header .top-nav ul li a,
+html.dark-mode body.no-banner .site-header .top-nav ul li .font-accessibility button,
+html.dark-mode .business p,
+html.dark-mode .business-tab-btn:hover,
+html.dark-mode .blog-list-modern .news-box .news-details h2,
+html.dark-mode .search-bar-wrapper .search-bar .form-control,
+html.dark-mode .documents-list__title,
+html.dark-mode .news-list__meta,
+html.dark-mode .news-list__separator,
+html.dark-mode .news-list__title,
+html.dark-mode .events-list__date-box-day,
+html.dark-mode .events-list__meta,
+html.dark-mode .events-list__category,
+html.dark-mode .events-list__date,
+html.dark-mode .events-list__title,
+html.dark-mode .events-list__description,
+html.dark-mode body:has(.inner-banner) header.site-header.is-scrolled:not(.sticky-header) .main-nav #navbarSupportedContent .navbar-nav .nav-item .nav-link,
+html.dark-mode .documents-table td p,
+html.dark-mode .panel-holder .side-panel-head h3,
+html.dark-mode .taxation-table-section .file-name p,
+html.dark-mode .resource-center-section .showing-documents,
+html.dark-mode .resource-center-section .table-header p,
+html.dark-mode .resource-center-section .fn-title p,
+html.dark-mode .resource-center-section .date-box p::before,
+html.dark-mode .ng-activities-section .ng-activities-nav .nav-link.active,
+html.dark-mode .ng-activities-section .ng-activities-nav .nav-link.active:hover,
+html.dark-mode .site-header.is-scrolled .top-nav ul li a,
+html.dark-mode .site-header.is-scrolled .top-nav ul li .font-accessibility,
+html.dark-mode .fsb-what-we-offer-section-inner .section-heading .sub-title,
+html.dark-mode .fsb-what-we-offer-section-inner .section-heading p,
+html.dark-mode .fsb-setup-process-section-inner .section-heading .sub-title,
+html.dark-mode .fsb-setup-process-section-inner .section-heading p {
+  color: var(--bs-body-color) !important;
+}
+
+/* 5. Echo Success and Ecosystem Success Custom Overrides */
+html.dark-mode .echo-success,
+html.dark-mode .ecosystem-success {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+html.dark-mode .success .echo-success.home-page {
+  background-image: none !important;
+}
+
+html.dark-mode .success .echo-success::before {
+  background-image: linear-gradient(to right, var(--bs-tertiary-bg) 0%, var(--bs-tertiary-bg) 35%, rgba(30, 30, 30, 0) 75%), url(../../assets/images/echoes-background.jpg) !important;
+  background-size: 100% 100%, contain !important;
+  background-position: left top, right center !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+html.dark-mode .success .echo-success .testimonial-slider::before {
+  display: none !important;
+}
+
+/* Text & Media Block Tabs (tmb-tabs) */
+html.dark-mode .all-in-one-text-media-block-section .tmb-tabs-nav {
+  background-color: var(--bs-body-bg);
+}
+
+html.dark-mode .all-in-one-text-media-block-section .tmb-tabs .nav-link {
+  color: #a0a0a0;
+  border-bottom-color: transparent;
+}
+
+html.dark-mode .all-in-one-text-media-block-section .tmb-tabs .nav-link:hover,
+html.dark-mode .all-in-one-text-media-block-section .tmb-tabs .nav-link.active {
+  color: #e0e0e0;
+  background: transparent;
+  border-bottom-color: #e0e0e0;
+}
+
+/* Date-Location meta block */
+html.dark-mode .date-location p {
+  color: var(--bs-body-color) !important;
+}
+
+html.dark-mode .date-location i {
+  color: #a0a0a0 !important;
+}
+
+/* Tabbed Content Section Title */
+html.dark-mode h4.title.text-black {
+  color: var(--bs-body-color) !important;
+}
+
+/* Sub-title (multiple components) */
+html.dark-mode .sub-title {
+  color: var(--secondary) !important;
+}
+
+html[data-font-scale="small"] {
+  font-size: 90%;
+}
+
+html[data-font-scale="large"] {
+  font-size: 110%;
+}
+
+html[data-font-scale="x-large"] {
+  font-size: 120%;
+}
+
+html[data-font-scale="xx-large"] {
+  font-size: 130%;
+}
+
+@media (max-width: 768px) {
+  .qfc-a11y-panel {
+    width: 200px;
+  }
+
+  .qfc-a11y-mobile .qfc-a11y-panel {
+    position: static;
+    border: 1px solid var(--border-color);
+    box-shadow: none;
+    margin-top: 8px;
+  }
+}

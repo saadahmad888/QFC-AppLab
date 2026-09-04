@@ -1,0 +1,16 @@
++section('updates py-4', 'media-newsletter')
+    .row
+        .col-md
+            +title('mb-4','Community Newsletter')
+        .col-md-auto 
+            a.btn.btn-transparent(href="#")
+                span.button-text View All
+                    i.bi.bi-circle-fill
+    .row.mt-4
+        .col-12
+            .swiper.mediaSwiper#newsLetterSwiper
+                .swiper-wrapper 
+                    each i in [1,2,3,4,5]
+                        .swiper-slide
+                            +cardList('simple-card','card-list newsletter', {title: 'May - June 2025', text: 'Highlights and key updates from this period', id:'newsletter', link:'#'})
+                .swiper-pagination

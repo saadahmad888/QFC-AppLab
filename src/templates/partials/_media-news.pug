@@ -1,0 +1,21 @@
++section('updates py-50', 'media-news')
+    .row
+        .col
+            +title('mb-4','News')
+        .col-auto 
+            a.btn.btn-transparent(href="#") 
+                span.button-text View All
+                    i.bi.bi-circle-fill
+    .row.mt-3
+        .col-12
+            .swiper.mediaSwiper#newsSwiper 
+                .swiper-wrapper 
+                    each i in [1,2,3,4,5]
+                        .swiper-slide
+                            .news-list-page
+                                +newsList(
+                                    {dateMonth: '22 Nov', type:'International', overlayLabel: true, text: 'The Qatar African Business forum (QABF) returns for its third edition', image:'assets/images/news-new.png', link:'news-details.html'})
+                                    //- {dateMonth: '22 Nov',type:'International', text: 'The Qatar African Business forum (QABF) returns for its third edition',image:'assets/images/news-new.png',link:'news-details.html'},
+                                    //- {dateMonth: '22 Nov',type:'International', text: 'The Qatar African Business forum (QABF) returns for its third edition',image:'assets/images/news-new.png',link:'news-details.html'})
+                
+                .swiper-pagination

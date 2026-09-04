@@ -1,0 +1,29 @@
+mixin tabList(id, ...tabLists)
+    ul.nav.nav-tabs(role="tablist",id=id) 
+        each tab in tabLists 
+            - var isActive = tab.class && tab.class.includes('active')
+            li.nav-item(role="presentation")
+                button.nav-link.fs-20(class=tab.class, id=tab.id, data-bs-toggle="tab", data-bs-target='#'+tab.targetID, type="button", role="tab", aria-controls=tab.targetID, aria-selected=isActive ? "true" : "false", title=tab.title)=tab.item
+
+mixin tabContents(...contentItems)
+    .tab-content 
+        each content, index in contentItems
+            - var tabClasses = content.class ? content.class : ''
+            - if (index === 0 && content.class && content.class.includes('active')) tabClasses += ' show'
+            .tab-pane.fade(class=tabClasses, id=content.id, role="tabpanel" aria-labelledby=contentID)
+                if content.contentList
+                    .row.gx-4.gx-lg-5
+                        each item in content.contentList
+                            .col-sm-6.col-md-4.col-lg-3
+                                .element-card
+                                    a(href="#", data-bs-toggle=item.modal ? "offcanvas" : false data-bs-target=item.modal ? '#'+item.modal : false)
+                                        figure.mb-4
+                                            img(src=item.image, class="img-fluid")
+                                        h4.fw-normal.fw-medium.text-secondary.mb-2.fs-20=item.title
+                                        p.fw-normal.fs-16=item.description
+                else
+                    figure.mb-4.rounded-4
+                        img(src=content.image, class="img-fluid rounded-4")
+                    h4.fw-normal.fw-medium.text-secondary.mb-4.fs-28=content.title
+                    p.fw-normal.fs-20=content.description
+                            

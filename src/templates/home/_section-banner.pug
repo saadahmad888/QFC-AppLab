@@ -1,0 +1,20 @@
++section('banner pb-0')
+    .row
+        .col-md-8
+            .left-heading
+                h1.mb-0 Supporting Founders
+                    p.mb-0 —from day zero
+        .col-md-4
+            .right-heading.d-flex.align-items-center.h-100
+                p.mb-0.fs-22 We provide startups and entrepreneurs with the platform, resources, and regulatory support they need to launch.
+    .row 
+        .banner-slider.container-lg.pt-5.pb-4 
+            +sliderList('banner-slider','', 
+            {className:'active', image: 'assets/images/banner1.jpg', title:'Your Gateway to Growth', text: 'Establish your business in one of the world’s fastest-growing economies.', buttontext: 'Know More'},
+            {className:'cloned', image: 'assets/images/banner2.jpg', title:'Your Gateway to Growth', text: 'Establish your business in one of the world’s fastest-growing economies.', buttontext: 'Know More'},
+            {className:'cloned', image: 'assets/images/banner1.jpg', title:'Your Gateway to Growth', text: 'Establish your business in one of the world’s fastest-growing economies.', buttontext: 'Know More'},
+            {className:'cloned', image: 'assets/images/banner2.jpg', title:'Your Gateway to Growth', text: 'Establish your business in one of the world’s fastest-growing economies.', buttontext: 'Know More'}
+            )
+            //- a.btn(href="#") 
+            //-     span.button-text Make an Enquiry 
+            //-         i.bi.bi-circle-fill

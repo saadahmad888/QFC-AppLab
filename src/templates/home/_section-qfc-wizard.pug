@@ -1,0 +1,24 @@
++section('qfc-wizard pt-0')
+    .qfc-wizard-inner
+        .row
+            .col-12
+                .heading
+                    h2.fs-24.fw-medium.text-primary
+                        |Your QFC Wizard
+                    p.fs-22.fw-normal.text-secondary
+                        |Describe who you are and what you need, and we’ll light the path ahead.
+
+        .row.align-items-end.g-3
+            .col-12.col-lg
+                .row.g-3
+                    each item in ['I am a', 'I am interested in', 'Specifically']
+                        .col-12.col-sm-6.col-lg-4
+                            .form-group
+                                label.form-label.fs-18.fw-normal= item
+                                select.form-select#mySelect
+                                    option( value="0" selected disabled) Select
+                                    option( value="1" ) One
+                                    option( value="2" ) Two
+                                    option( value="3" ) Three
+            .col-12.col-lg-auto
+                button.updated-primary-btn.fs-16.fw-medium(type="button") Submit

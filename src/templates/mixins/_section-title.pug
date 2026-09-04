@@ -1,0 +1,5 @@
+mixin title(className,title,subTitle,subclass)
+        if title
+            h4.section-title.fw-normal.text-primary.fs-40(class=className)!= title
+        if subTitle
+            p.sub-title.fw-normal.fs-20(class=subclass)!= subTitle

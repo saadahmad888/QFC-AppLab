@@ -1,0 +1,42 @@
+include ../mixins/_section-title
+
+//- Use .has-image class to display image instead of slider.
+.inner-banner.large.has-image
+    .inner-banner-holder.position-relative.inner-banner-normal
+        .container-lg
+            .row 
+                .col-12
+                    +breadcrumbNav('', 'breadcrumb-menu','', { link: 'index.html', text: 'Home', id: 'Home'},{ link: 'about.html', text: 'About Us', id: 'about'}, { link: 'ecosystem.html', text: 'Ecosystem', id: 'ecosystem'}, { link: 'echoes-of-success.html', text: 'Echoes of Success', id: activeLink})
+                    .banner-title
+                        +title('', 'Echoes of Lasting Success', 'Celebrating achievements that define growth, inspire <br> innovation, and strengthen Qatar’s global presence.')
+                        a.btn.btn-transparent(href="#") 
+                            span.button-text Click to be featured
+        .row 
+            .success-leaders
+                img.img-fluid.mt-5#banner-img(src="assets/images/echoes-of-success-banner.svg" alt="image")
+                .swiper#success-slider
+                    .swiper-wrapper 
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-1.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-2.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-1.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-2.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-1.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-2.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-1.png" alt="Leader Image")
+                        .swiper-slide
+                            .leader-image
+                                img(src="assets/images/sucess-2.png" alt="Leader Image")

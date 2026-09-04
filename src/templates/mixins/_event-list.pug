@@ -1,0 +1,8 @@
+mixin eventList(...eventLists)
+    each event in eventLists 
+        .event-details
+            .date-location.d-flex.align-items-center.gap-2.mb-2
+                p.fs-14=event.date
+                i.bi.bi-circle-fill
+                p.fs-14=event.type
+            a.text-secondary.fw-semibold.fs-20(href="#")=event.text

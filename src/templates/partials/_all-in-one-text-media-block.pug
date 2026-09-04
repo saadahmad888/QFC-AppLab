@@ -1,0 +1,377 @@
+section.all-in-one-text-media-block-section
+
+    //-
+    //- CLASS REFERENCE — add these to .text-media-block
+    //- ────────────────────────────────────────────────────────
+    //- MEDIA
+    //-   (default)              → image
+    //-   .with-uploaded-video   → uploaded video (native controls)
+    //-   .with-uploaded-video.video-no-controls → uploaded video + custom play/pause
+    //-   .with-youtube          → YouTube iframe
+    //-
+    //- CONTENT
+    //-   (default)              → paragraph only
+    //-   .with-cta              → paragraph + CTA button
+    //-   .with-read-more        → paragraph with read more / read less
+    //-   .with-list             → disc bullet list only
+    //-   .with-list-cta         → disc bullet list + CTA button
+    //-   .with-list-read-more   → disc bullet list with read more / read less
+    //-
+    //- LIST MARKER (combine with any list variant)
+    //-   .list-dash             → replaces disc bullets with an en-dash (–)
+    //- ────────────────────────────────────────────────────────
+
+    //- Tab navigation
+    .tmb-tabs-nav.container-lg
+        ul.nav.nav-tabs.tmb-tabs(role="tablist")
+            li.nav-item(role="presentation")
+                button.nav-link.active(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-1" role="tab" aria-controls="tmb-tab-1" aria-selected="true") Image + Para
+            li.nav-item(role="presentation")
+                button.nav-link(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-2" role="tab" aria-controls="tmb-tab-2" aria-selected="false") Image + CTA
+            li.nav-item(role="presentation")
+                button.nav-link(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-3" role="tab" aria-controls="tmb-tab-3" aria-selected="false") Image + Read More
+            li.nav-item(role="presentation")
+                button.nav-link(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-4" role="tab" aria-controls="tmb-tab-4" aria-selected="false") Video + Native Controls
+            li.nav-item(role="presentation")
+                button.nav-link(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-5" role="tab" aria-controls="tmb-tab-5" aria-selected="false") Video + Custom Controls
+            li.nav-item(role="presentation")
+                button.nav-link(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-6" role="tab" aria-controls="tmb-tab-6" aria-selected="false") YouTube + List
+            li.nav-item(role="presentation")
+                button.nav-link(type="button" data-bs-toggle="tab" data-bs-target="#tmb-tab-7" role="tab" aria-controls="tmb-tab-7" aria-selected="false") Dash List
+
+    //- Tab panes
+    .tab-content.tmb-tab-content
+
+        //- ─── TAB 1 — Default: image + paragraph ───────────────────
+        #tmb-tab-1.tab-pane.fade.show.active(role="tabpanel")
+            .text-media-block
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-5.col-md-6.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | Powering Qatar's Future of Business
+                                p.content-para.fs-20.fw-normal.text-secondary
+                                    | The Qatar Financial Centre (QFC) is a leading onshore business and financial centre where local advantages and global ambition come together to create exceptional opportunity.
+                                a.content-cta.updated-primary-btn(href="#") Get Started
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | The Qatar Financial Centre (QFC) is a leading onshore business and financial centre where local advantages and global ambition come together to create exceptional opportunity. As a fully integrated, one stop platform, QFC empowers companies to expand, innovate, and grow with confidence through a transparent, internationally aligned legal and regulatory framework. The QFC is designed to support Qatar's ambitions as a leading regional business hub. It provides an attractive environment for businesses to set up and operate, with a wide range of support services.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary Transparent legal and regulatory framework
+                                    li.fs-20.fw-normal.text-secondary World-class financial infrastructure
+                                    li.fs-20.fw-normal.text-secondary 100% foreign ownership permitted
+                                    li.fs-20.fw-normal.text-secondary Zero corporate tax for the first ten years
+                                    li.fs-20.fw-normal.text-secondary Access to Qatar's growing market
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary Transparent legal and regulatory framework
+                                        li.fs-20.fw-normal.text-secondary World-class financial infrastructure
+                                        li.fs-20.fw-normal.text-secondary 100% foreign ownership permitted
+                                        li.fs-20.fw-normal.text-secondary Zero corporate tax for the first ten years
+                                        li.fs-20.fw-normal.text-secondary Access to Qatar's growing market
+                                        li.fs-20.fw-normal.text-secondary Single-window government services
+                                        li.fs-20.fw-normal.text-secondary International arbitration centre
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                        .col-lg-6.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Qatar Financial Centre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+        //- ─── TAB 2 — Image left + paragraph + CTA right (reversed) ──
+        #tmb-tab-2.tab-pane.fade(role="tabpanel")
+            .text-media-block.with-cta.reverse
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-6.col-md-6.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Qatar Financial Centre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .col-lg-5.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | Building a World-Class Business Hub
+                                p.content-para.fs-20.fw-normal.text-secondary
+                                    | Qatar Financial Centre provides a robust, internationally aligned environment that gives companies the confidence to grow and innovate in Qatar and the wider GCC region.
+                                a.content-cta.updated-primary-btn(href="#") Explore Opportunities
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | Qatar Financial Centre provides a robust, internationally aligned environment that gives companies the confidence to grow and innovate. With access to over 100 countries and a gateway to the GCC market, QFC is the ideal platform for businesses looking to expand their global footprint. The centre offers a comprehensive range of services, from legal and regulatory support to financial services and beyond.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary Robust legal framework
+                                    li.fs-20.fw-normal.text-secondary International business standards
+                                    li.fs-20.fw-normal.text-secondary Gateway to GCC market
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary Robust legal framework
+                                        li.fs-20.fw-normal.text-secondary International business standards
+                                        li.fs-20.fw-normal.text-secondary Gateway to GCC market
+                                        li.fs-20.fw-normal.text-secondary Streamlined company registration
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+
+        //- ─── TAB 3 — Image + read more paragraph ──────────────────
+        #tmb-tab-3.tab-pane.fade(role="tabpanel")
+            .text-media-block.with-read-more
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-5.col-md-6.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | A Gateway to Exceptional Opportunity
+                                p.content-para.fs-20.fw-normal.text-secondary
+                                    | Qatar Financial Centre provides a robust, internationally aligned environment for business growth.
+                                a.content-cta.updated-primary-btn(href="#") Get Started
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | The Qatar Financial Centre (QFC) is a leading onshore business and financial centre where local advantages and global ambition come together to create exceptional opportunity. As a fully integrated, one stop platform, QFC empowers companies to expand, innovate, and grow with confidence through a transparent, internationally aligned legal and regulatory framework. Established under Law No. 7 of 2005, QFC is a core pillar of Qatar's diversification agenda under Qatar National Vision 2030. It provides a robust legal, regulatory, tax, and business environment for both financial and non-financial firms to set up businesses in Qatar. QFC's unique structure allows companies to operate 100% foreign-owned with no minimum capital requirements.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary Transparent legal framework
+                                    li.fs-20.fw-normal.text-secondary 100% foreign ownership
+                                    li.fs-20.fw-normal.text-secondary Zero corporate tax
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary Transparent legal framework
+                                        li.fs-20.fw-normal.text-secondary 100% foreign ownership
+                                        li.fs-20.fw-normal.text-secondary Zero corporate tax
+                                        li.fs-20.fw-normal.text-secondary Single-window registration
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                        .col-lg-6.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Qatar Financial Centre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+        //- ─── TAB 4 — Video left + native controls, content right (reversed)
+        #tmb-tab-4.tab-pane.fade(role="tabpanel")
+            .text-media-block.with-uploaded-video.with-cta.reverse
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-6.col-md-6.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Qatar Financial Centre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .col-lg-5.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | See QFC in Action
+                                p.content-para.fs-20.fw-normal.text-secondary
+                                    | Watch how Qatar Financial Centre empowers businesses to set up, grow, and thrive in one of the world's most dynamic economic environments.
+                                a.content-cta.updated-primary-btn(href="#") Learn More
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | Watch how Qatar Financial Centre empowers businesses to set up, grow, and thrive in one of the world's most dynamic economic environments. Our comprehensive support ecosystem covers every stage of your business journey — from registration to expansion. QFC provides access to a fully integrated, one stop platform where local advantages and global ambition come together.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary End-to-end business support
+                                    li.fs-20.fw-normal.text-secondary Dedicated relationship managers
+                                    li.fs-20.fw-normal.text-secondary Fast-track registration process
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary End-to-end business support
+                                        li.fs-20.fw-normal.text-secondary Dedicated relationship managers
+                                        li.fs-20.fw-normal.text-secondary Fast-track registration process
+                                        li.fs-20.fw-normal.text-secondary On-site advisory services
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+
+        //- ─── TAB 5 — Uploaded video with custom controls + list + CTA
+        #tmb-tab-5.tab-pane.fade(role="tabpanel")
+            .text-media-block.with-uploaded-video.video-no-controls.with-list-cta
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-5.col-md-6.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | Expand Your Business in Qatar
+                                p.content-para.fs-20.fw-normal.text-secondary
+                                    | QFC offers a comprehensive range of benefits designed to support business growth and innovation.
+                                a.content-cta.updated-primary-btn(href="#") Start Your Journey
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | QFC offers a comprehensive range of benefits designed to support business growth and innovation in Qatar. From transparent legal frameworks to world-class infrastructure, QFC provides everything you need to succeed in one of the world's most dynamic business environments.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary 100% foreign ownership permitted
+                                    li.fs-20.fw-normal.text-secondary Zero corporate tax for 10 years
+                                    li.fs-20.fw-normal.text-secondary Access to 100+ bilateral treaties
+                                    li.fs-20.fw-normal.text-secondary International arbitration support
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary 100% foreign ownership permitted
+                                        li.fs-20.fw-normal.text-secondary Zero corporate tax for 10 years
+                                        li.fs-20.fw-normal.text-secondary Access to 100+ bilateral treaties
+                                        li.fs-20.fw-normal.text-secondary International arbitration support
+                                        li.fs-20.fw-normal.text-secondary Single-window government services
+                                        li.fs-20.fw-normal.text-secondary Flexible business structures
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                        .col-lg-6.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Qatar Financial Centre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+        //- ─── TAB 6 — YouTube left + list right (reversed) ──────────
+        #tmb-tab-6.tab-pane.fade(role="tabpanel")
+            .text-media-block.with-youtube.with-list-read-more.reverse
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-6.col-md-6.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Why Choose QFC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .col-lg-5.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | Why Choose Qatar Financial Centre
+                                p.content-para.fs-20.fw-normal.text-secondary
+                                    | Discover the advantages that make QFC the preferred destination for international businesses.
+                                a.content-cta.updated-primary-btn(href="#") Learn More
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | Discover the advantages that make QFC the preferred destination for international businesses seeking to establish or expand their presence in Qatar and the wider GCC region. With a world-class legal and regulatory framework, strategic location, and unparalleled government support, QFC is your gateway to success.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary Strategic gateway to the GCC
+                                    li.fs-20.fw-normal.text-secondary English-language legal framework
+                                    li.fs-20.fw-normal.text-secondary Double taxation treaties
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary Strategic gateway to the GCC
+                                        li.fs-20.fw-normal.text-secondary English-language legal framework
+                                        li.fs-20.fw-normal.text-secondary Double taxation treaties with 80+ countries
+                                        li.fs-20.fw-normal.text-secondary Award-winning dispute resolution
+                                        li.fs-20.fw-normal.text-secondary Strong government backing and stability
+                                        li.fs-20.fw-normal.text-secondary Competitive operating costs
+                                        li.fs-20.fw-normal.text-secondary Internationally recognized legal system
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+
+        //- ─── TAB 7 — Image right + dash list left ───────────────────
+        #tmb-tab-7.tab-pane.fade(role="tabpanel")
+            .text-media-block.with-list-cta.list-dash
+                .container-lg
+                    .row.align-items-center.g-5
+                        .col-lg-5.col-md-6.col-12
+                            .content-box
+                                h4.title.fs-40.fw-medium.text-primary
+                                    | Key Benefits of QFC
+                                p.fs-20.fw-normal.text-secondary.mt-3
+                                    | Discover what makes QFC the region's most dynamic business hub — from flexible ownership structures to world-class infrastructure and a supportive regulatory environment.
+                                .content-read-more-wrap.read-more-wrapper
+                                    p.fs-20.fw-normal.text-secondary.read-more-content.collapsed
+                                        | Explore the core advantages of operating within the Qatar Financial Centre, from streamlined licensing to access across the GCC.
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                ul.content-list
+                                    li.fs-20.fw-normal.text-secondary 100% foreign ownership permitted
+                                    li.fs-20.fw-normal.text-secondary No restrictions on capital repatriation
+                                    li.fs-20.fw-normal.text-secondary Access to 80+ double-tax treaty network
+                                    li.fs-20.fw-normal.text-secondary English-language common law courts
+                                    li.fs-20.fw-normal.text-secondary Fast-track licensing and onboarding
+                                .content-list-read-more-wrap.read-more-wrapper
+                                    ul.read-more-content.collapsed
+                                        li.fs-20.fw-normal.text-secondary 100% foreign ownership permitted
+                                        li.fs-20.fw-normal.text-secondary No restrictions on capital repatriation
+                                        li.fs-20.fw-normal.text-secondary Access to 80+ double-tax treaty network
+                                        li.fs-20.fw-normal.text-secondary English-language common law courts
+                                        li.fs-20.fw-normal.text-secondary Fast-track licensing and onboarding
+                                        li.fs-20.fw-normal.text-secondary Strategic location in the heart of Doha
+                                        li.fs-20.fw-normal.text-secondary World-class professional services ecosystem
+                                        li.fs-20.fw-normal.text-secondary Stable political and economic environment
+                                        li.fs-20.fw-normal.text-secondary Competitive tax regime with zero income tax
+                                        li.fs-20.fw-normal.text-secondary Strong regulatory framework aligned with global standards
+                                    a.btn.more-btn.read-more(href="javascript:void(0)") Read more
+                                    a.btn.more-btn.read-less.d-none(href="javascript:void(0)") Read less
+                                a.content-cta.btn.btn-transparent.fs-20(href="#") Apply Now
+                        .col-lg-6.offset-lg-1.col-md-6.offset-md-0.col-12
+                            .media-box
+                                .media-image
+                                    figure.tmb-figure
+                                        img(src="assets/images/about-banner-2.png" alt="Qatar Financial Centre")
+                                .media-video
+                                    figure.tmb-figure
+                                        video.tmb-video(controls)
+                                            source(src="assets/videos/about.mp4" type="video/mp4")
+                                        button.tmb-play-btn(type="button" aria-label="Play / Pause video")
+                                            img(src="assets/images/icons/play-icon.png" alt="play")
+                                .media-youtube
+                                    figure.tmb-figure
+                                        .ratio.ratio-16x9
+                                            iframe(src="https://www.youtube.com/embed/VIDEO_ID" title="Key Benefits of QFC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)

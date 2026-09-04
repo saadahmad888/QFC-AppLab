@@ -1,0 +1,19 @@
++section('updates py-4', 'media-events')
+    .row
+        .col
+            +title('mb-4','Events')
+        .col-auto 
+            a.btn.btn-transparent(href="#") 
+                span.button-text View All
+                    i.bi.bi-circle-fill
+    .row.mt-3
+        .col-12
+            .swiper.mediaSwiper#eventsSwiper 
+                .swiper-wrapper 
+                    each i in [1,2,3,4,5]
+                        .swiper-slide
+                            .news-list-page
+                                +newsList(
+                                    {dateMonth: '26 Nov', location: 'Doha Qatar', type:'International', text: 'The Qatar African Business forum (QABF) returns for its third edition',image:'assets/images/news-new.png', date: '21', month: 'Aug', link:'#'})
+                
+                .swiper-pagination

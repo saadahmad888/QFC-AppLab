@@ -1,0 +1,14 @@
+include ./_section-title
+
+mixin innerBanner(img, pagetitle, description, className)
+    .inner-banner
+        .inner-banner-holder.position-relative(class=className)
+            if img
+                figure.mb-0
+                    img(src=img)
+                    .overlay
+            .container-lg
+                .row 
+                    .col-12
+                        .banner-title
+                            +title('', pagetitle, description)

@@ -1,0 +1,91 @@
+.policy-sticky-wrapper
+    .media-centre-tabs.policy.sticky-tabs.pt-4
+        .container-lg
+            .row
+                .col-lg-2.d-lg-block.d-none
+                    .d-flex.align-items-center.gap-3
+                        p.text-dark-grey.fw-400.m-0 On this page 
+                        img.img-fluid(src='assets/images/bottom-arrow.svg')
+                .col-lg-10.text-center.mb-4
+                    .tabs-wrapper
+                        a(href="#privacy_policy" class="btn-tab") QFCA Privacy Policy
+                        a(href="#collections" class="btn-tab") What data do we collect?
+                        a(href="#collect-data" class="btn-tab") How do we collect your data?
+                        a(href="#use-data" class="btn-tab") How will we use your data?
+                        a(href="#marketing" class="btn-tab") Marketing
+                        a(href="#rights" class="btn-tab") What are your data protection rights?
+                        a(href="#cookies" class="btn-tab") What are cookies?
+                        a(href="#use-cookies" class="btn-tab") How do we use cookies?
+                        a(href="#type-cookies" class="btn-tab") What type of cookies do we use?
+                        a(href="#manage-cookies" class="btn-tab") How to manage cookies
+                        a(href="#other" class="btn-tab") Privacy policies of other websites
+                        a(href="#contact" class="btn-tab") How to contact us
+    section.terms.py-4
+        .container-lg
+            .row.mt-3 
+                .col
+                    p.fw-normal.text-secondary The QFCA respects and takes your privacy seriously. It has a privacy policy including a cookie policy. When accessing the QFC website (including www.awards.qfc.qa) and clicking “Accept All Cookies” or “Partially Accepting”, you agree to the storing of cookies on your device to enhance site navigation, analyse site usage, and assist in QFCA marketing efforts.
+    +section('terms py-4', 'privacy_policy')
+        .row
+            .col
+                +title('mb-4 fs-28','QFCA Privacy Policy')
+        .row
+            .col-12
+                .p-content
+                    p.fw-normal.text-secondary This privacy policy explains how the QFCA uses the personal data we collect from you when you use the Site.
+                    ul.fw-normal.text-secondary.fs-16.list-styled-disc
+                        each item in ['What data do we collect?','How do we collect your data?','How will we use your data?','Marketing','What are your data protection rights?','What are cookies?','How do we use cookies?','What type of cookies do we use?','How to manage cookies','Privacy policies of other websites','How to contact us']
+                            li #{item}
+    +section('terms py-4', 'collections')
+        .row
+            .col
+                +title('mb-4 fs-28','What data do we collect?')
+        .row
+            .col-12
+                ul.fw-normal.text-secondary.fs-16.list-styled-disc
+                li The QFCA’s data protection regime is governed by the QFC Data Protection Regulations and QFCA Data Protection Rules
+                li The QFCA collects the following data:
+                    ul.fw-normal.text-secondary.fs-16.list-styled-disc.mt-3
+                        li Personal identification information (name, email address, phone numbers etc.);
+                        li Company identification information (organization name, registration data etc.);
+                        li Internet Protocol (IP) address; your device, browser, and operating system; your location, pages visited, and the duration of your stay on our Site.
+
+    +section('terms py-4', 'collect-data')
+        .row
+            .col
+                +title('mb-4 fs-28','How do we collect your data?')
+        .row
+            .col-12
+                .p-content
+                    ul.fw-normal.text-secondary.fs-16.list-styled-disc
+                        each item in ['What data do we collect?','How do we collect your data?','How will we use your data?','Marketing','What are your data protection rights?','What are cookies?','How do we use cookies?','What type of cookies do we use?','How to manage cookies','Privacy policies of other websites','How to contact us']
+                            li #{item}
+    +section('terms py-4', 'use-data')
+        .row
+            .col
+                +title('mb-4 fs-28',' How will we use your data?')
+        .row
+            .col-12
+                .p-content
+                    p.fw-normal.text-secondary The QFCA will use reasonable efforts to ensure this Site is available to you, without warranty of any kind, whether express or implied. Due to the possibility of human and technical errors, the QFCA will not be liable if, for any reason, the Site is unavailable for a period of time.
+                    p.fw-normal.text-secondary The QFCA reserves the right to temporarily or permanently suspend the Site without any prior notice.
+    +section('terms py-4', 'marketing')
+        .row
+            .col
+                +title('mb-4 fs-28','Marketing')
+        .row
+            .col-12
+                .p-content
+                    ul.fw-normal.text-secondary.fs-16.list-styled-disc
+                        each item in ['What data do we collect?','How do we collect your data?','How will we use your data?','Marketing','What are your data protection rights?','What are cookies?','How do we use cookies?','What type of cookies do we use?','How to manage cookies','Privacy policies of other websites','How to contact us']
+                            li #{item}
+    +section('terms py-4', 'use-cookies')
+        .row
+            .col
+                +title('mb-4 fs-28','How do we use cookies?')
+        .row
+            .col-12
+                .p-content
+                    ul.fw-normal.text-secondary.fs-16.list-styled-disc
+                        each item in ['What data do we collect?','How do we collect your data?','How will we use your data?','Marketing','What are your data protection rights?','What are cookies?','How do we use cookies?','What type of cookies do we use?','How to manage cookies','Privacy policies of other websites','How to contact us']
+                            li #{item}

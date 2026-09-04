@@ -1,0 +1,16 @@
++section('advantages pt-0')
+    .row 
+        .col-md-6.mb-5
+            +title('mb-4','Unlock your QFC advantages', '')
+            .advantage-text.d-flex.flex-column.h-100
+                p.fw-normal.text-secondary.fs-22 QFC is a leading onshore business and financial platform that enables global and local companies to operate in Qatar and expand across the region 
+        //- .col-md-6 
+    .row.gy-3
+        +cardList('simple-card','card-list border-hover',
+            {title: '100% Foreign Ownership', text: 'Full control of your business, no local sponsor required.', id:'foreign', image: 'assets/images/icons/card-1.png'},
+            {title: 'Common Law Jurisdiction', text: 'Operate under a globally familiar legal framework', id:'law', image: 'assets/images/icons/card-2.png'},
+            {title: 'Strategic Location', text: 'Full control of your business, no local sponsor required.', id:'location', image: 'assets/images/icons/card-3.png'},
+            {title: 'World-Class Infrastructure', text: 'Operate under a globally familiar legal framework', id:'infras', image: 'assets/images/icons/card-4.png'},
+            {title: 'Competitive Tax Regime', text: 'Operate under a globally familiar legal framework', id:'tax', image: 'assets/images/icons/card-5.png'},
+            {title: 'Simplified Business Setup', text: 'Full control of your business, no local sponsor required.', id:'business', image: 'assets/images/icons/card-6.png'}
+            )
