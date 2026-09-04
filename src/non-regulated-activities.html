@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap">
+    </noscript>
+    <link rel="stylesheet" href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="stylesheet" href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <noscript>
+      <link rel="stylesheet" href="assets/_css/app.css">
+    </noscript>
+    <title>Qatar Financial Centre</title>
+  </head>
+  <body>
+    <div class="search-backdrop"></div>
+    <header class="site-header">
+      <div class="container-lg">
+        <div class="top-nav">
+          <ul>
+            <li><a class="fs-15 fw-normal" href="">Client Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Vendor Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Resources</a></li>
+            <li><a class="fs-15 fw-normal" href="">عربي</a></li>
+            <li>
+              <div class="font-accessibility">
+                <button class="fs-15 fw-normal" type="button">A+</button>
+                <button class="fs-15 fw-normal" type="button">A-</button>
+              </div>
+            </li>
+            <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="dark" src="assets/images/QFC-logo.svg" alt="Logo"><img class="light" src="assets/images/logo-white-1.png" alt="Logo"></a>
+              <div class="d-flex gap-3">
+                <div class="search-box d-block d-lg-none">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div>
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu"><img src="assets/images/icons/menu-icons.svg" alt="hamburger icon"></button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="javascript:void(0)" data-mega-menu-trigger="megaAbout">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="doingBusiness">Doing Business</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="latestNews">Latest News</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="supportCentre">Support Centre</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end-buttons">
+                <div class="search-box">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div><a class="updated-primary-btn fs-16 fw-medium" href="">Start Your Setup</a>
+              </div>
+            </div>
+          </nav>
+          <div id="searchBox">
+            <div class="search-collapse-box">
+              <div class="input-group"><span class="input-group-text" id="search-input"> <img src="assets/images/icons/MagnifyingGlass.svg" alt=""></span>
+                <input class="form-control fs-20 fw-normal" type="text" placeholder="What are you looking for..." aria-describedby="search-input">
+              </div>
+              <button class="close" type="button"><img src="assets/images/icons/times.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="mega-menu-wrapper" id="megaMenuWrapper">
+            <div class="mega-menu-panel" id="megaAbout">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">About Us</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#">Life at QFC</a></li>
+                        <li><a href="#">Life in Qatar</a></li>
+                        <li><a href="#">Innovations</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Sample Heading</h4>
+                      <ul>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">QFC Regulatory Authority</a></li>
+                        <li><a href="#">Designated Office Premises</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Vendor Portal</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Introduction to QFC</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="doingBusiness">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Doing Business</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Business Solutions</a></li>
+                        <li><a href="#">Setup</a></li>
+                        <li><a href="#">Operate</a></li>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">Public Register</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Elite Onboarding Service</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Innovation Dome</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="latestNews">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Latest News</h4>
+                      <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Reports & Publications</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="spotlight-card"><a class="title fs-20 fw-normal" href="#">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></a>
+                        <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                        <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="supportCentre">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Support Centre</h4>
+                      <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Make an Inquiry</a></li>
+                        <li><a href="#">Resources</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">How to</h4>
+                      <ul>
+                        <li><a href="#">Submit Filings</a></li>
+                        <li><a href="#">Amend Company Details</a></li>
+                        <li><a href="#">Renew</a></li>
+                        <li><a href="#">Update UBO</a></li>
+                        <li><a href="#">Request Certificates</a></li>
+                        <li><a href="#">Access the Client Portal</a></li>
+                        <li><a href="#">Book Appointments</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" id="mobileMenu" data-bs-backdrop="static" tabindex="-1" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel"> <a class="navbar-brand" href="#"><img src="assets/images/QFC-logo.svg" alt="Logo"></a></h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-body-inner">
+            <ul>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false" aria-controls="aboutUs">About Us<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="aboutUs">
+                  <p class="nav-title">About Us</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Ecosystem</a></li>
+                    <li><a href="#">Life at QFC</a></li>
+                    <li><a href="#">Life in Qatar</a></li>
+                    <li><a href="#">Innovations</a></li>
+                  </ul>
+                  <p class="nav-title">Sample Heading</p>
+                  <ul>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">QFC Regulatory Authority</a></li>
+                    <li><a href="#">Designated Office Premises</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Vendor Portal</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Introduction to QFC</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#business" role="button" aria-expanded="false" aria-controls="business">Doing Business<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="business">
+                  <p class="nav-title">Doing Business</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#">Setup</a></li>
+                    <li><a href="#">Operate</a></li>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">Public Register</a></li>
+                  </ul>
+                  <p class="nav-title">Elite Onboarding Service</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Innovation Dome</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#latestNews" role="button" aria-expanded="false" aria-controls="latestNews">Latest News<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="latestNews">
+                  <p class="nav-title">Latest News</p>
+                  <ul>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reports & Publications</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                  </ul>
+                  <div class="spotlight-card">
+                    <p class="title fs-20 fw-normal">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></p>
+                    <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                    <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                  </div>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#sportsCenter" role="button" aria-expanded="false" aria-controls="sportsCenter">Support Centre<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="sportsCenter">
+                  <p class="nav-title">Support Centre</p>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Make an Inquiry</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                  <p class="nav-title">How to</p>
+                  <ul>
+                    <li><a href="#">Submit Filings</a></li>
+                    <li><a href="#">Amend Company Details</a></li>
+                    <li><a href="#">Renew</a></li>
+                    <li><a href="#">Update UBO</a></li>
+                    <li><a href="#">Request Certificates</a></li>
+                    <li><a href="#">Access the Client Portal</a></li>
+                    <li><a href="#">Book Appointments</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-nav">
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">Client Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Vendor Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Resources</a></li>
+            </ul>
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">عربي</a></li>
+              <li>
+                <div class="font-accessibility">
+                  <button class="fs-16 fw-normal" type="button">A+</button>
+                  <button class="fs-16 fw-normal" type="button">A-</button>
+                </div>
+              </li>
+              <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+        <div class="inner-banner">
+          <div class="inner-banner-holder position-relative">
+            <figure class="mb-0"><img src="assets/images/non-regulated-activities/page-banner.svg">
+              <div class="overlay"></div>
+            </figure>
+            <div class="container-lg">
+              <div class="row"> 
+                <div class="col-12">
+                  <div class="banner-title">
+                        <h4 class="section-title fw-normal text-primary fs-40">Financial Solutions</h4>
+                        <p class="sub-title fw-normal fs-20">QFC is Qatar’s premier business hub, supporting <br/> growth, innovation, and global partnerships.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="breadcrumb-menu" id="">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col"> 
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Registering a Company</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">What We License</a></li>
+                    <li class="breadcrumb-item"><a class="active " href="about.html">Non-Regulated Activities</a></li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+    <section class="ng-activities-section">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-12 order-lg-1 order-md-1 order-2">
+            <div class="section-heading">
+              <h2 class="fs-40 fw-medium text-primary">Non-Regulated Activities</h2>
+              <p class="fs-20 fw-normal text-gray3">Complete reference guide for business licensing codes, activity descriptions, and regulatory conditions in the Qatar Financial Centre</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-12 order-lg-2 order-md-2 order-1">
+            <div class="expandable-search">
+              <div class="input-group">
+                <input class="form-control fs-16 fw-medium" type="text" placeholder="Search" aria-label="Search" aria-describedby="expandable-search-input"><span class="input-group-text" id="expandable-search-input"> 
+                  <button type="button"><img src="assets/images/icons/search.svg" alt="Search Icon"></button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="ng-activities-nav">
+              <div class="nav flex-column nav-pills" id="nav-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="reporting-tab" data-bs-toggle="pill" data-bs-target="#reporting-content" type="button" role="tab" aria-controls="reporting-content" aria-selected="true">Shipping & Maritime Services
+                  <ul>
+                    <li><a class="fs-20 fw-normal" href="#c1">C1. Shipping Agents</a></li>
+                    <li><a class="fs-20 fw-normal" href="#c2">C2. Ship Broking</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C3. Private Credit Rating</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C4. Vessel Classification</a></li>
+                  </ul>
+                </button>
+                <button class="nav-link" id="headquarters-tab" data-bs-toggle="pill" data-bs-target="#headquarters-content" type="button" role="tab" aria-controls="headquarters-content" aria-selected="false">Headquarters & Treasury Operations
+                  <ul>
+                    <li><a class="fs-20 fw-normal" href="">C5. Shipping Agents</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C6. Ship Broking</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C7. Private Credit Rating</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C8. Vessel Classification</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C9. Vessel Classification</a></li>
+                  </ul>
+                </button>
+                <button class="nav-link" id="professional-tab" data-bs-toggle="pill" data-bs-target="#professional-content" type="button" role="tab" aria-controls="professional-content" aria-selected="false">Professional Services
+                  <ul>
+                    <li><a class="fs-20 fw-normal" href="#c10">C10. Advisory and Consultancy</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C11. Software Resale and Distribution</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C12. Information Technology and Programming</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C13. FinTech Services</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C13A. Token Services</a></li>
+                  </ul>
+                </button>
+                <button class="nav-link" id="trust-tab" data-bs-toggle="pill" data-bs-target="#trust-content" type="button" role="tab" aria-controls="trust-content" aria-selected="false">Trusts & Fiduciary Services
+                  <ul>
+                    <li><a class="fs-20 fw-normal" href="">C13. Shipping Agents</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C14. Ship Broking</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C15. Private Credit Rating</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C16. Vessel Classification</a></li>
+                  </ul>
+                </button>
+                <button class="nav-link" id="company-tab" data-bs-toggle="pill" data-bs-target="#company-content" type="button" role="tab" aria-controls="company-content" aria-selected="false">Company Administration & Insolvency
+                  <ul>
+                    <li><a class="fs-20 fw-normal" href="">C17. Shipping Agents</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C18. Ship Broking</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C19. Private Credit Rating</a></li>
+                    <li><a class="fs-20 fw-normal" href="">C20. Vessel Classification</a></li>
+                  </ul>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            <div class="ng-activities-tabs">
+              <div class="tab-content" id="nav-pills-tabContent">
+                <div class="tab-pane fade show active" id="reporting-content" role="tabpanel" aria-labelledby="reporting-tab" tabindex="0"> 
+                  <div class="main-heading">
+                    <h4 class="fs-32 fw-medium text-black">Shipping & Maritime Services</h4>
+                    <p class="fs-20 fw-normal text-gray3">Vessel agency, ship broking, classification services, and credit rating for maritime activities.</p><a class="fs-18 fw-medium link-with-double-arrow" href="#">Click here to view the full Non-Regulated Activities </a>
+                  </div>
+                  <div class="ng-detail-box" id="c1">
+                    <div class="ng-detail-box-inner">
+                      <div class="tag-box">
+                        <p class="tag fs-24 fw-medium text-black">C1</p>
+                      </div>
+                      <div class="detailed-content">
+                        <div class="heading-box">
+                          <h5 class="fs-24 fw-medium text-black">Shipping Agents</h5>
+                          <p class="fs-20 fw-normal text-gray3">Activities related to the management, agency, and operational support of vessels and maritime transport.</p>
+                        </div>
+                        <div class="list-box">
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5230-001</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Arranging and negotiating the buying and selling of ships for unaffiliated Persons</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5230-002</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Handling paperwork and customs (and other requirements relating to shipping)</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5230-003</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Organising storage, fuel and maintenance of vessels</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5230-004</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Other ancillary services relating to shipping agencies</p>
+                          </div>
+                        </div>
+                        <div class="shipping-agent-box">
+                          <p class="title fs-20 fw-semibold text-primary text-uppercase">Shipping Agents</p>
+                          <div class="shipping-agent-list">
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">Custom Clearance:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">Unless otherwise permitted by the QFCA, may not provide custom clearance services to any Person.</p>
+                            </div>
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">Port Authority:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">All activities subject to compliance with Qatar Ports Management Authority regulations.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ng-detail-box" id="c2">
+                    <div class="ng-detail-box-inner">
+                      <div class="tag-box">
+                        <p class="tag fs-24 fw-medium text-black">C2</p>
+                      </div>
+                      <div class="detailed-content">
+                        <div class="heading-box">
+                          <h5 class="fs-24 fw-medium text-black">Ship Broking</h5>
+                          <p class="fs-20 fw-normal text-gray3">Chartering, sale and purchase broking, and maritime commercial negotiation services.</p>
+                        </div>
+                        <div class="list-box">
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-001</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Arranging or negotiating the employment of a vessel</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-002</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Arranging the transportation of goods and commodities</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-003</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Brokerage for time and bareboat charter</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-004</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Other ancillary services relating to ship broking</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-005</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Initiating and originating deals for the sale of ships</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-006</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Assisting in negotiations for the sale of ships</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">5231-007</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Assisting in drawing up a contract for sale of ships</p>
+                          </div>
+                        </div>
+                        <div class="shipping-agent-box">
+                          <p class="title fs-20 fw-semibold text-primary text-uppercase">Shipping Agents</p>
+                          <div class="shipping-agent-list">
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">Custom Clearance:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">Unless otherwise permitted by the QFCA, may not provide custom clearance services to any Person.</p>
+                            </div>
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">Qualified Brokers:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">Personnel must hold recognized maritime brokerage qualifications or equivalent experience.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="headquarters-content" role="tabpanel" aria-labelledby="headquarters-tab" tabindex="0">Data not Found...</div>
+                <div class="tab-pane fade" id="professional-content" role="tabpanel" aria-labelledby="professional-tab" tabindex="0">
+                  <div class="main-heading">
+                    <h4 class="fs-32 fw-medium text-black">Professional Services</h4>
+                    <p class="fs-20 fw-normal text-gray3">Advisory, consultancy, IT, legal, accounting, architectural, and administrative professional services.</p>
+                  </div>
+                  <div class="ng-detail-box" id="c10">
+                    <div class="ng-detail-box-inner">
+                      <div class="tag-box">
+                        <p class="tag fs-24 fw-medium text-black">C10</p>
+                      </div>
+                      <div class="detailed-content">
+                        <div class="heading-box">
+                          <h5 class="fs-24 fw-medium text-black">Advisory and Consultancy</h5>
+                          <p class="fs-20 fw-normal text-gray3">Management consulting, tax, HR, immigration, and specialized industry advisory services.</p>
+                        </div>
+                        <div class="list-box with-title">
+                          <div class="title-box">
+                            <div class="tag-box">
+                              <p class="tag fs-20 fw-medium text-primary">C10.1</p>
+                            </div>
+                            <h6 class="fs-20 fw-medium text-primary">Management and Business Consulting</h6>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-001</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Strategic, operating model and organisational planning</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-002</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Financial planning and budgeting</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-003</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Providing advice on the feasibility of entering new businesses or markets</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-004</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Reviewing data and assisting in the preparation of initial public offering documents and private placement documents</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-005</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Advising clients on how to fund their business</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-006</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Business and investment valuations and other financial modelling</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-018</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Advising on mergers, joint ventures and acquisitions</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-007</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Human resources strategy and talent management advisory</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">7020-008</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Immigration and workforce mobility consulting</p>
+                          </div>
+                        </div>
+                        <div class="list-box with-title">
+                          <div class="title-box">
+                            <div class="tag-box">
+                              <p class="tag fs-20 fw-medium text-primary">C10.2</p>
+                            </div>
+                            <h6 class="fs-20 fw-medium text-primary">Tax Consultancy</h6>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">6920-001</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Advising on tax issues</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">6920-002</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Tax compliance services</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">6920-004</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Preparation of tax returns</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">6920-006</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Transfer pricing advisory and documentation</p>
+                          </div>
+                          <div class="list-item">
+                            <p class="list-title fs-20 fw-medium text-black">6920-007</p>
+                            <p class="list-desc fs-20 fw-normal text-black">Tax dispute resolution and representation services</p>
+                          </div>
+                        </div>
+                        <div class="shipping-agent-box">
+                          <p class="title fs-20 fw-semibold text-primary text-uppercase">General Conditions</p>
+                          <div class="shipping-agent-list">
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">Professional Competence:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">Must possess required knowledge and skill for carrying on all activities set out in its licence (Rule 3.7).</p>
+                            </div>
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">No Regulated Activities:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">May not carry on any Regulated Activity unless holding appropriate approval from the QFCRA.</p>
+                            </div>
+                            <div class="shipping-agent-list-item">
+                              <p class="list-title fs-20 fw-medium text-primary">Indemnity Insurance:</p>
+                              <p class="list-desc fs-20 fw-normal text-gray3">Professional indemnity insurance required for all advisory activities (minimum QAR 2,000,000).</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="trust-content" role="tabpanel" aria-labelledby="trust-tab" tabindex="0">Data not Found...</div>
+                <div class="tab-pane fade" id="company-content" role="tabpanel" aria-labelledby="company-tab" tabindex="0">Data not Found...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-sec">
+      <div class="container-lg pb-3 pb-lg-5 pt-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 text-start order-2 order-lg-1"> 
+            <div class="footer-nav w-100">
+              <h5 class="mb-2 mt-4 mt-lg-0">Subscribe to our newsletter</h5>
+              <p>We’ll send you only what matters — no noise, no spam.</p>
+            </div>
+            <div class="news-letter"> 
+              <input type="search" placeholder="Enter e-mail address" name="search"><a class="btn btn-transparent rounded-circle border-1 border" href="#"> <i class="bi bi-arrow-right text-white"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12 d-flex flex-wrap flex-md-nowrap align-items-start order-3 order-lg-2"> 
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">About QFC</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="about.html">Overview</a></li>
+                    <li><a class="nav-item nav-link" href="leadership.html">Leadership</a></li>
+                    <li><a class="nav-item nav-link" href="ecosystem.html">Ecosystem</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Business Services</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Setup Guide</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">VIP Services</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Regulatory & Legal</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Laws &amp; Regulations</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Public Register</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Insights & Media</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="news.html">News</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">White Papers</a></li>
+                    <li><a class="nav-item nav-link" href="reports-publications.html">Reports &amp; Publications</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Contact & Support</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Make an Inquiry</a></li>
+                    <li><a class="nav-item nav-link" href="FAQ.html">FAQ</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Social Media</a></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 mt-0 pt-0 mt-lg-5 pt-lg-5 order-1 order-lg-3"> <a class="logo d-flex align-items-center" href="index.html"><img class="footer-logo img-fluid mt-0" src="assets/images/logo-white-1.png" alt=""></a></div>
+          <div class="col-12 col-lg-6 mt-lg-5 pt-lg-5 mt-2 pt-2 order-4 order-lg-4"> 
+            <ul class="footer-social">
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/facebook.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/linkedin.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/instagram.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/twitter.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/youtube.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/tiktok.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg pt-3 pt-lg-4 border-top">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 copyright">
+            <p class="fw-normal mb-0">&copy; 2025 Qatar Financial Centre. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 footer-terms">
+            <div class="footer-nav d-flex align-items-start"> 
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="terms.html">Terms</a></li>
+                    <li><a class="nav-item nav-link" href="privacy-policy.html">Privacy</a></li>
+                    <li><a class="nav-item nav-link" href="cookies.html">Cookies</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+      {
+          "imports": {
+              "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+              "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+          }
+      }
+    </script>
+    <script type="module">
+      import { Popover } from 'bootstrap';
+      //- new Popover(document.getElementById('popoverButton'))
+    </script>
+  </body>
+</html>

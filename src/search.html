@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap">
+    </noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/_css/app.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="stylesheet" href="assets/_css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <noscript>
+      <link rel="stylesheet" href="assets/_css/app.css">
+    </noscript>
+    <title>Qatar Financial Centre</title>
+  </head>
+  <body class="inner-page no-banner">
+    <div class="search-backdrop"></div>
+    <header class="site-header">
+      <div class="container-lg">
+        <div class="top-nav">
+          <ul>
+            <li><a class="fs-15 fw-normal" href="">Client Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Vendor Portal</a></li>
+            <li><a class="fs-15 fw-normal" href="">Resources</a></li>
+            <li><a class="fs-15 fw-normal" href="">عربي</a></li>
+            <li>
+              <div class="font-accessibility">
+                <button class="fs-15 fw-normal" type="button">A+</button>
+                <button class="fs-15 fw-normal" type="button">A-</button>
+              </div>
+            </li>
+            <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="dark" src="assets/images/QFC-logo.svg" alt="Logo"><img class="light" src="assets/images/logo-white-1.png" alt="Logo"></a>
+              <div class="d-flex gap-3">
+                <div class="search-box d-block d-lg-none">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div>
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu"><img src="assets/images/icons/menu-icons.svg" alt="hamburger icon"></button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="javascript:void(0)" data-mega-menu-trigger="megaAbout">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="doingBusiness">Doing Business</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="latestNews">Latest News</a></li>
+                  <li class="nav-item"><a class="nav-link fs-20 fw-medium" href="#" data-mega-menu-trigger="supportCentre">Support Centre</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end-buttons">
+                <div class="search-box">
+                  <button class="search-btn search-trigger" type="button"><img src="assets/images/icons/MagnifyingGlass.svg" alt=""></button>
+                </div><a class="updated-primary-btn fs-16 fw-medium" href="">Start Your Setup</a>
+              </div>
+            </div>
+          </nav>
+          <div id="searchBox">
+            <div class="search-collapse-box">
+              <div class="input-group"><span class="input-group-text" id="search-input"> <img src="assets/images/icons/MagnifyingGlass.svg" alt=""></span>
+                <input class="form-control fs-20 fw-normal" type="text" placeholder="What are you looking for..." aria-describedby="search-input">
+              </div>
+              <button class="close" type="button"><img src="assets/images/icons/times.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="mega-menu-wrapper" id="megaMenuWrapper">
+            <div class="mega-menu-panel" id="megaAbout">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">About Us</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#">Life at QFC</a></li>
+                        <li><a href="#">Life in Qatar</a></li>
+                        <li><a href="#">Innovations</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Sample Heading</h4>
+                      <ul>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">QFC Regulatory Authority</a></li>
+                        <li><a href="#">Designated Office Premises</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Vendor Portal</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Introduction to QFC</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="doingBusiness">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Doing Business</h4>
+                      <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Business Solutions</a></li>
+                        <li><a href="#">Setup</a></li>
+                        <li><a href="#">Operate</a></li>
+                        <li><a href="#">Law & Regulations</a></li>
+                        <li><a href="#">Public Register</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Elite Onboarding Service</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Innovation Dome</h4>
+                      <ul>
+                        <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="latestNews">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="fs-18 fw-normal">Latest News</h4>
+                      <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Reports & Publications</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="spotlight-card"><a class="title fs-20 fw-normal" href="#">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></a>
+                        <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                        <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-menu-panel" id="supportCentre">
+              <div class="mega-menu-inner">
+                <div class="container-lg">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Support Centre</h4>
+                      <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Make an Inquiry</a></li>
+                        <li><a href="#">Resources</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">How to</h4>
+                      <ul>
+                        <li><a href="#">Submit Filings</a></li>
+                        <li><a href="#">Amend Company Details</a></li>
+                        <li><a href="#">Renew</a></li>
+                        <li><a href="#">Update UBO</a></li>
+                        <li><a href="#">Request Certificates</a></li>
+                        <li><a href="#">Access the Client Portal</a></li>
+                        <li><a href="#">Book Appointments</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h4 class="fs-18 fw-normal">Quick Links</h4>
+                      <ul>
+                        <li><a href="#">Start Your Setup</a></li>
+                        <li><a href="#">Setup Checklist</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Tax Card</a></li>
+                      </ul>
+                      <h4 class="fs-18 fw-normal">Downloads</h4>
+                      <ul>
+                        <li><a href="#">Forms and Templates</a></li>
+                        <li><a href="#">Policies and Guidelines</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="fs-18 fw-normal">Frequently Accessed</h4>
+                      <ul class="frequently-list">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Reports & Publications</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" id="mobileMenu" data-bs-backdrop="static" tabindex="-1" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel"> <a class="navbar-brand" href="#"><img src="assets/images/QFC-logo.svg" alt="Logo"></a></h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-body-inner">
+            <ul>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false" aria-controls="aboutUs">About Us<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="aboutUs">
+                  <p class="nav-title">About Us</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Ecosystem</a></li>
+                    <li><a href="#">Life at QFC</a></li>
+                    <li><a href="#">Life in Qatar</a></li>
+                    <li><a href="#">Innovations</a></li>
+                  </ul>
+                  <p class="nav-title">Sample Heading</p>
+                  <ul>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">QFC Regulatory Authority</a></li>
+                    <li><a href="#">Designated Office Premises</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Vendor Portal</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Introduction to QFC</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#business" role="button" aria-expanded="false" aria-controls="business">Doing Business<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="business">
+                  <p class="nav-title">Doing Business</p>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#">Setup</a></li>
+                    <li><a href="#">Operate</a></li>
+                    <li><a href="#">Law & Regulations</a></li>
+                    <li><a href="#">Public Register</a></li>
+                  </ul>
+                  <p class="nav-title">Elite Onboarding Service</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Innovation Dome</p>
+                  <ul>
+                    <li><a href="#">Fast-Track Your Business Incorporation in one hour with QFC Platinum</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#latestNews" role="button" aria-expanded="false" aria-controls="latestNews">Latest News<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="latestNews">
+                  <p class="nav-title">Latest News</p>
+                  <ul>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reports & Publications</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                  </ul>
+                  <div class="spotlight-card">
+                    <p class="title fs-20 fw-normal">Spotlight<img src="assets/images/icons/right-arrow.svg" alt="Arrow"></p>
+                    <figure><img src="assets/images/spotlight-card-img.png" alt=""></figure>
+                    <div class="content-box with-arrow"><a class="fs-18 fw-medium" href="">QFC hosts participants  executive master's programme in leadership</a><img src="assets/images/icons/right-arrow.svg" alt="Arrow"></div>
+                  </div>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" data-bs-toggle="collapse" href="#sportsCenter" role="button" aria-expanded="false" aria-controls="sportsCenter">Support Centre<img src="assets/images/icons/arrow-down.svg" alt=""></a>
+                <div class="collapse" id="sportsCenter">
+                  <p class="nav-title">Support Centre</p>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Make an Inquiry</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                  <p class="nav-title">How to</p>
+                  <ul>
+                    <li><a href="#">Submit Filings</a></li>
+                    <li><a href="#">Amend Company Details</a></li>
+                    <li><a href="#">Renew</a></li>
+                    <li><a href="#">Update UBO</a></li>
+                    <li><a href="#">Request Certificates</a></li>
+                    <li><a href="#">Access the Client Portal</a></li>
+                    <li><a href="#">Book Appointments</a></li>
+                  </ul>
+                  <p class="nav-title">Quick Links</p>
+                  <ul>
+                    <li><a href="#">Start Your Setup</a></li>
+                    <li><a href="#">Setup Checklist</a></li>
+                    <li><a href="#">Client Portal</a></li>
+                    <li><a href="#">Tax Card</a></li>
+                  </ul>
+                  <p class="nav-title">Downloads</p>
+                  <ul>
+                    <li><a href="#">Forms and Templates</a></li>
+                    <li><a href="#">Policies and Guidelines</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-nav">
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">Client Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Vendor Portal</a></li>
+              <li><a class="fs-16 fw-normal" href="">Resources</a></li>
+            </ul>
+            <ul>
+              <li><a class="fs-16 fw-normal" href="">عربي</a></li>
+              <li>
+                <div class="font-accessibility">
+                  <button class="fs-16 fw-normal" type="button">A+</button>
+                  <button class="fs-16 fw-normal" type="button">A-</button>
+                </div>
+              </li>
+              <li><a href=""><img src="assets/images/icons/accessibility-icon.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+        <section class="breadcrumb-menu" id="">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col"> 
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="active " href="search.html">Search</a></li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="search py-50">
+          <div class="container-lg">
+                <h4 class="section-title fw-normal text-primary fs-40 fw-medium text-center">What are you looking for</h4>
+            <div class="search-bar-wrapper my-4">
+              <div class="search-bar">
+                <input class="form-control" type="text" placeholder="Search events, news, documents">
+              </div>
+            </div>
+            <div class="filter-tabs flex-column">
+              <div class="d-flex justify-content-center search-tabs">
+                    <ul class="nav nav-tabs" role="tablist" id="simpleTabs"> 
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20 active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20" id="pages-tab" data-bs-toggle="tab" data-bs-target="#pages" type="button" role="tab" aria-controls="pages" aria-selected="false">Pages</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news" aria-selected="false">News</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-20" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
+                      </li>
+                    </ul>
+              </div>
+              <div class="tab-content mt-lg-5 mt-4">
+                <div class="tab-pane fade active show" id="all" role="tabpanel" aria-labelledby="all-tab">
+                  <div class="pages-list-wrapper">
+                    <div class="pages-header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">Pages</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="pages-content">
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="documents-list">
+                    <div class="documents-list__header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">Documents</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="documents-list__content">
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">QFC Data Protection Regulations 2021 - Self Assessment Tool</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Tax Obligations and Recent Amendments to the QFC</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Tax Obligations and Recent Amendments to the QFC</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Company Letter - Product IS-35 - IS-36 - IS-37</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Steps for changing employer - non QFC to QFC</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">MOI form - Product IS-35 - IS-36 - IS-37 - IS-311</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">MOI form - Product IS-41 and IS-42</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Updated Job title list - Product IS-6 and IS-31</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-1" href="#">View</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-list">
+                    <div class="news-list__header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">News</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="news-list__content">
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">Business</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC Honoured for Pioneering Initiatives in Innovation and Social Responsibility</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">International</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC attracts global firms and launches metaverse at Web Summit Qatar 2025</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">International</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">The Qatar African Business forum (QABF) returns for its third edition</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">Business</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC Honoured for Pioneering Initiatives in Innovation and Social Responsibility</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">Business</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC attracts global firms and launches metaverse at Web Summit Qatar 2025</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="events-list">
+                    <div class="events-list__header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">Events</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="events-list__content">
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">23</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Jan</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">Business</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">07</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Nov</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">International</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">07</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Oct</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">International</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">17</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Aug</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">Business</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">14</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Aug</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">International</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">Monday, 23 November, 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pages" role="tabpanel" aria-labelledby="pages-tab">
+                  <div class="pages-list-wrapper">
+                    <div class="pages-header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">Pages</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="pages-content">
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                      <div class="page-item mb-lg-5 mb-4">
+                        <h3 class="page-title fw-medium fs-24 text-black mb-2">About Us - Qatar Financial Centre</h3><a class="page-url text-primary fs-20 mb-2 d-block" href="https://www.qfc.qa/" target="_blank" rel="noopener noreferrer">https://www.qfc.qa/</a>
+                        <p class="page-description fw-normal text-secondary fs-20">The Qatar Financial Centre (QFC) is a leading onshore business and financial platform, enabling firms to operate seamlessly within Qatar's dynamic market.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+                  <div class="documents-list">
+                    <div class="documents-list__header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">Documents</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="documents-list__content">
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">QFC Data Protection Regulations 2021 - Self Assessment Tool</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Tax Obligations and Recent Amendments to the QFC</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Tax Obligations and Recent Amendments to the QFC</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Company Letter - Product IS-35 - IS-36 - IS-37</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Steps for changing employer - non QFC to QFC</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">MOI form - Product IS-35 - IS-36 - IS-37 - IS-311</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">MOI form - Product IS-41 and IS-42</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-2" href="#">View</a>
+                      </div>
+                      <div class="documents-list__item d-flex align-items-center justify-content-between mb-3">
+                        <div class="documents-list__item-left d-flex align-items-center"><i class="bi bi-file-earmark-text documents-list__icon text-primary me-3"></i>
+                          <h3 class="documents-list__title fw-normal fs-20 text-secondary mb-0">Updated Job title list - Product IS-6 and IS-31</h3>
+                        </div><a class="btn btn-transparent documents-list__button rounded-pill px-4 py-1" href="#">View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+                  <div class="news-list">
+                    <div class="news-list__header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">News</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="news-list__content">
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">Business</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC Honoured for Pioneering Initiatives in Innovation and Social Responsibility</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">International</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC attracts global firms and launches metaverse at Web Summit Qatar 2025</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">International</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">The Qatar African Business forum (QABF) returns for its third edition</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">Business</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC Honoured for Pioneering Initiatives in Innovation and Social Responsibility</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                      <div class="news-list__item">
+                        <div class="news-list__meta mb-2"><span class="news-list__category">Business</span><span class="news-list__separator mx-2">•</span><span class="news-list__date">23 Nov 2025</span></div>
+                        <h3 class="news-list__title fw-medium text-secondary fs-20 mb-2">QFC attracts global firms and launches metaverse at Web Summit Qatar 2025</h3>
+                        <p class="news-list__description text-secondary mb-0 fs-20">Qatar Financial Centre (QFC), a leading onshore financial and business centre in the region, recorded a remarkable 64 per cent increase in firm registrations in the first half (H1) of 2025 compared to the same period of 2024.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+                  <div class="events-list">
+                    <div class="events-list__header d-flex justify-content-between align-items-center mb-4">
+                      <h1 class="Tabs-section-title fw-medium text-primary fs-40">Events</h1><a class="btn btn-transparent rounded-pill" href="#">View All</a>
+                    </div>
+                    <div class="events-list__content">
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">23</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Jan</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">Business</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">07</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Nov</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">International</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">07</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Oct</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">International</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">17</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Aug</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">Business</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">23 Nov 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                      <div class="events-list__item">
+                        <div class="events-list__date-box"><span class="events-list__date-box-day">14</span><span class="events-list__date-box-separator"></span><span class="events-list__date-box-month">Aug</span></div>
+                        <div class="events-list__separators">   </div>
+                        <div class="events-list__item-content">
+                          <div class="events-list__meta mb-2"><span class="events-list__category">International</span><span class="events-list__separator mx-2">•</span><span class="events-list__date">Monday, 23 November, 2025</span><span class="events-list__separator mx-2">•</span><i class="bi bi-geo-alt"></i><span class="events-list__location ms-1">Davos, Switzerland</span></div>
+                          <h3 class="events-list__title fw-medium text-secondary fs-20 mb-2">Corporate Registers Forum - 2024 Annual Conference</h3>
+                          <p class="events-list__description text-secondary mb-0 fs-20">The Corporate Registers Forum (CRF) 2024 Annual Conference brings together leaders, regulators, and experts from around the world to discuss the future of business registries, governance, and transparency.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <footer class="footer-sec">
+      <div class="container-lg pb-3 pb-lg-5 pt-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 text-start order-2 order-lg-1"> 
+            <div class="footer-nav w-100">
+              <h5 class="mb-2 mt-4 mt-lg-0">Subscribe to our newsletter</h5>
+              <p>We’ll send you only what matters — no noise, no spam.</p>
+            </div>
+            <div class="news-letter"> 
+              <input type="search" placeholder="Enter e-mail address" name="search"><a class="btn btn-transparent rounded-circle border-1 border" href="#"> <i class="bi bi-arrow-right text-white"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12 d-flex flex-wrap flex-md-nowrap align-items-start order-3 order-lg-2"> 
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">About QFC</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="about.html">Overview</a></li>
+                    <li><a class="nav-item nav-link" href="leadership.html">Leadership</a></li>
+                    <li><a class="nav-item nav-link" href="ecosystem.html">Ecosystem</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Business Services</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Setup Guide</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">VIP Services</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Regulatory & Legal</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Laws &amp; Regulations</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Public Register</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Start Your Setup</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Insights & Media</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="news.html">News</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">White Papers</a></li>
+                    <li><a class="nav-item nav-link" href="reports-publications.html">Reports &amp; Publications</a></li>
+                  </ul>
+            </div>
+            <div class="footer-nav">
+              <h5 class="mb-3 mb-lg-4 mt-4 mt-lg-0">Contact & Support</h5>
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="index.html">Make an Inquiry</a></li>
+                    <li><a class="nav-item nav-link" href="FAQ.html">FAQ</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Social Media</a></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 mt-0 pt-0 mt-lg-5 pt-lg-5 order-1 order-lg-3"> <a class="logo d-flex align-items-center" href="index.html"><img class="footer-logo img-fluid mt-0" src="assets/images/logo-white-1.png" alt=""></a></div>
+          <div class="col-12 col-lg-6 mt-lg-5 pt-lg-5 mt-2 pt-2 order-4 order-lg-4"> 
+            <ul class="footer-social">
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/facebook.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/linkedin.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/instagram.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/twitter.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/youtube.png"></a></li>
+              <li> <a href=""><img class="img-fluid" src="assets/images/icons/tiktok.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg pt-3 pt-lg-4 border-top">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 copyright">
+            <p class="fw-normal mb-0">&copy; 2025 Qatar Financial Centre. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 footer-terms">
+            <div class="footer-nav d-flex align-items-start"> 
+                  <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-item nav-link" href="terms.html">Terms</a></li>
+                    <li><a class="nav-item nav-link" href="privacy-policy.html">Privacy</a></li>
+                    <li><a class="nav-item nav-link" href="cookies.html">Cookies</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+      {
+          "imports": {
+              "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+              "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+          }
+      }
+    </script>
+    <script type="module">
+      import { Popover } from 'bootstrap';
+      //- new Popover(document.getElementById('popoverButton'))
+    </script>
+  </body>
+</html>
